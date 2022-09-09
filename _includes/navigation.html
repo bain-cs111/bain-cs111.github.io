@@ -1,0 +1,8 @@
+<nav>
+    <ul>
+        <li {% if page.url == "/syllabus/" %}class="active"{% endif %}><a href="{{site.baseurl}}/syllabus/">Syllabus</a></li>
+        <li {% if page.url == "/" or page.url contains "/schedule/" %}class="active"{% endif %}><a href="{{site.baseurl}}/" >Schedule</a></li>
+        <li {% if page.url contains "/assignments/" %}class="active"{% endif %}><a href="{{site.baseurl}}/assignments/">Assignments</a></li>
+        <li><a href="{{site.campuswire_url}}" target="_blank">Campuswire</a></li>
+    </ul>
+</nav>

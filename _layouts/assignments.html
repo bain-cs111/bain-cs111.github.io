@@ -1,0 +1,114 @@
+---
+layout: default
+---
+{{content}}
+
+{% assign dateStart = site.term_start_date | date: '%s' %}
+{% assign now = 'now' | date: '%s' %}
+
+<section class="assignments">
+    <table class="assignments-table">
+        <thead>
+            <tr>
+                <th>Week</th>
+                <th>Assignment</th>
+                <th>Description</th>
+                <th>Points</th>
+                <th>Due</th>
+                <th>Days Left</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% assign last_week = 0 %}
+        {% assign sortedAssignments = site.assignments | sort: 'due_date' %}
+        {% assign labs = site.lectures | sort: 'due_date' | where: "type", "lab" %}
+        {% assign exams = site.lectures | sort: 'due_date' | where: "type", "exam" %}
+        {% assign assignments = sortedAssignments | concat: labs  | concat: exams | sort: 'due_date' %}
+        {% for assignment in assignments %}
+            {% assign dueDate = assignment.due_date | date: '%s' %}
+            {% assign diffSeconds = dueDate | minus: dateStart %}
+            {% assign diffDays = diffSeconds | divided_by: 3600 | divided_by: 24 | plus: 1 %}
+            {% assign week = diffDays | divided_by: 7 | plus: 1 %}
+            {% assign className = 'pj' %}
+            {% if assignment.type == 'homework' %}
+                {% assign className = 'hw' %}
+            {% endif %}
+            {% if assignment.type == 'tutorial' %}
+                {% assign className = 'lab' %}
+            {% endif %}
+            {% if assignment.type == 'extra credit' %}
+                {% assign className = 'ec' %}
+            {% endif %}
+            <tr>
+                <td>{% if week != last_week %}
+                        Week {{week}}
+                    {% endif %}
+                </td>
+                <td>
+                    {% assign abbreviation = assignment.abbreviation %}
+                    {% unless assignment.abbreviation %}
+                        {% assign abbreviation = "Lab" | append: assignment.num %}
+                    {% endunless %}
+                    {% if assignment.draft == 1 %}
+                        {{ abbreviation }}
+                    {% else %}
+                        <a class="{{ className }}" href="{{site.baseurl}}{{assignment.url}}">
+                            {{ abbreviation }}
+                            <i class="fas fa-link"></i>
+                        </a>
+                    {% endif %}
+                </td>
+                <td>{{ assignment.title }}</span>
+                <td>{{ assignment.points }} points</td>
+                <td>{{ assignment.due_date | date: "%a, %m/%d" }}</td>
+                <td>
+                    <span class="due-date">
+                        {{ assignment.due_date | date: "%m/%d/%y" }}
+                    </span>
+                </td>
+            </tr>
+            {% assign last_week = week %}
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+</section>
+
+
+{% if site.deadline_reminder %}
+<script>
+    /*
+        Script for calculating # of days until assignment due.
+        Note: Can't use Jekyll b/c it doesn't compile every time.
+    */
+    const trs = document.querySelectorAll('.assignments-table tr');
+    for (tr of trs) {
+        const lastTd = tr.querySelector('td:last-child');
+        if (lastTd) {
+            const isLab = tr.querySelector('.lab') != null || tr.querySelector('td:nth-child(2)').innerHTML.includes('Lab');
+            const nextToLastTd = lastTd.previousElementSibling;
+            nextToLastTd.style.maxWidth = "140px";
+            const dateString = lastTd.querySelector('.due-date').innerHTML;
+            const dueDate = new Date(dateString);
+            const numDays = (dueDate - new Date()) / (1000 * 3600 * 24);
+            if (numDays < -1) {
+                tr.classList.add('passed');
+                lastTd.innerHTML = "passed";
+            }
+            else if (isLab) {
+                lastTd.innerHTML = "<span style='font-family: Arial;'>&#8804;</span> " + (numDays + 1).toFixed();
+                //lastTd.innerHTML = '';
+            }
+            else {
+                if (numDays < 0) {
+                    lastTd.innerHTML = "due tonight";
+                }
+                else {
+                    lastTd.innerHTML = (numDays + 1).toFixed();
+                }
+            }
+        }
+    }
+</script>
+{% endif %}

@@ -1,0 +1,104 @@
+.subtitle {
+    margin: -20px 0px 15px 0px;
+    color: #676767;
+    font-family:"Campton Extra Light";
+    // color: $lightpurple;
+    font-size: 1.2em;
+}
+
+.caption {
+    line-height: 1.2em;
+    font-size: 0.9em;
+    margin-top: -8px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.frame {
+    border-radius: 5px;
+    padding: 5px;
+    border: solid 1px #CCC;
+}
+img.small {
+    max-width: 30%;
+}
+img.medium {
+    max-width: 50%;
+}
+img.med-lg {
+    max-width: 75%;
+}
+img.large {
+    max-width: 100%;
+}
+.center {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+img.creature {
+    max-width: 20%;
+    float: left;
+    margin: 0px 10px 0px 0px;
+}
+img.cars {
+    float: right;
+    max-width: 40%;
+    margin: 0px 0px 0px 10px;
+    border-top: solid 1px #ccc;
+    border-left: solid 1px #ccc;
+    border-right: solid 1px #ccc;
+    border-radius: 5px;
+}
+.module-image {
+    border-radius: 5px;
+    padding: 5px;
+    border: solid 1px #CCC;
+    max-width: 30%;
+    float: left;
+    margin: 0px 10px 0px 0px;
+}
+
+.highlighter-rouge {
+    margin-bottom: 20px;
+}
+
+.nu-button, .nu-button:visited, .nu-button:active {
+    &:hover {
+        background: $lightpurple;
+        border: none;
+    }
+    background: $purple;
+    border: none;
+    color: #fff !important;
+    margin: 20px .5em 20px 0;
+    padding: .8em 1em .7em 1em;
+    align-self: flex-start;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    text-decoration: none;
+    i {
+        margin-left: 5px;
+    }
+}
+
+table.instructions {
+    td, th {
+        font-size: 1em;
+    }
+}
+
+
+@media (max-width: 800px) { 
+    img.small, img.medium, img.med-lg {
+        max-width: 100%;
+    }
+    img.module-image, img.creature, .img.cars {
+        max-width: 40%;
+    }
+    img.cars {
+        max-width: 100%;
+        float: inherit;
+    }
+}

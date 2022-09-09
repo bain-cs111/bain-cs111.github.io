@@ -1,0 +1,152 @@
+
+$twocolHeaderHeight: 40px;
+.two-column {
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  width: 85%;
+  height: 100%;
+}
+
+.sidebar {
+  width: 20%;
+  height: 25vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+
+  h3 {
+      margin-top: 0px;
+  }
+  ol {
+      padding: 0px;
+      margin: 0px;
+  }
+  .side-menu {
+      background: #F6F6F6;
+      padding: 20px;
+      a {
+          font-size: 1.05em;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          padding-right: 20px !important;
+      }
+      a:hover {
+          background: #EEE;
+      }
+      >li {
+          a {
+              display: block;
+              padding-top: 5px;
+              &.active {
+                  background: $lightpurple;
+                  color: white;
+              }
+          }
+          >a:first-child {
+              padding: 4px 0px 3px 10px;
+              font-weight: 500;
+          }
+          ol {
+              margin-top: 0px;
+              margin-bottom: 10px;
+              li {
+                  a {
+                      color: #444;
+                      font-size: 0.9em;
+                      padding-left: 20px;
+                  }
+
+                  ol li {
+                      a {
+                          color: #666;
+                          font-size: 0.9em;
+                          padding-left: 45px;
+                      }
+                      ol li > a {
+                          padding-left: 65px;
+                      }
+                  }
+              }
+          }
+      }
+      li {
+          margin-top: 0px;
+          list-style-type: none;
+          line-height: 1.2em;
+      }
+  }
+}
+    /* Large rounded green border */
+    hr {
+      border: 2px solid grey;
+      border-radius: 5px;
+      width:100%;
+    }
+    margin-bottom: 400px;
+    main {
+        h1, h2, h3, h4 {
+            padding-top: 85px;
+            margin-top: -70px;
+        }
+        h2, h3, h4 {
+            z-index: -1;
+        }
+    }
+    padding: 0px;
+
+    .desktop { display: flex; }
+    .mobile { display: none; }
+    header {
+        height: 116px;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+        h1 {
+            z-index: 100;
+        }
+    }
+    nav {
+        height: 48px;
+        // background: white;
+        border-bottom: dotted 1px #CCC;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        ul {
+            z-index: 300;
+        }
+    }
+
+    aside {
+        position: sticky;
+        //top: $twocolHeaderHeight;
+        top: 0;
+        left: 0px;
+        min-height: 100vh;
+        width: 20%;
+        overflow-y: auto;
+        padding-top: 25px;
+        padding-bottom: 40px;
+
+    }
+    article {
+      display:flex;
+        width: 85%;
+
+        padding: 20px 40px;
+        padding-right: 18vh;
+
+        h1 {
+            font-size: 1.8em;
+        }
+    }
+}

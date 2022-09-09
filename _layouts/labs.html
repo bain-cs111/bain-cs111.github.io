@@ -1,0 +1,74 @@
+---
+layout: default
+---
+            
+<section class="assignments">
+
+    {{content}}
+
+    <table class="labs">
+        <thead>
+            <tr>
+                <th>Week</th>
+                <th>Lab Link</th>
+                <th>Description</th>
+                <th>Notes</th>
+                <th>Points</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% assign dateStart = site.term_start_date | date: '%s' %}
+        {% assign now = 'now' | date: '%s' %}
+        {% assign last_week = 0 %}
+        {% assign labs = site.lectures | sort: 'due_date' | where: "type", "lab" %}
+        {% for assignment in labs %}
+            {% assign dueDate = assignment.due_date | date: '%s' %}
+            {% assign diffSeconds = dueDate | minus: dateStart %}
+            {% assign diffDays = diffSeconds | divided_by: 3600 | divided_by: 24 | plus: 1 %}
+            {% assign week = diffDays | divided_by: 7 | plus: 1 %}
+            {% assign className = 'lab' %}
+            <tr>
+                <td>{% if week != last_week %}
+                        Week {{week}}
+                    {% endif %}
+                </td>
+                <td>
+                    {% if assignment.draft == 1 %}
+                        Lab {{ assignment.num }}:
+                    {% else %} 
+                        <a class="{{ className }}" href="{{site.baseurl}}{{assignment.url}}">
+                            Lab {{ assignment.num }}
+                            <i class="fas fa-link"></i>
+                        </a> 
+                    {% endif %}    
+                    {{ assignment.title }}            
+                </td>
+                <td>
+                    {% if assignment.description.first %}
+                        <ul>
+                            <li>
+                                {{ assignment.description | join: "</li><li>" }}
+                            </li>
+                        </ul>
+                    {% else %}
+                        {{ assignment.description }}
+                    {% endif %}
+                </td>
+                <td>
+                    {% if assignment.notes.first %}
+                        <ul>
+                            <li>
+                                {{ assignment.notes | join: "</li><li>" }}
+                            </li>
+                        </ul>
+                    {% else %}
+                        {{ assignment.notes }}
+                    {% endif %}
+                </td>
+                <td>{{ assignment.points }} points</td>
+            </tr>
+            {% assign last_week = week %}
+        {% endfor %}
+        </tbody>
+    </table>
+</section>

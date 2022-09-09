@@ -1,0 +1,32 @@
+
+{% assign sortedPages = site.pages | sort: 'nav_order' %}
+
+<ol class="side-menu">
+{% for p in sortedPages %}
+    {% if p.has_children %}
+        <li>
+            {% assign cls = "" %}
+            {% if p.permalink == page.permalink %}
+                {% assign cls = "active" %}
+            {% endif %}
+            <a href="{{site.baseurl}}{{p.permalink}}" class="{{cls}}">{{ p.title }}</a>
+            <ol>
+                {% for child in sortedPages %}
+                {% if p.title == child.parent %}
+                    <li>
+                        {% assign cls = "" %}
+                        {% if child.permalink == page.permalink %}
+                            {% assign cls = "active" %}
+                        {% endif %}
+                        <a href="{{site.baseurl}}{{child.permalink}}" class="{{cls}}">{{ child.title }}</a>
+                        {% if child.permalink == page.permalink %}
+                            {% include toc.html html=child.content ordered=true %}
+                        {% endif %}
+                    </li>
+                {% endif %}
+                {% endfor %}
+            </ol>
+        </li>
+    {% endif %}
+{% endfor %}
+</ol>

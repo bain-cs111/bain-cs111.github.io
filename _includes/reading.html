@@ -1,0 +1,28 @@
+<li>
+    {% if item.author %}
+        {{ item.author }}
+    {% endif %}
+    {% if item.date %}
+        ({{ item.date }}).
+    {% endif %}
+    {% if item.url %}
+        {% if item.video_url == False %}
+            <a href="{{ item.url }}" {% if item.internal != 1 %}target="_blank"{% endif %}>{{ item.title }}</a>.
+        {% else %}
+            {{ item.title }}.
+        {% endif %}
+    {% else %}
+        {{ item.title }}.
+    {% endif %}
+    {% if item.source %}
+        <em>{{ item.source }}</em>
+    {% endif %}
+    {% if item.video_url %}
+        <br>
+        <a href="{{ item.url }}" target="_blank">reading</a> &bull;
+        <a href="{{ item.video_url }}" target="_blank">video</a> 
+    {% endif %}
+    {% if item.notes %}
+        <br>{{ item.notes }}</em>
+    {% endif %}
+</li>

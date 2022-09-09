@@ -1,0 +1,287 @@
+$lightgrey: #F6F6F6;
+$grey: #999;
+$darkgrey: #5c5962;
+$nupurple: #691D40;
+$purple: #684a98;
+$lightpurple: #934B66;
+$lightlightpurple: rgba(132, 109, 172, 0.65);
+$green: #009c7b;
+$blue: #2869e6;
+$mutedblue: #5B85AA;
+$orange: #F46036;
+
+* {
+    box-sizing: border-box;
+}
+
+iframe {
+    margin: 20px 0px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Akkurat Pro Regular';
+    color: #342f2e;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+section, div, aside {
+    box-sizing: border-box;
+}
+
+section, article {
+    a, a:hover, a:visited, a:active {
+        text-decoration: none;
+        color: #444;
+        //border-bottom: dotted $grey 2px;
+        border-bottom: solid $lightpurple 1px;
+    }
+    a:hover {
+        // border-bottom: dotted #444 2px;
+        background: #f6f6f6;
+    }
+    p, li {
+        font-size: 16px;
+        color: #5c5962;
+        line-height: 1.7em;
+        margin-top: 0px;
+    }
+}
+
+a, a:hover, a:visited, a:active {
+    text-decoration: none;
+    color: #444;
+    border-bottom: solid transparent 2px;
+}
+
+
+ol, ul {
+    margin-top: 0px;
+}
+li {
+    line-height: 1.5em;
+}
+ol.spaced li, ul.spaced li {
+    line-height: 1.5em;
+    margin-bottom: 5px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Campton Book",Tahoma,sans-serif;
+    color: $nupurple;
+    font-weight: 600;
+
+    a, a:hover, a:visited, a:active {
+        text-decoration: none;
+        color: $nupurple;
+        border-bottom: none !important;
+    }
+}
+
+h1 {
+    font-weight: 400;
+    a, a:visited {
+        color: $nupurple;
+        text-decoration: none;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: -5px;
+    }
+    a:hover {
+        background: #EEE;
+        border-radius: 5px;
+    }
+    span {
+        display: inline-block;
+        border-radius: 4px;
+        color: white;
+        &.hw {
+            background: $purple;
+        }
+        &.pj {
+            background: $purple;
+        }
+    }
+}
+
+h2, h3, h4, h5 {
+    margin-bottom: 0px;
+    &.slashes {
+        &::before, &::after {
+            background: url(https://common.northwestern.edu/v8/css/images/icons/grey-slash.svg) no-repeat 50%/17px 21px;
+            padding: 0 20px;
+            content: " ";
+        }
+    }
+    &.slash {
+        &::after {
+            background: url(https://common.northwestern.edu/v8/css/images/icons/grey-slash.svg) no-repeat 50%/17px 21px;
+            padding: 0 20px;
+            content: " ";
+        }
+    }
+}
+
+h2 {
+    border-bottom: dotted 1px #999;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+h4 {
+    font-size: 1.2em;
+}
+h5 {
+    font-size: 1.1em;
+}
+strong {
+    font-weight: 600;
+}
+code.highlighter-rouge {
+    background: #F3F3F3;
+    padding: 3px;
+    border-radius: 6px;
+}
+.codepen-frame {
+    height: 350px;
+}
+
+.desktop { display: flex; }
+.mobile {
+    display: none;
+}
+
+.due-date {
+    display: none;
+}
+
+ol.flush, ul.flush {
+    padding-left: 17px;
+    li {
+        padding-left: 8px;
+        img, .highlighter-rouge {
+            margin: 5px 0px 5px 5px;
+        }
+    }
+}
+
+.checkbox {
+    text-indent: -34px;
+    margin-left: 34px;
+}
+.checkbox:before {
+    font-family:"Font Awesome 5 Pro";
+    content: "\f00c";
+    font-weight: 600;
+    color: #1cb954;
+    margin-right: 10px;
+    font-size: 1.5em;
+    vertical-align: top;
+}
+
+pre.highlight {
+    border-radius: 10px;
+    background: #F6F6F6;
+    padding: 10px;
+}
+
+.blockquote-no-margin {
+    margin-top: 0px;
+}
+blockquote {
+    border-left: solid 7px $lightgrey;
+    background: #F6F6F6;
+    padding: 10px;
+    margin: 0px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    p {
+        margin: 0px;
+    }
+}
+
+footer {
+    border-top: dotted 1px $grey;
+    margin-top: 150px;
+    grid-area: bottom;
+    p {
+        margin: 40px 0px 40px 0px;
+        text-align: center;
+    }
+}
+
+main {
+    grid-area: main;
+    &.sticky {
+        padding-top: 48px;
+    }
+
+}
+
+header {
+    grid-area: top;
+    align-items: flex-end;
+    flex-direction: column;
+    background: url(/assets/images/purple-polygons.png) repeat-y;
+    h1 {
+        margin-bottom: 0px;
+        color: white;
+        a, a:hover, a:visited, a:active {
+            color: white;
+            background: none;
+        }
+    }
+    h2 {
+        margin-top: 0px;
+        margin-bottom: 20px;
+        font-family: "Campton Extra Light",Tahoma,sans-serif;
+        border-bottom: none;
+        color: white;
+        a, a:hover, a:visited, a:active {
+            color: white;
+        }
+        // color:#691D40;
+    }
+}
+nav {
+    background: $lightgrey;
+    grid-area: menu;
+    &.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+        margin: 0px;
+
+        li {
+            border-bottom: solid 3px transparent;
+            list-style: none;
+            padding: 10px 5px;
+
+            &.active {
+                border-bottom: solid 3px $nupurple;
+                // background: #EEE;
+            }
+
+            a {
+                padding: 5px 8px;
+            }
+            a, a:visited, &:active {
+                text-decoration: none;
+                color: #444;
+            }
+            &:hover, &:active {
+                background: #F9F9F9;
+                border-bottom: solid 3px $grey;
+            }
+        }
+    }
+}

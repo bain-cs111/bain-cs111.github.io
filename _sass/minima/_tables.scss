@@ -1,0 +1,111 @@
+table {
+    border-top: solid 1px #444;
+    border-bottom: solid 1px #444;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+
+    td, th {
+        font-size: 0.9em;
+        line-height: 1.5em;
+        margin-top: 5px;
+        vertical-align: top;
+        ul {
+            margin-bottom: 0px;
+            li {
+                line-height: 1.5em;
+                font-size: 1em;
+            }
+        }
+    }
+    td {
+        font-family: "Akkurat Pro Light";
+        strong, i, a.lec, a.hw, a.pj {
+            font-family: 'Akkurat Pro Regular';
+        }
+    }
+
+    td:first-child, th:first-child {
+        min-width: 80px;
+    }
+
+    thead tr:first-child {
+        border-bottom: solid 1px #444;
+    }
+
+    td, th {
+        border-bottom: dotted 1px #999;
+        padding: 8px;
+    }
+    th {
+        font-weight: 500;
+        min-width: 60px;
+        text-align: left;
+    }
+}
+table.rubric-short {
+    td:nth-child(1), th:nth-child(1) {
+        width: 40px;
+        min-width: 40px;
+        max-width: 40px;
+    }
+    td:nth-child(2), th:nth-child(2) {
+        width: 80px;
+    }
+    ul {
+        margin: 0px;
+    }
+}
+
+table.rubric {
+    td:nth-child(1), th:nth-child(1) {
+        min-width: 160px;
+    }
+    ul {
+        margin: 0px;
+    }
+}
+
+.assignments {
+    td:nth-child(1), th:nth-child(1) {
+        width: 60px !important;
+        font-weight: 500;
+    }
+}
+
+.readings, .schedule, .labs {
+    td:nth-child(2), th:nth-child(2) {
+        min-width: 80px;
+    }
+    td:nth-child(2), th:nth-child(2) {
+        min-width: 100px;
+    }
+    td:nth-child(3), th:nth-child(3) {
+        min-width: 310px;
+    }
+    td:last-child, th:last-child {
+        max-width: 180px;
+        min-width: 100px;
+    }
+}
+.schedule, .labs {
+    td:nth-child(3), th:nth-child(3) {
+        min-width: 280px;
+    }
+}
+
+table.xsmall {
+    width: 250px !important;
+}
+table.small {
+    width: 400px !important;
+}
+table.medium {
+    width: 600px !important;
+
+    &.module {
+        td:nth-child(2) {
+            max-width: 320px;
+        }
+    }
+}

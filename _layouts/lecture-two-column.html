@@ -1,0 +1,29 @@
+---
+layout: two-column
+---
+
+{% if page.slides_url or page.lecture_files %}
+    <ul>
+        {% if page.slides_url %}
+        <li>
+            <a href="{{ page.slides_url }}" target="_blank">slides</a>
+        </li>
+        {% endif %}
+        {% if page.lecture_files %}
+        <li>
+            <a href="{{ page.lecture_files }}" target="_blank">lecture files</a>
+        </li>
+        {% endif %}
+        {% if page.credits %}
+            <li>Credit: {{page.credits}}</li>
+        {% endif %}
+    </ul>
+{% endif %}
+
+{{ content }}
+
+{% if page.readings %}
+    <h2 id="lecture-readings">Readings</h2>
+    {% include page_readings.html %} 
+{% endif %}
+

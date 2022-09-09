@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {% include head.html %}
+    </head>
+    <body class="two-column">
+        <div class="wrapper">
+
+            <div class="sidebar">
+                {% include toc.html html=content class='side-menu' ordered=true %}
+            </div>
+
+          <article>
+            <div class="main">
+                <!--{% include page_title.html %}-->
+                {{ content }}
+            </div>
+</article>
+      </div>
+        {{ page.additional_html }}
+        {% include scripts.html %}
+        <script type="text/javascript" src="{{site.baseurl}}/assets/js/scrollspy.js"></script>
+    </body>
+</html>

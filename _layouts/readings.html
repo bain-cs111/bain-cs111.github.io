@@ -1,0 +1,70 @@
+---
+layout: default
+---
+<section class="readings">
+{{content}}
+{% assign dateStart = site.term_start_date | date: '%s' %}
+{% assign now = 'now' | date: '%s' %}
+{% assign last_week = 0 %}
+<table>
+    <thead>
+        <tr>
+            <th>Week</th>
+            <th></th>
+            <th>Topic</th>
+            <th>Readings</th>
+        </tr>
+    </thead>
+    <tbody>
+{% for lecture in site.lectures %}
+    <!-- Only output if it's a lecture that has readings -->
+    {% if lecture.type != "lab" %}
+        {% assign lectureDate = lecture.due_date | date: '%s' %}
+        {% assign diffSeconds = lectureDate | minus: dateStart %}
+        {% assign diffDays = diffSeconds | divided_by: 3600 | divided_by: 24 | plus: 1 %}
+        {% assign week = diffDays | divided_by: 7 | plus: 1 %}
+        <tr>
+            <th>
+                {% if week != last_week %}
+                    Week {{week}}
+                {% endif %}
+                <span class="due-date">
+                    {{ lecture.due_date | date: "%m/%d/%y" }}
+                </span>
+            </th>
+            <td>{{ lecture.due_date | date: "%a, %m/%d" }}</td>
+            <td>{{lecture.title}}</td>
+            <td>
+                {% if lecture.readings %}
+                    {% assign page = lecture %}
+                    {% include page_readings.html %} 
+                {% endif %}
+            </td>
+    {% endif %}
+    {% assign last_week = week %}
+    </tr>
+{% endfor %}
+    </tbody>
+</table>
+</section>
+
+<!-- {% if site.deadline_reminder %}
+<script>
+    /* 
+        Script for calculating # of days until assignment due.
+        Note: Can't use Jekyll b/c it doesn't compile every time.
+    */
+    const trs = document.querySelectorAll('tr');
+    for (tr of trs) {
+        const dateElement = tr.querySelector('.due-date');
+        if (dateElement) {
+            const dateString = dateElement.innerHTML;
+            const dueDate = new Date(dateString);
+            const numDays = (dueDate - new Date()) / (1000 * 3600 * 24);
+            if (numDays < 0) {
+                tr.classList.add('passed');
+            }
+        }
+    }
+</script>
+{% endif %} -->

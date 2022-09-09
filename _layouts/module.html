@@ -1,0 +1,133 @@
+---
+layout: two-column
+show_outline: 1
+show_schedule: 1
+---
+
+{{content}}
+
+<h2 id="do-now">Today's Activities</h2>
+<p>For today, please do the following:</p>
+{% assign num = 1 %}
+
+{% if page.exercise_url %}
+    <h3 id="code">{{num}}. Download the Exercise Files</h3> 
+    <a class="nu-button" href="{{site.baseurl}}/course-files/lectures/{{page.exercise_url}}" target="_blank">
+        Exercise Files <i class="fas fa-download"></i>
+    </a>
+    {% assign num = num | plus: 1 %}
+{% endif %}
+
+<h3 id="slides">{{num}}. Review the Slides</h3>  
+{% assign num = num | plus: 1 %}
+{% if page.slides %}
+    <ol>
+    {% for slide in page.slides %}
+        <li>
+            <a href="{{slide.url}}" target="_blank">{{slide.title}}</a>
+        </li>
+    {% endfor %}
+    </ol>
+{% else %}
+    <p>No slides posted.</p>
+{% endif %}
+
+{% if page.videos %}
+<h3 id="videos">{{num}}. Watch the Lecture Video(s)</h3>
+{% assign num = num | plus: 1 %}
+
+    <table class="medium module">
+        <thead>
+            <tr>
+                <th>Link</th>
+                <th>Title</th>
+                <th>Type</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% assign vnum = 1 %}
+        {% for video in page.videos %}
+            {% assign className = "recorded" %}
+            {% assign type = "pre-recorded" %}
+            {% if video.live %}
+                {% assign className = "live" %}
+                {% assign type = "lecture" %}
+            {% endif %}
+            {% assign label = "Video" | append: " " | append: vnum %}
+            {% if video.chat %}
+                {% assign label = "Chat" %}
+                {% assign type = "chat" %}
+            {% endif %}
+            <tr>
+                <td>
+                    <a class="{{ className }}" href="{{video.url}}" target="_blank">
+                        {{label}} <i class="fa fa-link"></i>
+                    </a>
+                </td>
+                <td>
+                    {{video.title}}
+                </td>
+                <td>
+                    {{ type }}
+                </td>
+                <td>
+                    {{ video.duration }}
+                </td>
+            </tr>
+            {% assign vnum = vnum | plus: 1 %}
+        {% endfor %}
+        </tbody>
+    </table>
+{% endif %}
+
+{% if page.readings %}
+    <h3 id="readings">{{ num }}. Review / Study the Supplemental Materials</h3>
+    <p>
+        Note: these readings / videos are suggested for additional context / 
+        examples, but not required.
+    </p>
+    {% include page_readings.html %} 
+    {% assign num = num | plus: 1 %}
+{% endif %}
+
+{% if page.quiz_url %}
+    <h3 id="quiz">{{ num }}. Take the Practice (Ungraded) Quiz</h3>
+    <p>
+        Note: The quiz is to help you test your own understanding 
+        of the concepts. It is not graded, and is designed to help you to see 
+        what you already know and what you should review / ask about.<br>
+        <a href="{{page.quiz_url}}" target="_blanl">{{page.quiz_url}}</a>
+    </p>
+    {% assign num = num | plus: 1 %}
+{% endif %}
+
+{% if page.extras %}
+    <h2 id="reminders">Reminders</h2>
+    <ul>
+        {% for extra in page.extras %}
+            <li>
+                {% if extra.url %}
+                    <a href="{{extra.url}}">{{extra.title}}</a>
+                {% else %}
+                    {{extra.title}}
+                {% endif %}
+                <br>{{extra.comments}}
+                
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+{% if page.include_page %}
+    {% capture my_include %}{% include_relative {{ page.include_page }} %}{% endcapture %}
+    {{ my_include | markdownify }}
+{% endif %}
+
+{% if page.include_pages %}
+    {% for inc in page.include_pages %}
+        {% capture my_include %}{% include_relative {{ inc }} %}{% endcapture %}
+        {{ my_include | markdownify }}
+        {% assign num = num | plus: 1 %}
+    {% endfor %}
+{% endif %}

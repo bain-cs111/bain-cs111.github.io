@@ -1,0 +1,32 @@
+.container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "top"
+        "menu"
+        "main"
+        "bottom";
+}
+.one-column {
+    header {
+        height: 116px;
+    }
+    header, nav, footer, main {
+        display: flex;
+    }
+    header, nav, footer {
+        justify-content: center;
+        align-items: center;
+    }
+    footer > div {
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+    
+    main {
+        min-height: 80vh;
+        flex-direction: column;
+        padding-left: 15vw;
+        padding-right: 15vw;
+    }
+}
+
