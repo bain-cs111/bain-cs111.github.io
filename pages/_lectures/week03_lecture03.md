@@ -2,7 +2,7 @@
 layout: module
 title: Conditional Expressions
 type: lecture
-num: 8
+num: 7
 draft: 1
 due_date: 2022-10-07
 description:

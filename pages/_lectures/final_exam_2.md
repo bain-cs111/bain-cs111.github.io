@@ -5,7 +5,6 @@ type: quiz
 draft: 1
 num: 4
 due_date: 2022-12-09
-
 ---
 If you have already taken Quiz 1 and Quiz 2 and are satisfied with your grade, Quiz 3 is optional (given that you can drop your lowest quiz score).
 

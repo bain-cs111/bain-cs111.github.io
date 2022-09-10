@@ -3,7 +3,7 @@ layout: module
 title: Lambda Abstraction
 type: lecture
 draft: 1
-num: 7
+num: 6
 due_date: 2022-10-05
 slides:
   - url: https://docs.google.com/presentation/d/1F92Sc2ak-DRDfQa4rCPQY8nPIqD4mBoV_EzFfOxOz4g/edit?usp=sharing

@@ -3,7 +3,7 @@ layout: module
 title: Iterative Recursion
 type: lecture
 draft: 1
-num: 13
+num: 12
 description:
 due_date: 2022-10-21
 slides:

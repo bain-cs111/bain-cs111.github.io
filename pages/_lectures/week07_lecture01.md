@@ -4,7 +4,7 @@ title: Q2 Review
 description:
 type: lecture
 draft: 1
-num: 17
+num: 16
 due_date: 2022-10-31
 slides:
    - title: "Handling User Input & Event Handlers"

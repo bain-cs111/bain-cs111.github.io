@@ -3,7 +3,7 @@ layout: module
 title: What is Computation?
 type: lecture
 description:
-num: 1
+num: 0
 draft: 1
 due_date: 2022-09-21
 slides:

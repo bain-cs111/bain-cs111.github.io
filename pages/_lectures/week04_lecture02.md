@@ -3,7 +3,7 @@ layout: module
 title: Lists
 type: lecture
 draft: 1
-num: 10
+num: 9
 description:
 due_date: 2022-10-12
 slides:

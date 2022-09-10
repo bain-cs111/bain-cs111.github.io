@@ -4,7 +4,7 @@ title: Quiz 1 Review
 type: lecture
 description:
 draft: 1
-num: 11
+num: 10
 due_date: 2022-10-14
 
 ---

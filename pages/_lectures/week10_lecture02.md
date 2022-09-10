@@ -3,7 +3,7 @@ layout: module
 title: Programming and Thinking Paradigms
 type: lecture
 draft: 1
-num: 25
+num: 24
 due_date: 2022-11-23
 slides:
    - title: "Practice for P2"

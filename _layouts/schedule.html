@@ -8,7 +8,7 @@ layout: default
     {% assign dates = everything | sort: 'due_date'| map: 'due_date' | uniq %}
 
     <p>
-        Note: This schedule is subject to change (as needed). 
+        Note: This schedule is subject to change (as needed).
         In addition, unless otherwise indicated, tutorials are always due on Wednesday at 11:59PM
         and homework is always due on Friday at 11:59PM.
     </p>
@@ -17,7 +17,7 @@ layout: default
             <tr>
                 <th>Week</th>
                 <th></th>
-                <th>Lesson Topic</th>
+                <th>Lecture Topic</th>
                 <th>Due</th>
             </tr>
         </thead>
@@ -42,7 +42,7 @@ layout: default
                 </th>
                 {% if lecture %}
                     <!-- If lecture -->
-                    <td> 
+                    <td>
                         {{ date | date: "%a, %m/%d" }}
                         <!-- {% comment %}
                         {% if lecture.type != 'lab' %}
@@ -50,19 +50,19 @@ layout: default
                         {% else %}
                             Lab<br>
                             (during assigned day/time)
-                        {% endif %} 
+                        {% endif %}
                         {% endcomment %} -->
                     </td>
                     <td>
                         {% assign className = 'lec' %}
                         {% assign prefix = None %}
                         {% if lecture.num  %}
-                            {% assign prefix = "Lesson " | append: lecture.num %}
-                        {% endif %} 
+                            {% assign prefix = "Lecture " | append: lecture.num %}
+                        {% endif %}
                         {% if lecture.type == 'lab' %}
                             {% assign className = 'lab' %}
                             {% assign prefix = "Lab " | append: lecture.num %}
-                        {% endif %} 
+                        {% endif %}
                         {% if lecture.type == 'review' or lecture.type == 'exam' or lecture.type == 'quiz'%}
                             {% assign className = 'quiz' %}
                             {% assign prefix = lecture.type  | append: " " | append: lecture.num %}
@@ -71,7 +71,7 @@ layout: default
                             <span class="badge">
                                 {{ prefix }}
                             </span>
-                        {% elsif prefix %} 
+                        {% elsif prefix %}
                             <a id="l{{lecture.num}}" class="{{ className }}" href="{{site.baseurl}}{{lecture.url}}">
                                 {{ prefix }} <i class="fas fa-link"></i>
                             </a>
@@ -107,22 +107,22 @@ layout: default
                         {% assign classname = "pj" %}
                         {% if assignment.type == "homework" %}
                             {% assign classname = "hw" %}
-                        {% endif %} 
+                        {% endif %}
                         {% if assignment.type == "extra credit" %}
                             {% assign classname = "ec" %}
-                        {% endif %} 
+                        {% endif %}
                         {% if assignment.type == "tutorial" %}
                             {% assign classname = "lab" %}
-                        {% endif %} 
-                        
+                        {% endif %}
+
                         {% if assignment.draft == 1 %}
                             <strong>{{ assignment.abbreviation }}:</strong>
-                        {% else %} 
+                        {% else %}
                             <a href="{{site.baseurl}}{{assignment.url}}" class="{{classname}}">
                                 {{ assignment.abbreviation }}
                                 <i class="fa fa-link"></i>
                             </a>
-                        {% endif %} 
+                        {% endif %}
                         {{ assignment.title }}<br>
                     {% endfor %}
                 </td>
@@ -135,7 +135,7 @@ layout: default
 </section>
 {% if site.deadline_reminder %}
 <script>
-    /* 
+    /*
         Script for calculating # of days until assignment due.
         Note: Can't use Jekyll b/c it doesn't compile every time.
     */

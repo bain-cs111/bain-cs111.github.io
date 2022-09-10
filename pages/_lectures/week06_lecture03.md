@@ -4,7 +4,7 @@ title: Binary Search Trees
 description:
 type: lecture
 draft: 1
-num: 16
+num: 15
 due_date: 2022-10-28
 slides:
    - title: "Handling User Input & Event Handlers"

@@ -3,7 +3,7 @@ layout: module
 title: Composite Data
 type: lecture
 description:
-num: 9
+num: 8
 draft: 1
 due_date: 2022-10-10
 videos:

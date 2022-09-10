@@ -3,7 +3,7 @@ layout: module
 title: Iteration
 type: lecture
 draft: 1
-num: 6
+num: 5
 description:
 due_date: 2022-10-03
 slides:

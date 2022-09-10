@@ -4,7 +4,7 @@ title: File Operations
 description:
 type: lecture
 draft: 1
-num: 20
+num: 19
 due_date: 2022-11-09
 slides:
    - title: "More Files & Strings + Error Handling"

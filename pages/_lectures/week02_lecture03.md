@@ -4,7 +4,7 @@ title: Aligning Language
 type: lecture
 description:
 draft: 1
-num: 5
+num: 4
 due_date: 2022-09-30
 slides:
   - url: https://docs.google.com/presentation/d/1Z4E9qXQjftpvCKbwV8kRWvVJ0ZUTz4i8E-vmn4Pgujw/edit?usp=sharing

@@ -2,7 +2,7 @@
 layout: module
 title: Graphics Language
 type: lecture
-num: 3
+num: 2
 draft: 1
 description:
 due_date: 2022-09-26

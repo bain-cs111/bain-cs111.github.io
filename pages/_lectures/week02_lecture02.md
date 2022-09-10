@@ -2,7 +2,7 @@
 layout: module
 title: Compound Procedures
 type: lecture
-num: 4
+num: 3
 draft: 1
 description:
 due_date: 2022-09-28

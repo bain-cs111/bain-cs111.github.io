@@ -4,7 +4,7 @@ title: Methods
 description:
 type: lecture
 draft: 1
-num: 23
+num: 22
 due_date: 2022-11-16
 exercise_url: "lecture23.zip"
 readings:

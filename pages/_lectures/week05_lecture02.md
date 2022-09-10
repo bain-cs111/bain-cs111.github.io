@@ -4,7 +4,7 @@ title: Recursion
 description:
 type: lecture
 draft: 1
-num: 12
+num: 11
 due_date: 2022-10-19
 slides:
    - title: "Lecture Slides"

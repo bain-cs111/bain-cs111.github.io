@@ -4,7 +4,7 @@ title: Linked Lists
 description:
 type: lecture
 draft: 1
-num: 14
+num: 13
 due_date: 2022-10-24
 slides:
    - title: "More on Iteration"

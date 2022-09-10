@@ -3,7 +3,7 @@ layout: module
 title: Programming in Text
 type: lecture
 draft: 1
-num: 2
+num: 1
 description:
 due_date: 2022-09-23
 slides:
