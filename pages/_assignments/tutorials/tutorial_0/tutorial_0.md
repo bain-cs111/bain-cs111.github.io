@@ -1,9 +1,9 @@
 ---
 layout: assignment-two-column
-title: This is Really Shaping Up Nicely
+title: Shaping Up
 type: tutorial
 abbreviation: Tutorial 0
-draft: 0
+draft: 1
 points: 100
 num: 1
 description:

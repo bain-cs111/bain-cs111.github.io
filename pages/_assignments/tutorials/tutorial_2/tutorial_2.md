@@ -3,7 +3,7 @@ layout: assignment-two-column
 title: Composing Composite Data
 type: tutorial
 abbreviation: Tutorial 2
-draft: 0
+draft: 1
 points: 100
 num: 3
 description:

@@ -5,7 +5,7 @@ abbreviation: Exercise 2
 type: homework
 due_date: 2022-10-10
 ordering: 3
-draft: 0
+draft: 1
 points: 100
 ---
 

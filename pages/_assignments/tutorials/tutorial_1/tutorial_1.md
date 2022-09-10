@@ -3,7 +3,7 @@ layout: assignment-two-column
 title: Iterating on your Expectations
 type: tutorial
 abbreviation: Tutorial 1
-draft: 0
+draft: 1
 points: 100
 num: 2
 description:

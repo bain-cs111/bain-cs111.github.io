@@ -1,6 +1,6 @@
 ---
 layout: module
-title: Programming and Thinking Paradigms
+title: Programming and Thinking Paradigms (ZOOM)
 type: lecture
 draft: 1
 num: 24
