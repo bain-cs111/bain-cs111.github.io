@@ -95,7 +95,7 @@ Calling your function like this:
 
 should return a result like this:
 
-![my-iterated-overlay example output](images/my-iterated-overlay.svg)
+![my-iterated-overlay example output](/assets/exercise_4/my-iterated-overlay.svg)
 
 > **Remember**: You can't use `foldl`, `foldr`, `apply`, etc.
 

@@ -14,7 +14,7 @@ Today's tutorial is all about practicing recursion. Remember, **recursion** itse
 
 [Relevant "XKCD" Comic Strip](https://thomaspark.co/2017/01/relevant-xkcd/) (totally worth a click):
 
-![XKCD Comic About Recursion](images/xkcd.png)
+![XKCD Comic About Recursion](/assets/tutorial_3/xkcd.png)
 
 ***
 ## Problem 1 - `factorial`
@@ -133,7 +133,7 @@ Wow. Abstraction **and** recursion. This is straight :fire:. Better call the :fi
 
 Write a recursive function, `tree`, that makes a recursive image something like this:
 
-![Image of a cool tree](images/tree.svg)
+![Image of a cool tree](/assets/tutorial_3/tree.svg)
 
 How do you make something like this? Here’s the basic idea:
 * At its base, it's just a solid green rectangle
@@ -149,7 +149,7 @@ We can write that as a recursion. The function `tree` takes a number of levels o
 
 Here’s what your function should (roughly) produce across inputs from 0 levels of branching up to 9 levels:
 
-![Trees at Different Levels from 0 to 9](images/tree-sequence.svg)
+![Trees at Different Levels from 0 to 9](/assets/tutorial_3/tree-sequence.svg)
 
 Your trees don’t have to look exactly like ours–that would require a lot of trial and error that you wouldn’t learn anything from. Just experiment with making recursive pictures like this and have fun. You can make some absolutely dope images with this simple pattern.
 
