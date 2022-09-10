@@ -63,7 +63,7 @@ When you think you've got it, make sure to uncomment the `check-expect` for the 
 
 Now that you've got a working `my-row` procedure...let's use it to make an even more complicated image: a complete grid of whatever image someone inputs to our function. For example, say I wanted to make a grid (5 wide and 5 high) of outlined red circles:
 
-<img src="images/my-grid.svg" alt="My Grid Example" width="33%"/>
+<img src="/assets/tutorial_1/my-grid.svg" alt="My Grid Example" width="33%"/>
 
 Use your `my-row` function as well as the `iterated-above` function to generate a square-grid of any inputted `image`.
 
@@ -81,7 +81,7 @@ Remember that all iterators’ have a built-in counter variable that start at $0
 
 For your next image, you are going to try and recreate a bullseye made out of red-outlined circles with radii increasing by 25 each time. This procedure, called `my-bullseye`, will take one input, the number of circles to draw, and will involve `iterated-overlay`. The output should look something like this.
 
-<img src="images/my-bullseye.svg" alt="Bullseye Example" width="33%"/>
+<img src="/assets/tutorial_1/my-bullseye.svg" alt="Bullseye Example" width="33%"/>
 
 Notice that there is a tiny little speck in the middle of the bullseye example. What could _that_ be?
  
@@ -91,7 +91,7 @@ Notice that there is a tiny little speck in the middle of the bullseye example. 
 
 For the final image, you are going to try to create a pyramid with a procedure called `my-pyramid` to create some awesome pyramids that would put Giza to shame.
 
-<img src="images/my-pyramid.svg" alt="My Grid Example" width="33%"/>
+<img src="/assets/tutorial_1/my-pyramid.svg" alt="My Grid Example" width="33%"/>
 
 You are going to want to use a structure something similar to your `my-grid` function for this, but this time, change the length of the rows on each iteration (just like you changed the size of each circle in `my-bullseye`).
 

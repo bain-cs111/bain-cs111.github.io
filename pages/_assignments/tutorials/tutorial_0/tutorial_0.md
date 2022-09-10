@@ -16,7 +16,7 @@ In this assignment you’ll play with simple functions for making images that we
 
 To begin with, we’ll need to tell DrRacket that we’re using one of the simplified “student languages” rather than the full industrial-strength version. Start DrRacket, go to the Language menu, and select “Choose Language...”. Then click on “Intermediate student language with lambda” and click OK:
 
-<img src="images/00_choose_language.png" alt="Dr Racket Choose Language" width="50%"/>
+<img src="/assets/tutorial_0/00_choose_language.png" alt="Dr Racket Choose Language" width="50%"/>
 
 You only need to do this once; DrRacket will remember the setting when you run it again in the future.
 
@@ -26,7 +26,7 @@ You can also set DrRacket to be in _Horizontal Layout_ where the Program Window 
 
 Vertical Layout | Horizontal Layout
 - | -
-![Vertical Layout](images/01a_vertical_layout.png) | ![Horizontal Layout](images/01b_horizontal_layout.png)
+![Vertical Layout](/assets/tutorial_0/01a_vertical_layout.png) | ![Horizontal Layout](/assets/tutorial_0/01b_horizontal_layout.png)
 
 Go to the Program Window and add the following command to the beginning:
 
@@ -55,7 +55,7 @@ Try running that program now in the Interaction Window (sometimes called the **R
 
 We call the `rectangle` function, passing it the inputs `50`, `50`, ``"solid"``, and ``"blue"``. Its output is another data object: the image of a blue square. Here's what that whole process looks like in a **data flow diagram**.
 
-![Rectangle Function](images/rectangle_function.png)
+![Rectangle Function](/assets/tutorial_0/rectangle_function.png)
 
 Try changing the arguments to different values and rerunning the expression. Change the width and height, the color, etc.
 
@@ -78,19 +78,19 @@ Let's make a series of simple images. For each element in the table below, use t
 
 | Description | Desired Image |
 | ----------- | ------------- |
-| A 100x100 solid green square|  ![A green square](images/square.svg) |
-| A blue circle with a diameter of 100 | ![A blue circle](images/circle.svg) |
+| A 100x100 solid green square|  ![A green square](/assets/tutorial_0/square.svg) |
+| A blue circle with a diameter of 100 | ![A blue circle](/assets/tutorial_0/circle.svg) |
 
 ### Compound Shapes
 Now let’s make compound images from simpler images. For example, what if you wanted to make a shape like the below:
 
-<img alt="a-nested-circle" src="images/a-nested-circle.svg" width="25%"/>
+<img alt="a-nested-circle" src="/assets/tutorial_0/a-nested-circle.svg" width="25%"/>
 
 We can do this by first making two shapes and then joining them using a function called `overlay`. The [`overlay` function](https://docs.racket-lang.org/teachpack/2htdpimage.html#%28def._%28%28lib._2htdp%2Fimage..rkt%29._overlay%29%29) takes images as arguments and outputs a new image that contains its inputted images stacked on one another (make sure to look it up in the reference materials!). Notice that this means we’re _composing_ or _chaining_ the calls to our shape functions with the call to `overlay`.
 
 The outputs of the two shape functions are passed as inputs to `overlay`. The data flow we want looks like the below: two shape function calls that output each shape, followed by an overlay call that outputs the final image. This one is if you wanted to overlay two concentric (i.e. they share the same center point) circles.
 
-![Overlay Function Data Flow](images/overlay-example-final.svg)
+![Overlay Function Data Flow](/assets/tutorial_0/overlay-example-final.svg)
 
 How do we chain calls in our code? By moving the function call into the place where we want it to be used as an input. The three calls we want, written as text, would look like this:
 
@@ -128,7 +128,7 @@ Realize though that this is to make your code more _human-readable_, and will ha
 
 Alright, now that you've seen an example of using `overlay`, see if you can adapt it to make a compound image of our blue circle from earlier on top of our green square from earlier like the below:
 
-<img alt="overlay activity" src="images/overlay.svg" width="25%"/>
+<img alt="overlay activity" src="/assets/tutorial_0/overlay.svg" width="25%"/>
 
 Of course `overlay` is just one function that makes compound images. Make sure to check out the other functions that do similar things like [`above`](https://docs.racket-lang.org/teachpack/2htdpimage.html#%28def._%28%28lib._2htdp%2Fimage..rkt%29._above%29%29), and [`beside`](https://docs.racket-lang.org/teachpack/2htdpimage.html#%28def._%28%28lib._2htdp%2Fimage..rkt%29._beside%29%29).
 
@@ -136,7 +136,7 @@ Of course `overlay` is just one function that makes compound images. Make sure t
 
 Reproduce the shape below (don't worry about exactly matching sizes or colors):
 
-<img alt="a-nested-diamond" src="images/diamonds.svg" width="25%"/>
+<img alt="a-nested-diamond" src="/assets/tutorial_0/diamonds.svg" width="25%"/>
 
 Before jumping in, try to break the problem down into smaller sub problems:
   1. Find a function in the [`2htdp/image` library]() that produces diamond shapes.
@@ -158,7 +158,7 @@ You should get something like this:
 
 <!-- viewBox="0 0 221 101" -->
 
-<img alt="glasses example" src="images/glasses.svg" width="50%"/>
+<img alt="glasses example" src="/assets/tutorial_0/glasses.svg" width="50%"/>
 
 Remember, a lambda expression is one that allows you to specify something is a function _that needs to be evaluated with inputs_ rather than just a regular old piece of data. So for example, we can make a new function by saying:
 <pre>
