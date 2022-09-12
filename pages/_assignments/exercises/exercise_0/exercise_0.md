@@ -68,7 +68,7 @@ apt-get install racket
 
 ## Activity 2 - Selecting the Sub-Language
 
-After installation, you should be able to double click on the DrRacket executable/application ![DrRacket Logo](/assets/images/racket_app.png) to start DrRacket. On a Windows PC, it should be in your Start menu (or whatever they're calling it these days). On a Mac, it'll be in your Applications folder.
+After installation, you should be able to double click on the DrRacket executable/application ![DrRacket Logo](/assets/exercise_0/racket_app.png) to start DrRacket. On a Windows PC, it should be in your Start menu (or whatever they're calling it these days). On a Mac, it'll be in your Applications folder.
 
 That should launch a window that looks something like this:
 
@@ -78,9 +78,9 @@ One of the main reasons we use Racket in this class is that it is essentially a 
 
 In the bottom left hand corner, you should see a message that says "No language chosen" (you might also see something else here, that's okay). If you click on that menu you'll be brought to the Language Select screen (see below). On this screen, select the `Intermediate Student Language with lambda` and hit OK.
 
-![DrRacket Language Select](/assets/images/drracket_language.png)
+![DrRacket Language Select](/assets/exercise_0/drracket_language.png)
 
-Once you've selected the language, hit the ![Run Button](/assets/images/drracket_run.png) button at the top of the Window which asks Racket to load the selected language. If everything went well, near the bottom of the window you'll see a line that says `Language: Intermediate Student with lambda; memory limit: 128 MB `.
+Once you've selected the language, hit the ![Run Button](/assets/exercise_0/drracket_run.png) button at the top of the Window which asks Racket to load the selected language. If everything went well, near the bottom of the window you'll see a line that says `Language: Intermediate Student with lambda; memory limit: 128 MB `.
 
 ## Activity 3 - Running a Program
 
@@ -92,15 +92,15 @@ So let's write a **powerful** program! In the bottom half of the window (also ca
 (+ 2 3)
 ```
 
-![Our First Program](/assets/images/drracket_calc.png)
+![Our First Program](/assets/exercise_0/drracket_calc.png)
 
 If you see a result of `5`, congratulations! You've officially run your first program.
 
 ## Activity 4 - Saving your Program
 
-However, because you wrote it in the _Interaction Window_, DrRacket hasn't stored your program in any file on your computer. To do that, we need to use the Definitions Window_, the top half of the DrRacket app. Type in `(+ 2 3)` again, but this time up top in the _Definitions Window_. Then click the `Run` button ![Run Button](/assets/images/run_button.png)
+However, because you wrote it in the _Interaction Window_, DrRacket hasn't stored your program in any file on your computer. To do that, we need to use the Definitions Window_, the top half of the DrRacket app. Type in `(+ 2 3)` again, but this time up top in the _Definitions Window_. Then click the `Run` button ![Run Button](/assets/exercise_0/run_button.png)
 
-![Our First Program as a Definition](/assets/images/drracket_definitions.png)
+![Our First Program as a Definition](/assets/exercise_0/drracket_definitions.png)
 
 You should see the same calculated result now at the bottom in the _Interactions Window_. In general, when writing programs in our class, we'll follow this same workflow:
 
@@ -126,7 +126,7 @@ While `(+ 2 3)` is a pretty dope program, sometimes we need to teach the compute
 
 **Make sure to replace the thing in quotation marks with your actual NetID***. This tells Racket that from now on, when you give it the _symbol_ `netid` it will use the value `"abc1234"`. Make sure to run your program which should look like the below:
 
-![Final Version of Our First Program](/assets/images/drracket_ex0.png)
+![Final Version of Our First Program](/assets/exercise_0/drracket_ex0.png)
 
 Notice that you won't see your NetID outputted in the _Interactions Window_. That's because you didn't actually ask Racket to do anything with your NetID–you just asked it to remember it. That's okay for now. We just want to have it store the NetID so that when we run your program, we can tell your program apart from your classmate's.
 
