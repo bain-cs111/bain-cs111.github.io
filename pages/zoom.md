@@ -6,11 +6,15 @@ permalink: /resources/zoom/
 
 ## Logging Into Zoom
 
-For security purposes, all zoom meetings will require that you sign-in via your NU account. To do this, you will first navigate to <a href="https://northwestern.zoom.us" target="_blank">https://northwestern.zoom.us</a>, and then join the corresponding meeting. If you don't login to zoom or if you are logged in as a user other than through the NU Single Sign-On, you won't be able to join the zoom.
+For security purposes, all zoom meetings will require that you sign-in via your NU account. To do this, you will first navigate to <a href="https://northwestern.zoom.us" target="_blank">https://northwestern.zoom.us</a>, and then join the corresponding meeting.
+
+If you have not setup your NU Zoom account, please visit [NU IT's webpage](https://www.it.northwestern.edu/conferencing/zoom/index.html) for more details.
+
+If you don't login to zoom or if you are logged in as a user other than through the NU Single Sign-On, you won't be able to join our Zoom rooms.
 
 ## Finding Your Zoom Link
-* We will have different zoom links for different kinds of activities. All zoom links corresponding to lectures, office hours, and labs will be made available via the [course calendar](../../times-locations/). All zoom meetings will be password-protected (see Canvas for passwords).
-* The zoom link for all lectures (Mo, We, Fr 10:20-11:10AM) is: <a href="https://northwestern.zoom.us/j/99102409231" target="_blank">https://northwestern.zoom.us/j/99102409231</a> (Meeting ID: 991 0240 9231).
+
+We will have different zoom links for different kinds of activities. All zoom links corresponding to lectures, office hours, and labs will be made available via Canvas
 
 ## Recording (Audio / Video)
 We **will** be recording all sessions during regularly scheduled class time. We WILL NOT be recording office hours or lab sessions in order to protect students' privacy.
@@ -24,6 +28,6 @@ To ensure a smooth lecture experience for everyone, we’ll need to follow some 
 4. To ask your question, please unmute your audio (and video, if you want), ask, then mute yourself again. Repeat as needed for follow-ups.
 5. We will have a member of the course staff present during lectures to monitor the meeting and the chat. If you think I may not have noticed your question (give me a few moments), or if asking your question directly is an issue (e.g., you prefer not be to recorded, or do not have a microphone), send the staff member on duty a direct message using Zoom’s chat feature.
 6. To avoid audio feedback when you speak up, please use headphones during Zoom meetings.
-7. We may need to adapt the above and/or introduce new guidelines as the quarter goes on. But above all, we’re relying on everyone doing their part to ensure a conducive learning environment. 
+7. We may need to adapt the above and/or introduce new guidelines as the quarter goes on. But above all, we’re relying on everyone doing their part to ensure a conducive learning environment.
 
 Thank you for your cooperation!

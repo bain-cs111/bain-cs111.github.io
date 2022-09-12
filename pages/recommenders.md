@@ -1,3 +1,9 @@
+---
+layout: two-column
+title: Finding Recommenders for Applications
+permalink: /resources/recommenders/
+---
+
 # Finding Recommenders for Applications
 
 Many applications ask for some sort of _reference_, a person with whom you've worked that can attest to all of the stuff you submit as part of your application. No matter what year you are in school, it's always a daunting part of the application process. Who do you ask? What sorts of information do they need? What if they say no?

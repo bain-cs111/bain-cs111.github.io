@@ -1,3 +1,10 @@
+---
+layout: two-column
+title: Campuswire Guidelines
+permalink: /resources/campuswire/
+---
+
+
 Some guidelines for using Campuswire:
 * Before you post a question, please do a quick search to make sure that one of your classmates hasn't already asked the same question
 * Campuswire gives you the option of posting anonymously (to your classmates) so that you don’t feel intimidated in asking your questions
