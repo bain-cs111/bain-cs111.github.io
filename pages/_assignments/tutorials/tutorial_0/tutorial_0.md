@@ -3,7 +3,7 @@ layout: assignment-two-column
 title: Shaping Up
 type: tutorial
 abbreviation: Tutorial 0
-draft: 1
+draft: 0
 points: 100
 num: 1
 description:
@@ -12,7 +12,7 @@ due_date: 2022-09-28
 
 In this assignment you’ll play with simple functions for making images that we’ll use later on in the course. Make sure to work with the other people in your group. If you find yourself needing help, ask your assigned PM or any of the other course staff members.
 
-## Step 1: Make Sure DrRacket is Configured
+## Make Sure DrRacket is Configured
 
 To begin with, we’ll need to tell DrRacket that we’re using one of the simplified “student languages” rather than the full industrial-strength version. Start DrRacket, go to the Language menu, and select “Choose Language...”. Then click on “Intermediate student language with lambda” and click OK:
 
@@ -180,7 +180,7 @@ Your job here is to decide what _output-code_ should be. It’s going to want to
 
 Feel free to change the names lens and bridge to something else if you prefer.
 
-> Hint: You won't be able to use `overlay` here since you need to place shapes beside each other. See if there's another function in the `2htdp/image` library that might be useful for combining images in a different way!
+> **Hint**: You won't be able to use `overlay` here since you need to place shapes beside each other. See if there's another function in the `2htdp/image` library that might be useful for combining images in a different way!
 
 ### Designer Eyeware
 Now have fun trying to make different interesting glasses designs, and share them with the other students in your group! The wackier the better!
