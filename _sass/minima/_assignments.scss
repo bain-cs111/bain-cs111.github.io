@@ -25,9 +25,9 @@
         // li, li::before {
         //     color: #777;
         // }
-        .hw, a.hw, 
-        .pj, a.pj, 
-        .lec, a.lec, 
+        .hw, a.hw,
+        .pj, a.pj,
+        .lec, a.lec,
         .lab, a.lab,
         .quiz, a.quiz,
         .ec, a.ec {
@@ -45,14 +45,14 @@
 .assignments, .lectures, .assignment, .reference, .lecture, .readings, .link-menu, .two-column article, .syllabus, .schedule {
     display: flex;
     flex-direction: column;
-    
+
     .badge, a.badge,
-    .hw, a.hw, 
-    .pj, a.pj, 
-    .lec, a.lec, 
-    .lab, a.lab, 
-    .quiz, a.quiz, 
-    .live, .recorded, 
+    .hw, a.hw,
+    .pj, a.pj,
+    .lec, a.lec,
+    .lab, a.lab,
+    .quiz, a.quiz,
+    .live, .recorded,
     .ec, a.ec {
         display: inline-block;
         border-radius: 4px;
@@ -98,7 +98,7 @@
     .recorded {
         background: $lightpurple;
     }
-    
+
     ul {
         margin-top: 0px;
     }
@@ -208,7 +208,7 @@ blockquote.caveat {
     border-left: 0px;
     padding: 25px;
     padding: 0px;
-} 
+}
 
 blockquote.quote {
     margin-left: 20px;

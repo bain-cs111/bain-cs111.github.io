@@ -18,9 +18,9 @@ permalink: /syllabus/
 
 # About the Course
 
-This is an introductory course on the fundamentals of computer programming. This class is meant to allow students to explore the many of the core concepts of computer science and serves as the first course in the computer science (CS) core sequence at Northwestern. It is specifically designed to be open to students of **all** backgrounds and does not expect **any** computer science knowledge or prior programming experience.
+This is an introductory course on the fundamentals of computer programming. This class is meant to allow students to explore many of the core concepts of computer science (CS) and serves as the first course in core sequence at Northwestern. It is specifically designed to be open to students of **all** backgrounds and does not expect **any** computer science knowledge or prior programming experience.
 
-> Please note that if you are looking to learn a specific programming language (i.e. "learn how to code in Python"), please consider registering for [COMP_SCI 110](https://www.mccormick.northwestern.edu/computer-science/academics/courses/descriptions/110.html) instead. While this course is certainly an introduction to programming, it is first and foremost and introduction to core CS concepts. We use programming as _a means to understand and implement these concepts_ rather than simply learning a single programming language. The ideas we talk about in this class apply to **all programming languages** and set the basis for you to be able to quickly pick up new programming languages throughout your future studies in CS.
+> Please note that if you are looking to learn a specific programming language (i.e. "learn how to code in Python"), please consider registering for [COMP_SCI 110](https://www.mccormick.northwestern.edu/computer-science/academics/courses/descriptions/110.html) instead. While this course is certainly an introduction to programming, it is first and foremost an introduction to core CS concepts. We use programming as _a means to understand and implement these concepts_ rather than simply learning a single programming language. The ideas we talk about in this class apply to **all programming languages** and set the basis for you to be able to quickly pick up new programming languages throughout your future studies in CS.
 
 This course uses the [Racket](https://racket-lang.org) programming language and its associated Integrated Development Environment (IDE) [DrRacket](https://docs.racket-lang.org/drracket/) as its main programming tools.
 
@@ -39,25 +39,27 @@ Beyond this main goal, the course has a number of interwoven learning objectives
 * _Programming as a **psychological** discipline_: Programming is more about the limits of human intelligence than about memorizing bits of code.
 * _Programming as an **aesthetic** discipline_: Code can be beautiful; it can also be ugly.  Those distinctions have real consequences in the world.
 
-Programming is a powerful medium for creative expression: it can be a representational medium, a tool for thinking about problems, a way of amplifying and/or communicating ideas, a means of performing complex calculations over massive datasets, and more. Being a computer scientist is *not* a prerequisite for creating useful or advanced programs. In fact, most people who write computer programs are not computer scientists, but rather people who occupy a range of professions. Journalists, geographers, sociologists, scientists, artists, musicians, entrepreneurs, researchers, etc., use programming languages to accomplish diverse and specialized goals. And as data and computing increasingly influence and perfuse modern life, understanding the mechanisms (and risks!) that underlie these systems is a valuable modern literacy that is likely to serve you well.
+Programming is a powerful medium for creative expression. It can be a representational medium, a tool for thinking about problems, a way of amplifying and/or communicating ideas, a means of performing complex calculations over massive datasets, and more. Being a computer scientist is *not* a prerequisite for creating useful or advanced programs. In fact, most people who write computer programs are not computer scientists, but rather people who occupy a range of professions. Journalists, geographers, sociologists, scientists, artists, musicians, entrepreneurs, researchers, etc., use programming languages to accomplish diverse and specialized goals. And as data and computing increasingly influence and perfuse modern life, understanding the mechanisms (and risks!) that underlie these systems is a valuable modern literacy that is likely to serve you well.
 
 Learning to program is not dissimilar to learning a new spoken/written language–first, you need to understand basic rules like grammar and syntax, then you need exemplar buildings blocks like adjectives, nouns, and prepositions, and only then can you use these ideas together to create computer programs. What this means is that you **must** dedicate enough time to practicing the basics in order to allow yourself to progressively move to more and more complex programming practice.
 
-Taking this course means committing — for 11 weeks — to attending lectures, tutorials, and office hours, turning in assignments, doing (lots of) practice problems, and most importantly, persevering when things get difficult. Asking questions throughout the class is not a sign of weakness–it shows that you are actively trying to understand what you know and what you do not know. We have an excellent staff of teaching assistants and peer mentors who are here to answer your questions, help you understand course material in different ways, and push you to your fullest learning potential. With your consistent and _active_ participation in learning, you can navigate the material in the course and become a proficient programmer by the end of the quarter.
+Taking this course means committing—for 11 weeks—to attending lectures, tutorials, and office hours, turning in assignments, practicing your programming skills, and most importantly, persevering when things get difficult. Asking questions throughout the class is not a sign of weakness. It shows that you are actively trying to understand what you know and what you do not know. We have an excellent staff of teaching assistants and peer mentors who are here to answer your questions, help you understand course material in different ways, and push you to your fullest learning potential. With your consistent and _active_ participation in learning, you can navigate the material in the course and become a proficient programmer by the end of the quarter.
 
 * * *
 
 # Course Format
 
-Our class will be _partially flipped_. While some of our reserved class periods will be used for **interactive lecture** where new concepts will be introduced, other days will be reserved for in-depth **tutorials** where students will be expected to review course materials (recorded lecture videos, slides, and notes) **before** the class period and during class we will work in small groups to complete an in-depth programming assignment.
+Our class will be _partially flipped_. While some of our reserved class periods will be used for **interactive lectures** where new concepts will be introduced, other days will be reserved for in-depth **tutorials** where students will be expected to review course materials (recorded lecture videos, slides, and notes) **before** the class period and during class we will work in small groups to complete an in-depth programming assignment.
 
-## Lectures
-Lectures will be both synchronous and asynchronous. During our scheduled class time, we will focus on things we cannot do when we are not together: mainly doing practice problems together and answering questions about course content. All in-class lectures will be recorded. We will also use some pre-recorded videos, which cover specific course material that we will then go straight to practicing during lectures. When we assign a pre-recorded lecture, students *must* watch the video before coming to lecture. Organizationally, some topics/modules span multiple lectures (see the [course schedule](../)).
+The rough schedule of the course will be (there are some exceptions):
 
-## Tutorial Sessions
-The best way to learn how to program is by writing lots of programs. To facilitate this, and to provide a more close-knit learning setting within the context of our larger class, you will each take part in weekly tutorial sessions with one of our Peer Mentors (PMs). These 1-hour sessions will start the second week of class and you will sign up for a particular Tutorial Session at the end of Week 1.
+* Mondays - Lecture Day
+* Wednesdays - Tutorial Day
+* Fridays - Practice and Move On Day
 
-By completing the tutorials, you will become familiar with the types of strategies you might use to approach problems (which will be closely related to the homework / projects), push you to write lots of programs, and help you assess what you know and don't know so that you can know when to ask for more help in lecture or in office hours.
+For lecture days, we'll have interactive lectures where we introduce a new topic and focus on building a core understanding. For Tutorial days, you'll work in your tutorial groups to complete an assignment during class time. On Practice days, we'll do a little more practice along with previewing the next components of the course.
+
+When we assign a pre-recorded lecture, students *must* watch the video before coming to lecture. Organizationally, some topics/modules span multiple lectures.
 
 ## Office Hours
 Office hours are a crucial component of this course. Everyone on our course staff is here to help you to be successful in the course and find your own power as current and future programmers. That said, it's up to you to take the initiative and cultivate a weekly / bi-weekly practice of going to office hours that works for you and your schedule. This looks different for everyone: some people go to 1-2 office hours sessions per week and finish their homework with a TA or peer mentor nearby (if needed). Other students never go to office hours (though this is rare, as the exercises are challenging). Also, different people connect with different TAs/peer mentors, so do shop around to find a person with whom you work well.
@@ -74,12 +76,15 @@ Office hours are meant to be a time where you can ask questions that you need an
 * * *
 
 # Course Staff
+
 This is a very large class and in order to better support each of your learning goals, we have 33 course staff members.
 
 ## Instructor
+
 * Prof. Connor Bain (connor.bain@northwestern.edu)
 
 ## Graduate Teaching Assistants
+
 Our Graduate TAs serve as the go-to course staff members for grading discrepancies, Canvas Issues, and other logistical questions about the class.
 
 * Adia Wallace (adiawallace2021@u.northwestern.edu)
@@ -116,18 +121,23 @@ Your final grade will be the weighted average of all the above assignments. Fina
 | F  | 0  - 59.99 |
 
 > **Note**: The Graduate School does not recognize D letter grades meaning if you are enrolled in the class as a graduate student, the range for the F grade is 0-69.99.
- December 8, 9am |
 
 ## Tutorials
 The idea of the Tutorials is to provide you with opportunities to both practice your own programming skill *as well as learn to communicate with and help other programmers*. As such, these Tutorials will be held on Wednesdays (with one exception) during our scheduled class time during the quarter.
+
+These will start the second week of class and you will sign up for a particular Tutorial group at the end of Week 1.
+
+By completing the tutorials, you will become familiar with the types of strategies you might use to approach problems , push you to write lots of programs, and help you assess what you know and don't know so that you can know when to ask for more help in lecture or in office hours.
 
 This course is meant to a be a learning community which requires the dedicated participation of all members. Attendance is required for the first Tutorial, but you may choose to submit future tutorials remotely.
 
 If you attend the Tutorial session in-person and make a legitimate attempt (up to the discretion of your Peer Mentor) at completing the assignment, you will receive full-credit. If you choose not to attend in-person, then your assignment will be reviewed for completion and you may nor may not receive full credit.
 
+We will not accept late tutorial submissions.
+
 ## Exercises
 
-The Exercises serve as larger programming assignments that build upon the content we discuss in lecture on work on in Tutorials. The 10 weekly Exercises will be spread across our 11 weeks of class and will be submitted on Canvas.
+The Exercises serve as larger programming assignments that build upon the content we discuss in lecture and work on in Tutorials. The 10 weekly Exercises will be spread across our 11 weeks of class and will be submitted on Canvas and generally due on Mondays before the start of class.
 
 We do not accept resubmissions of assignments. This means it is up to you to verify that:
 1. You have submitted the correct file.
@@ -136,11 +146,14 @@ We do not accept resubmissions of assignments. This means it is up to you to ver
 
 These exercises will be graded via an autograder (computerized grading machine) as well as checked for plagiarism against other students' (including from past quarters) solutions, online solutions, and a large database of course content.
 
+You may submit the assignments up to 48 hours late with a 10% penalty per 24-hours.
+
 ## Mini-quizzes
 
 These will be short Canvas quizzes for each module of the course that serve as a check of your attendance and/or asynchronous participation in the course.
 
 ## Quizzes
+
 There will be four cumulative assessments of your knowledge and practice of the course material administered during our assigned class time (50 minutes). The tentative schedule for these quizzes is below:
 
 {:.medium}
@@ -153,6 +166,7 @@ There will be four cumulative assessments of your knowledge and practice of the 
 
 
 ## Grading Equity Policies
+
 > The course is specifically designed to be academically equitable to all students when it comes to assessment and has two special policies related to grading: 1. An _emergency erasure policy_; 2. A _deliberate extension policy_.
 
 These two policies are provided to accommodate the myriad situations that students encounter over the life cycle of the class (e.g. student org travel, sickness, etc.). **This built-in leniency means that there will be no other exceptions to the course syllabus without prior authorization from the Dean of Students at Northwestern. I cannot offer any other leniency, make-up assignments, extensions, etc., outside these policies.**
@@ -164,9 +178,9 @@ The _deliberate extension policy_ applies ONLY to **Exercises** and is meant to 
 * Students **must** request the extension via the form at least 24 hours in advance of the Exercise deadline.
 * Students **may not** request extensions on consecutive assignments.
 
-The policy is _deliberate_ in that you, as a student, must actively consider at least 24 hours in advance of the deadline that you will need extra time to complete this assignment. We do not allow consecutive extensions–if you find yourself needing extra time on consecutive assignments, this is a good sign that you need to reach out to someone on the Course Staff for help.
+The policy is _deliberate_ in that you, as a student, must actively consider at least 24 hours in advance of the deadline that you will need extra time to complete this assignment. We do not allow consecutive extensions. If you find yourself needing extra time on consecutive assignments, this is a good sign that you need to reach out to someone on the Course Staff for help.
 
-There will be no exceptions to this policy. Once you are granted an extension, it cannot be voided unless it is more than 24 hours from the assignment deadline.
+There will be no exceptions to this policy. Once you are granted an extension, it cannot be voided.
 
 ### Emergency Grade Erasure Policy
 
@@ -186,29 +200,30 @@ If you _choose_ to drop an assignment early in the quarter only to find yourself
 This is a **zero cost course** meaning that you are not required to purchase any additional materials to complete the course outside those required by the university as a whole. All required course materials will be distributed to registered members of the class directly via Canvas.
 
 ## Course Software
-As this is a programming course, we will be using some free software programs and libraries in order to write, debug, and run Racket programs. Installing and configuring this software can be a huge hassle, but it is part of the process of developing your computing proficiencies. Please note, you will need a computer capable of running Racket 8.6 in order to participate in this course. Any Windows/Mac/Linux computer from the last decade should be fine, however, you may encounter difficulties using a Chromebook, iPad, or other non-standard operating system.
+We will be using some free software programs and libraries in order to write, debug, and run Racket programs. Installing and configuring this software can be a huge hassle, but it is part of the process of developing your computing proficiencies. Please note, you will need a computer capable of running Racket 8.6 in order to participate in this course. Any Windows/Mac/Linux computer from the last decade should be fine, however, you may encounter difficulties using a Chromebook, iPad, or other non-standard operating system.
 
 This course uses the [Racket](https://racket-lang.org) programming language and its associated Integrated Development Environment (IDE) [DrRacket](https://docs.racket-lang.org/drracket/) as its main programming tools. Note that the Racket download includes DrRacket.
 
 If you do not have access to appropriate computing hardware, please let the course staff know _as soon as possible_ so that we can help you make other arrangements either a computing loaner program or arranging for you to use a computer lab on campus.
 
 ## Campuswire
+
 Campuswire is a Question-and-Answer site that allows students to ask questions that can then be answered by _either_ Course Staff or other students in the course as well as create discussion areas about both related and unrelated topics.
 
 {:.blockquote-no-margin}
-> To register for the course Campuswire (you will only have to do this once), please click this link: <a href="" target="_blank"></a> and use the following join code: ****.
-
+> Check out our course's Canvas page for the registration link.
 
 ## Auxillary Texts
-While we will not follow any textbook exactly, we will use two auxillary texts which can serve as an excellent resource both for students looking for different persepectives on the course content as well as students looking for additional content outside our syllabus (note, both are free to access online):
 
-* Structure and Interpretation of Computer Programs - https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html
-* How to Design Programs - http://htdp.org/2022-6-7/Book/part_prologue.html
+While we will not follow any textbook exactly, we will use two auxiliary texts which can serve as an excellent resource both for students looking for different perspectives on the course content as well as students looking for additional content outside our syllabus (note, both are free to access online):
+
+* Abelson, H., Sussman, G. and Sussman J. 1996. [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html)
+* Felleisen, M., Findler, R., Flatt, M., and Krishnamurthi, S. 2018. [How to Design Programs](http://htdp.org/2022-6-7/Book/part_prologue.html)
 
 * * *
 
 # Policy on Academic Honesty
-In the past, there have been incidents in which students have presented work other than their own. For the programming assignments: you are allowed (encouraged, even!) to discuss general approaches to solving problems, but all work you submit must be your own. Working “together” and presenting variants of the same file is not acceptable.
+In the past, there have been incidents in which students have presented work other than their own. For the programming assignments, you are allowed (encouraged, even!) to discuss general approaches to solving problems, but all work you submit must be your own. Working "together" and presenting variants of the same file is not acceptable.
 
 Here are some specific guidelines:
 

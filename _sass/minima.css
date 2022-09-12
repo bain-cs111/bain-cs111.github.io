@@ -60,13 +60,13 @@ ol.spaced li, ul.spaced li {
 
 h1, h2, h3, h4, h5 {
   font-family: "Campton Book",Tahoma,sans-serif;
-  color: #691D40;
+  color: #4E2A84;
   font-weight: 600;
 }
 
 h1 a, h1 a:hover, h1 a:visited, h1 a:active, h2 a, h2 a:hover, h2 a:visited, h2 a:active, h3 a, h3 a:hover, h3 a:visited, h3 a:active, h4 a, h4 a:hover, h4 a:visited, h4 a:active, h5 a, h5 a:hover, h5 a:visited, h5 a:active {
   text-decoration: none;
-  color: #691D40;
+  color: #4E2A84;
   border-bottom: none !important;
 }
 
@@ -75,7 +75,7 @@ h1 {
 }
 
 h1 a, h1 a:visited {
-  color: #691D40;
+  color: #4E2A84;
   text-decoration: none;
   padding-left: 5px;
   padding-right: 5px;
@@ -304,7 +304,7 @@ nav ul li {
 }
 
 nav ul li.active {
-  border-bottom: solid 3px #691D40;
+  border-bottom: solid 3px #4E2A84;
 }
 
 nav ul li a {
@@ -1640,7 +1640,7 @@ table.instructions td, table.instructions th {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    background: #691D40 !important;
+    background: #4E2A84 !important;
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.22), 0 1px 2px rgba(0, 0, 0, 0.34);
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.22), 0 1px 2px rgba(0, 0, 0, 0.34);
     color: white;
