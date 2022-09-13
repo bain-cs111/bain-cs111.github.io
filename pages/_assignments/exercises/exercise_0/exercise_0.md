@@ -34,6 +34,7 @@ Link to [Teams Survey](https://forms.gle/TNqpEJutHby4t4RS6) (note, you must be l
 
 While we'd like for the Teams to be as stable as possible throughout the quarter, stuff does happen so switching will be allowed after Week 2.
 
+* * *
 ## Activity 1 - Setting up DrRacket
 
 Our first and most important task is to get DrRacket (and the Racket programming language) installed on your computer.
@@ -72,15 +73,17 @@ After installation, you should be able to double click on the DrRacket executabl
 
 That should launch a window that looks something like this:
 
-![DrRacket Window](/assets/images/drracket_main.png)
+<img alt="DrRacket Window" src="/assets/exercise_0/drracket_main.png" style="scale:50%"/>
 
 One of the main reasons we use Racket in this class is that it is essentially a programming language for programming languages. Rather than being a single programming language (e.g. Python), it allows you to implement your own languages. In this class, we'll actually be gradually progressing from one language to another language as we practice our programming skills.
 
 In the bottom left hand corner, you should see a message that says "No language chosen" (you might also see something else here, that's okay). If you click on that menu you'll be brought to the Language Select screen (see below). On this screen, select the `Intermediate Student Language with lambda` and hit OK.
 
-![DrRacket Language Select](/assets/exercise_0/drracket_language.png)
+<img alt="DrRacket Language Select" src="/assets/exercise_0/drracket_language.png" style="scale:50%"/>
 
 Once you've selected the language, hit the ![Run Button](/assets/exercise_0/drracket_run.png) button at the top of the Window which asks Racket to load the selected language. If everything went well, near the bottom of the window you'll see a line that says `Language: Intermediate Student with lambda; memory limit: 128 MB `.
+
+* * *
 
 ## Activity 3 - Running a Program
 
@@ -92,15 +95,17 @@ So let's write a **powerful** program! In the bottom half of the window (also ca
 (+ 2 3)
 ```
 
-![Our First Program](/assets/exercise_0/drracket_calc.png)
+<img alt="Our First Program" src="/assets/exercise_0/drracket_calc.png" style="scale:50%"/>
 
 If you see a result of `5`, congratulations! You've officially run your first program.
 
+* * *
+
 ## Activity 4 - Saving your Program
 
-However, because you wrote it in the _Interaction Window_, DrRacket hasn't stored your program in any file on your computer. To do that, we need to use the Definitions Window_, the top half of the DrRacket app. Type in `(+ 2 3)` again, but this time up top in the _Definitions Window_. Then click the `Run` button ![Run Button](/assets/exercise_0/run_button.png)
+However, because you wrote it in the _Interaction Window_, DrRacket hasn't stored your program in any file on your computer. To do that, we need to use the Definitions Window_, the top half of the DrRacket app. Type in `(+ 2 3)` again, but this time up top in the _Definitions Window_. Then click the `Run` button ![Run Button](/assets/exercise_0/drracket_run.png)
 
-![Our First Program as a Definition](/assets/exercise_0/drracket_definitions.png)
+<img alt="Our First Definitions" src="/assets/exercise_0/drracket_definitions.png" style="scale:50%"/>
 
 You should see the same calculated result now at the bottom in the _Interactions Window_. In general, when writing programs in our class, we'll follow this same workflow:
 
@@ -116,6 +121,8 @@ I like commonsense file names, so go ahead and name your file `exercise_0.rkt`.
 
 Once you hit save, you should be able to go to that folder on your computer and see your new document (it will have the `.rkt` file extension).
 
+* * *
+
 ## Activity 5 - Writing a Definition
 
 While `(+ 2 3)` is a pretty dope program, sometimes we need to teach the computer to remember a particular piece of data to be used later in our programs. We can teach the computer to remember pieces of data using a `define` _special form_. Add to your program in the Definitions Window a new line that looks like the following:
@@ -124,9 +131,13 @@ While `(+ 2 3)` is a pretty dope program, sometimes we need to teach the compute
 (define netid "abc1234")
 ```
 
-**Make sure to replace the thing in quotation marks with your actual NetID***. This tells Racket that from now on, when you give it the _symbol_ `netid` it will use the value `"abc1234"`. Make sure to run your program which should look like the below:
+**Make sure to replace the thing in quotation marks with your actual NetID***. This tells Racket that from now on, when you give it the _symbol_ `netid` it will use the value `"abc1234"`.
 
-![Final Version of Our First Program](/assets/exercise_0/drracket_ex0.png)
+>**Note**: Those quotation marks `"` are important! They tell Racket that this thing inside the quotation marks isn't just a symbol, it's a piece of data called a string (that's why DrRacket makes it green).
+
+Make sure to run your program which should look like the below:
+
+<img alt="Final Version of Our First Program" src="/assets/exercise_0/drracket_ex0.png" style="scale:50%"/>
 
 Notice that you won't see your NetID outputted in the _Interactions Window_. That's because you didn't actually ask Racket to do anything with your NetID–you just asked it to remember it. That's okay for now. We just want to have it store the NetID so that when we run your program, we can tell your program apart from your classmate's.
 
@@ -141,5 +152,13 @@ Congratulations, you're officially a _Racketeer_!
 ## Turning it in
 
 All of the Exercises in this class will be graded via an autograder – a program, written in Racket, that will run your program and test it to see if it meets all the expectations of the assignment.
+
+This means that you must _carefully_ read each assignment description and follow it exactly. If your assignment does not satisfy the requirements in any way (even if you think it's small and inconsequential) you will receive points off (or in the worst case, not receive any points at all). For this assignment, because the program is so short, there's only a few things you should check:
+
+1. Does your program run without any errors?
+2. Are you outputting the result of some math calculation?
+3. Are you storing your actual netid inside the `define` statement?
+  * Important: Racket **is** case-sensitive (i.e. capitals matter) so make sure that your define statement actually says `(define netid ...)` where `netid` has no spaces and no capitals.
+  * Make sure your netid you enter is actually your netid. The autograder will compare the submitter's netid to the one in your program.
 
 For this assignment, you will upload your `exercise_0.rkt` file to the assignment on Canvas. DO NOT UPLOAD ANY OTHER FILES. Once you've submitted your file to Canvas, you're done!
