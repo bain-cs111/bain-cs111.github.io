@@ -19,7 +19,7 @@ This assignment is super easy and super short. We'll basically complete the whol
 
 A key part of this class is your Tutorial Team (up to 8 people; no exceptions) with whom you'll work each week to complete in-class exercises. Think of it as a smaller community within the larger course community.
 
-> **Note**: There are two sections of this course this quarter. If you'd like to be in a Team with people from the other section, that's fine as long as you can plan on attending that class time on a consistent basis. **However, when we have our **Quizzes** you will be expected to take that quiz during the course time you are registered for.**
+> **Note**: There are two sections of this course this quarter. If you'd like to be in a Team with people from the other section, that's fine as long as you can plan on attending that class time on a consistent basis. **However, when we have our Quizzes you will be expected to take that quiz during the course time you are registered for.**
 
 There are several ways of finding a Tutorial Team in our class:
 
@@ -35,11 +35,11 @@ Link to [Teams Survey](https://forms.gle/TNqpEJutHby4t4RS6) (note, you must be l
 While we'd like for the Teams to be as stable as possible throughout the quarter, stuff does happen so switching will be allowed after Week 2.
 
 * * *
-## Activity 1 - Setting up DrRacket
+## Activity 1: Getting DrRacket
 
 Our first and most important task is to get DrRacket (and the Racket programming language) installed on your computer.
 
-### Step 1: Download the Installer
+### Download the Installer
 
 1. Go to the [Racket download page](https://download.racket-lang.org/).
 2. Pick the installer that corresponds to your computer's OS.
@@ -47,6 +47,8 @@ Our first and most important task is to get DrRacket (and the Racket programming
 > **Note**: You can select either 32-bit or 64-bit, but if your computer is less than 4 years old, you should go ahead and pick 64-bit. What does this mean you might ask? You'll learn more about this in future CS coursework, but the basic idea is that computers have memory (called _RAM_) where they store temporarily store information as they run applications. Programs are assigned specific "blocks" of memory using addresses, just you were assigned a specific room in a residence hall on campus. 32-Bit programs can use up to 2^32 different memory addresses (around 4GB of RAM) while 64-bit programs can use up to 2^64 different memory addresses (17,179,869,184 GB (16 exabytes) of RAM).
 
 > **Note**: If you're on a Mac laptop that was made anytime after November 2020, you should select the "Apple Silicon" version. However, the "Intel" version will work on your computer regardless.
+
+### Install DrRacket + Racket
 
 Once you've downloaded the installer, you'll need to actually run it. On a Mac, you'll drag the `Racket` folder into your `Applications` folder. On a Windows PC, you'll run the `.exe` file to install it.
 
@@ -67,14 +69,12 @@ apt-get install racket
 
 * * *
 
-## Activity 2 - Selecting the Sub-Language
+## Activity 2: Choosing a Language
 
 After installation, you should be able to double click on the DrRacket executable/application ![DrRacket Logo](/assets/exercise_0/racket_app.png) to start DrRacket. On a Windows PC, it should be in your Start menu (or whatever they're calling it these days). On a Mac, it'll be in your Applications folder.
 
 That should launch a window that looks something like this:
-
-<img alt="DrRacket Window" src="/assets/exercise_0/drracket_main.png" style="scale:50%"/>
-
+<img alt="DrRacket Window" src="/assets/exercise_0/drracket_main.png" style="scale:50%;"/>
 One of the main reasons we use Racket in this class is that it is essentially a programming language for programming languages. Rather than being a single programming language (e.g. Python), it allows you to implement your own languages. In this class, we'll actually be gradually progressing from one language to another language as we practice our programming skills.
 
 In the bottom left hand corner, you should see a message that says "No language chosen" (you might also see something else here, that's okay). If you click on that menu you'll be brought to the Language Select screen (see below). On this screen, select the `Intermediate Student Language with lambda` and hit OK.
@@ -85,7 +85,7 @@ Once you've selected the language, hit the ![Run Button](/assets/exercise_0/drra
 
 * * *
 
-## Activity 3 - Running a Program
+## Activity 3: Running a Program
 
 One of the core tenants of this class is that **there is no such thing as a little program.** All programs, regardless of their size/length, are powerful in that you have successfully translated an idea from your head to a form that the computer understands.
 
@@ -101,7 +101,7 @@ If you see a result of `5`, congratulations! You've officially run your first pr
 
 * * *
 
-## Activity 4 - Saving your Program
+## Activity 4: Saving your Program
 
 However, because you wrote it in the _Interaction Window_, DrRacket hasn't stored your program in any file on your computer. To do that, we need to use the Definitions Window_, the top half of the DrRacket app. Type in `(+ 2 3)` again, but this time up top in the _Definitions Window_. Then click the `Run` button ![Run Button](/assets/exercise_0/drracket_run.png)
 
@@ -123,7 +123,7 @@ Once you hit save, you should be able to go to that folder on your computer and 
 
 * * *
 
-## Activity 5 - Writing a Definition
+## Activity 5: Writing a Definition
 
 While `(+ 2 3)` is a pretty dope program, sometimes we need to teach the computer to remember a particular piece of data to be used later in our programs. We can teach the computer to remember pieces of data using a `define` _special form_. Add to your program in the Definitions Window a new line that looks like the following:
 

@@ -11,11 +11,11 @@ points: 100
 
 In this assignment you’ll play with simple functions for making images that we’ll use later on in the course. If you have not already completed Tutorial 0, do so before starting this assignment as it will assume that you have correctly configured Dr Racket and that you have a solid understanding of how to create both simple and compound images.
 
-> **Note**: We've tried to make this assignment accessible to those who have trouble seeing colors, but please let us know if we can provide additional help. On this assignment, it is not necessary to exactly reproduce sizes and colors unless they are specifically stated in the problem.
+> **Note**: We've tried to make this assignment accessible to those who have trouble seeing colors, but please let us know if we can provide additional help. For this assignment it's not necessary to exactly match the colors we show.
 
 In order to start this assignment, please download the starter files:
 
-<a class="nu-button" href="/course-files/homework/ex01_template.zip" target="_blank">
+<a class="nu-button" href="/course-files/homework/exercise_1_template.zip" target="_blank">
     Exercise 1 Starter Files <i class="fas fa-download"></i>
 </a>
 
@@ -27,7 +27,7 @@ Now, open up the extracted file. For this exercise, it's called `exercise_1.rkt.
 
 * * *
 
-## Activity 1 - Red Square
+## Activity 1: Red Square
 First, let's make a 100x100 red square like the below:
 
 ![red-square](/assets/exercise_1/a-red-square.svg)
@@ -46,7 +46,7 @@ You can now refer to the square by typing `a-red-square` into the interaction wi
 
 * * *
 
-## Activity 2 - Blue Circle
+## Activity 2: Blue Circle
 
 Now let's make a blue circle of radius 50.
 
@@ -55,7 +55,7 @@ Now let's make a blue circle of radius 50.
 Define it as the name: `a-blue-circle`.
 * * *
 
-## Activity 3 - Outline Mode
+## Activity 3: Outline Mode
 Repeat Activities 1 and 2, but use outline mode:
 
 <!-- Note I had to manually edit the viewbox of both of these to 0 0 101 101 to make sure they didn't clip - CB 08-2022 -->
@@ -67,7 +67,7 @@ Repeat Activities 1 and 2, but use outline mode:
 Define them as the names `outlined-square` and `outlined-circle` respectively.
 * * *
 
-## Activity 4 - Compound Images
+## Activity 4: Compound Images
 Now let’s make compound images from simpler images. Use `overlay`, `above`, and `beside` to make the following compound images, defined as follows:
 
 <span style="font-weight:normal">`row-of-squares`</span> | <img alt="row-of-squares" src="/assets/exercise_1/row-of-squares.svg" width="15%"/> |
@@ -78,7 +78,7 @@ Now let’s make compound images from simpler images. Use `overlay`, `above`, an
 Make sure to draw out the dataflow diagrams for each of these. You don’t need to turn them in–just draw them on some scratch paper or a whiteboard to make sure you understand how the data moves through the chain of calls.
 
 * * *
-## Activity 5 - Rotate
+## Activity 5: Rotate
 
 Read the documentation for the `rotate` function and try making an image that looks like this:
 
@@ -87,7 +87,7 @@ Read the documentation for the `rotate` function and try making an image that lo
 Define it as `rotated-squares`. And draw out the dataflow diagram for this one. Once again, you don’t need to turn the diagram in.
 
 * * *
-## Activity 6 - Flag of Chicago
+## Activity 6: Flag of Chicago
 
 Now, make the flag of Chicago:
 
