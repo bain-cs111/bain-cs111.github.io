@@ -71,7 +71,7 @@ All the functions in Racket are documented in official Racket Documentation. You
 
 > **Note:** In this class, it's generally a bad idea to copy and paste code from any source, including this document. For one, if you're copy and pasting, you don't get the sort of kinesthetic experience of programming. Secondly, many times when you copy and paste from documents and web pages, you accidentally copy and paste so-called "special" characters that _look_ like a character you know, but are slightly different for example: `-` and `–` look VERY similar...but are totally different characters. If you just copy and paste, you might end up with a mix of – and - which will cause lots of confusion down the road. So for all of the function calls we show below...please type them yourself! And thirdly, copy-and-pasting from sources not provided by the class may be a violation of our academic honesty policy.
 
-###  Simple Shapes
+### Activity 1: Simple Shapes
 
 Let's make a series of simple images. For each element in the table below, use the relevant Racket functions to create the image you see (the lecture slides might be a useful resource here; as would the official Racket documentation):
 
@@ -81,7 +81,7 @@ Let's make a series of simple images. For each element in the table below, use t
 | A 100x100 solid green square|  ![A green square](/assets/tutorial_0/square.svg) |
 | A blue circle with a diameter of 100 | ![A blue circle](/assets/tutorial_0/circle.svg) |
 
-### Compound Shapes
+### Activity 2: Compound Shapes
 Now let’s make compound images from simpler images. For example, what if you wanted to make a shape like the below:
 
 <img alt="a-nested-circle" src="/assets/tutorial_0/a-nested-circle.svg" width="25%"/>
@@ -132,7 +132,7 @@ Alright, now that you've seen an example of using `overlay`, see if you can adap
 
 Of course `overlay` is just one function that makes compound images. Make sure to check out the other functions that do similar things like [`above`](https://docs.racket-lang.org/teachpack/2htdpimage.html#%28def._%28%28lib._2htdp%2Fimage..rkt%29._above%29%29), and [`beside`](https://docs.racket-lang.org/teachpack/2htdpimage.html#%28def._%28%28lib._2htdp%2Fimage..rkt%29._beside%29%29).
 
-### Concentric Diamonds
+### Activity 3: Concentric Diamonds
 
 Reproduce the shape below (don't worry about exactly matching sizes or colors):
 
@@ -146,7 +146,7 @@ Before jumping in, try to break the problem down into smaller sub problems:
 
 This approach is often called **sub-goaling** and is a particularly important programming practice. Don't try and approach a complex problem all at once. Instead, identify smaller parts you already know how to do and work towards combining them into the ultimate goal.
 
-## Writing a Simple Procedure
+## Activity 4: Writing a Simple Procedure
 Now write a simple procedure, `glasses`, that makes a picture of a pair of glasses. It takes two inputs, the first is the lens design (an `image`) and the second is the design for the bridge that joins the two lenses (also an `image`). It should output an `image` with two copies of the lens, joined by the bridge. So if you say:
 
 ```Racket
@@ -186,4 +186,4 @@ Feel free to change the names lens and bridge to something else if you prefer.
 Now have fun trying to make different interesting glasses designs, and share them with the other students in your group! The wackier the better!
 
 ## Getting Credit for Your Work
-Since attendance for this tutorial is required, make sure to submit the Google Form with the secret word and your group number. In future weeks, you can choose to complete these tutorials remotely, but keep in mind if you do so, you MUST submit your completed tutorial to Canvas and it will be graded for completion. If you attend tutorials in-person, you will automatically receive full credit for the assignment.
+Since attendance for this tutorial is required, your PM will ask to confirm your name and NetID. You'll automatically receive full credit as long as your PM indicates you participated fully. In future weeks, if you choose not to attend and instead submit your work remotely, it will be graded for completion and, as such, you may not receive full credit.

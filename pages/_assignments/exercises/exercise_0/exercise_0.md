@@ -15,7 +15,7 @@ This assignment is super easy and super short. We'll basically complete the whol
 
 * * *
 
-## Activity 0 - Signing Up for a Tutorial Team
+## Activity 0: Signing Up for a Tutorial Team
 
 A key part of this class is your Tutorial Team (up to 8 people; no exceptions) with whom you'll work each week to complete in-class exercises. Think of it as a smaller community within the larger course community.
 

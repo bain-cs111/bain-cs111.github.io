@@ -45,7 +45,7 @@ Note that we will be testing your code against our own library, not yours. So in
 
 * * *
 
-## Question 1 - `all-titles`
+## Question 1: `all-titles`
 Write a function to **find all the titles** in a library. Call this function `all-titles`. It should take a `(listof album)` (our library) as input, so your answer will look something like (you fill in the expression):
 
 ```racket
@@ -63,7 +63,7 @@ Write a function to **find all the titles** in a library. Call this function `al
 
 * * *
 
-## Question 2 - `all-artists`
+## Question 2: `all-artists`
 
 Now write one to find all the artists in the library. Call this one `all-artists`. Again, this function will take a library as input. Its signature is:
 
@@ -85,7 +85,7 @@ We get the result:
 ```
 * * *
 
-## Question 3 `all-genres`
+## Question 3: `all-genres`
 
 Now write a function, `all-genres`, to return all the genres, again with each genre mentioned only once. Again, write at least one test case for it so that you know it works. Its signature is:
 
@@ -94,7 +94,7 @@ Now write a function, `all-genres`, to return all the genres, again with each ge
 ```
 * * *
 
-## Question 4 - `artist-albums`
+## Question 4: `artist-albums`
 
 Write a function, `artist-albums`, that takes an artist name and library as inputs and outputs all the albums by that artist. That is,
 
@@ -129,7 +129,7 @@ because the part that says "...some magic code..." would need to use the variabl
 
 * * *
 
-## Question 5 - `artist-genres`
+## Question 5: `artist-genres`
 
 Now write a function, `artist-genres`, to return all the genres of a given artist (without duplicates).
 
@@ -143,7 +143,7 @@ Again, you should write at least one test case (i.e. a check-expect), for this a
 
 * * *
 
-## Question 6 `artist-is-versatile?`
+## Question 6: `artist-is-versatile?`
 
 Now write a function, `artist-is-versatile?`, that takes the name of an artist and the library as inputs and returns `true` if an artist has albums in more than one genre. Its signature is:
 
@@ -155,7 +155,7 @@ Your solution should call `artist-genres`.
 
 * * *
 
-## Question 7 - `versatile-artists`
+## Question 7: `versatile-artists`
 
 Now write a function, `versatile-artists`, that returns a list of the names of all artists who work in more than one genre. Its signature is:
 
@@ -167,7 +167,7 @@ Your solution should call `artist-is-versatile?`.
 
 * * *
 
-## Question 8 - `artist-album-counts`
+## Question 8: `artist-album-counts`
 Write a function, `artist-album-counts`, to count the number of albums by each artist. It should return a list of lists, where each sublist is the name of an artist followed by the number of albums they have in the library. Its signature is:
 
 ```racket
@@ -194,7 +194,7 @@ For example, assuming your library had two Kanye West albums, 1 Hayley Kiyoko al
 
 * * *
 
-## Question 9 - `genre-album-counts`
+## Question 9: `genre-album-counts`
 Now do the same thing, but count the number of albums in each genre, rather than the number by each artist. Call the function `genre-album-counts`. Its signature is:
 ```racket
 ; genre-album-counts: (listof album) -> (listof (list string number))
