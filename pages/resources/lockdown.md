@@ -6,7 +6,9 @@ permalink: /resources/lockdown/
 
 # Lockdown Browser
 
-In order to create an equitable testing environment and to save an incredible amount of paper, we will use the Lockdown Browser to enable electronic testing. Please note that we will NOT be using Lockdown "Monitor" (which utilizes your webcam and other monitoring sensors). We will simply be using the Lockdown browser which prevents you from using other applications on your computer while taking the exam.
+In order to create an equitable testing environment and to save an incredible amount of paper, we will use the Lockdown Browser to enable electronic testing.
+
+> Please note that we will **NOT** be using Lockdown "Monitor" (which utilizes your webcam and other monitoring sensors). We will simply be using the Lockdown browser which prevents you from using other applications on your computer while taking the exam.
 
 Additionally, you will need Lockdown Browser for the assessments in the course. Please do this now so that we don't run into any problems later.
 

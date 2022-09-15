@@ -4,19 +4,22 @@ title: Turtle Activity 1
 permalink: /resources/turtle-activity-1/
 ---
 
-Below, you'll see exactly what everyone expects to see on a typical day: a turtle on a chessboard (or a grid of&nbsp;<strong>patches</strong>)&nbsp;with some lava on it. Your goal? Guide the turtle to the safety of the violet (yes, that's violet not "purple") patch.
+Surprise! You just wrote your first computer <strong>program</strong>! A program is just a collection of instructions that a computer can run. When you combined the existing commands to go BACKWARDS, you wrote a program.
 
-At the top of the board is a RESET button. Everytime you click this button, the board will be randomly regenerated, placing the turtle, lava, and violet goal in random new locations.
+Now that you've gotten command of commands, let's turn our attention to another aspect of: <strong>variables</strong>.
 
-At the bottom of the board you should see three buttons:
+Our favorite turtle is back on board! You've got all the same buttons at your disposal, but you've got some interesting <i>monitors</i> down at the bottom of the screen. You should see three different displays:
 
-* TURN LEFT
-* FORWARD
-* TURN RIGHT
+* POSITION (where am i?)
+* HEADING (what direction am i facing?)
+* WHAT_IS_AHEAD (what is ahead of me?)
 
-These are the only <strong>commands</strong> that exist in your world here. Each time you click one of the buttons, the turtle <strong>executes</strong> the command. Try using those buttons to guide the turtle to the goal.
-<iframe frameborder="0" height="500" scrolling="no" src="https://ct-stem.s3.amazonaws.com/uploads/bainco/2020/06/30/programming_step_1_2020-06-30-14-40-38-216865.html" width="500">Something has gone wrong. Please reload the page.</iframe>
+Each of these monitors shows the current <em>value</em> of a <strong>variable</strong> for your turtle-buddy. Just like an object in the real world has properties (e.g. color, texture, hardness, etc.), computational objects have these properties too!
 
-In this simulation, you only had three <strong>commands</strong>. In other words, the computer only understood these three actions of turning left, turning right, and going forward. But say we wanted the turtle to go backwards one square. Is there any way we could <em>combine</em> these three commands into a BACKWARDS command?
+<strong>Variables</strong> are very important to understand because they can have an effect on the outcome of commands. For instance, does the FORWARD button always do the same thing? Or does it depend on what the value of HEADING is for the turtle?
+
+Move your turtle around and watch how the value in each of these three different properties changes as you move.
+
+<iframe frameborder="0" height="550" scrolling="no" src="https://ct-stem.s3.amazonaws.com/uploads/bainco/2020/06/30/programming_step2_2020-06-30-18-51-00-320523.html" width="500">Something has gone wrong. Please reload the page.</iframe>
 
 [Next turtle activity...](/resources/turtle-activity-2)

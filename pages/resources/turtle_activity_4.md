@@ -1,21 +1,40 @@
 ---
 layout: page
-title: Turtle Activity 4
+title: Turtle Activity 4x
 permalink: /resources/turtle-activity-4/
 ---
+Now that you're experts, lets put your skills to some creative use. We have our delightful turtle buddy and some simple ways of controlling its movement. We also now know how to chain these movements (or commands) together into <strong>programs</strong>. But programs don't need to always be about completing some sort of task. What if we used our turtle buddy to create art? Computers are great at performing the same simple tasks repeatedly at amazing speed. Here, we're going to use a slightly modified version of our previous activity that focuses on drawing designs based off of your turtle buddy's movements.
 
-When we construct sentences in English, we end up using quite a bit of syntax in order to make sure our meaning is communicated correctly. This often includes quite a bit of punctuation–seemingly meaningless symbols that drastically change the way we read/interpret a sentence. If you've ever seen a program in a traditional <strong>text-based </strong>programming language like Python, Java, or even something like Fortran, you're sure to have noticed the same types of things! Semicolons, indents, and parentheses are just some examples of syntax that are used in text-based programming languages to prevent ambiguities.
+There are a few main changes to this simulation:
 
-But today, we want to get programming right away and don't want to have to get used to using a text-based language. Instead, we're going to use a <b>blocks-based language to program the movements of our turtle buddy! A <b>blocks-based language</b> is a computer programming language where programs are constructed visually, with commands "snapping" together just like pieces in a jig saw puzzle.
+1. We no longer have a checker-board grid. The patches are still there, they're just all the same color.
 
-Below, we have our now familiar turtle simulator, but you'll notice a "Programming Canvas" to the right hand side. On the Canvas on the right-hand side you'll see the beginning of a <strong>function</strong> which tells our turtle how <i><u>to MOVE.</u></i>. You'll see on the right-most side of your screen a set of 4 different blocks, three of which should remind you of the buttons we used to solve this simple puzzle just a few minutes ago.
+2. Your turtle buddy now has a pen with it and where it moves, the pen draws on the ground (you'll see what we mean). The color of the pen depends on the color of your turtle's shell.
 
-While issuing commands one-at-a-time to our turtle was great, here we want to write our <em>function</em> using these blocks. In a way, we're basically programming the turtle's brain. We upload our program to its brain with the RUN PROGRAM button and let it do its thing. To add blocks to your TO MOVE function, just click and drag a block from the rightmost side of your screen and snap it, like a puzzle piece, on to the bottom of the TO MOVE block (use the little nibs on the blocks as a guide). Continue this process with whichever blocks you need to guide your turtle buddy to the safety of the violet patch. Once you've finished your program, use the RUN PROGRAM button to have the turtle run your program.
+3. The FORWARD, LEFT TURN, and RIGHT TURN command blocks are a little different than they were before. You'll notice each of them has now been <em>parameterized</em>. FORWARD now asks you how many steps that your turtle should step forward while LEFT TURN and RIGHT TURN ask you how many degrees to turn. Note that this is NOT the same thing as "changing the value of heading to right or left." Instead, it's turning at an angle. You'll see what we mean if you ask your turtle to LEFT TURN 90 degrees. If you were to ask it to LEFT TURN 90 four times....that's the same thing as LEFT TURNING 360...which is the same thing as not turning at all!
 
-If your turtle hits the lava, it'll let you know and go back to its starting position. But if your turtle stays safe but doesn't make it to the goal, you'll need to change your program to accommodate its new position.
+4. Oh, and we removed the lava...and the violet goal patch. Now you're free to draw to your heart's content!
 
-<iframe frameborder="1" height="700" scrolling="no" src="https://ct-stem.s3.amazonaws.com/uploads/bainco/2020/06/30/step3-a-2-2_2020-06-30-21-07-19-304306.html" width="1100">Something has gone wrong. Please reload the page.</iframe>
+5. TO MOVE, has been replaced by TO DRAW. Unlike TO MOVE that only gets executed by your turtle buddy once, TO DRAW will be repeatedly executed by your turtle until you click the DRAW button once more to stop it.
 
-Note: If you try to stop your program while it is executing by clicking the RUN PROGRAM button, your turtle will likely get confused. If this happens to you, make sure to click the CLEAR TURTLE BRAIN button before trying again.
+<You control the movement of your turtle just as before, by connecting movement blocks to each other and then, once satisfied, hitting the DRAW button (note: remember, once you've clicked the DRAW button, your turtle will keep following your program until you click DRAW again).
 
-[Next turtle activity...](/resources/turtle-activity-5)
+<iframe frameborder="0" height="650" scrolling="no" src="https://ct-stem.s3.amazonaws.com/uploads/bainco/2020/07/01/drawing_turtle_2020-07-01-11-13-32-984014.html" width="1200">Something has gone wrong. Please reload the page.</iframe>
+
+## Activities
+Write a program that results in your turtle drawing an <em>equilateral</em> triangle (equal angles and equal side
+lengths). Explain how your program works.
+
+Now modify your program so that it draws a square. Explain your modifications.</p>
+
+Now try modifying your program to draw a regular (all sides are equal length) pentagon. Is there a pattern between your solutions for a regular triangle, regular square, and regular pentagon? Explain.
+
+This process of looking for patterns among tasks is very common in programming. In this case, we might be able to <strong>abstract</strong> our programs into a single program that can draw <em>any</em> regular polygon with a given number of sides <em>n</em>.
+
+Say you want to draw a regular polygon with <em>n</em> sides. While we know we'll need to have at least <em>n</em> forward commands, how might we express the turn angle of our turtle in terms of <em>n</em>?
+
+(Hint: Think back to your geometry days. Maybe the term <em>interior angle</em> reminds you of something?)
+
+Spend some time experimenting. See what sort of designs you can have your turtle buddy draw! If you're not feeling particularly creative, try recreating this program:
+
+<img height="456" src="https://ct-stem.s3.amazonaws.com/uploads/bainco/2020/07/01/screen%20shot%202020-07-01%20at%2012.04.25%20pm_2020-07-01-11-48-33-232370.png" width="210">

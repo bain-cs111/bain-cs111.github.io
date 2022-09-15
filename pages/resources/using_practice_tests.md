@@ -1,7 +1,7 @@
 ---
 layout: two-column
 title: Using Practice Tests to Study
-permalink: /resources/zoom/
+permalink: /resources/practice-tests/
 ---
 
 Practice tests are often seen as a panacea for midterms and finals studying. While they're useful to practice _test taking skills_, they aren't representative of "studying" the underlying material.
