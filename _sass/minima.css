@@ -894,7 +894,7 @@ blockquote.quote.slim:before {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-left: 0;
-  padding-right: 15vw;
+  padding-right: 0vw;
 }
 
 .two-column {
@@ -1549,7 +1549,7 @@ table.instructions td, table.instructions th {
 @media (max-width: 1200px) {
   .one-column main {
     padding-left: 0vw;
-    padding-right: 10vw;
+    padding-right: 0vw;
   }
   .readings td:nth-child(4), .readings th:nth-child(4), .readings td:nth-child(3), .readings th:nth-child(3), .readings th:last-child, .readings td:last-child, .schedule td:nth-child(4), .schedule th:nth-child(4), .schedule td:nth-child(3), .schedule th:nth-child(3), .schedule th:last-child, .schedule td:last-child, .labs td:nth-child(4), .labs th:nth-child(4), .labs td:nth-child(3), .labs th:nth-child(3), .labs th:last-child, .labs td:last-child {
     min-width: 80px;
@@ -1560,8 +1560,8 @@ table.instructions td, table.instructions th {
 
 @media (max-width: 900px) {
   .one-column main {
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 0vw;
+    padding-right: 0vw;
   }
 }
 

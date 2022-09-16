@@ -1,4 +1,4 @@
-@media (max-width: 1200px) {   
+@media (max-width: 1200px) {
     .one-column {
         main {
             padding-left: 10vw;
@@ -14,16 +14,16 @@
     }
 }
 
-@media (max-width: 900px) {   
+@media (max-width: 900px) {
     .one-column {
         main {
-            padding-left: 5vw;
-            padding-right: 5vw;
+            padding-left: 0vw;
+            padding-right: 0vw;
         }
     }
 }
 
-@media (max-width: 800px) {   
+@media (max-width: 800px) {
     .two-column {
         main {
             padding-left: 5vw;
@@ -73,7 +73,7 @@
         }
     }
 }
-    
+
 @media (max-width: 600px) {
     .one-column, .two-column {
         main {
@@ -115,7 +115,7 @@
             padding-top: 8px;
             align-items: flex-start;
             justify-content: flex-start;
-            
+
             i { font-size: 24px; }
             a {
                 padding: 10px;
@@ -145,7 +145,7 @@
                 li {
                     border-bottom: solid 1px #EEE;
                     margin-top: 0px;
-                    
+
                     &.active {
                         border-bottom: solid 1px #EEE;
                         background: $lightpurple;
