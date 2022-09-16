@@ -16,7 +16,7 @@ In this assignment you’ll play with simple functions for making images that we
 
 To begin with, we’ll need to tell DrRacket that we’re using one of the simplified “student languages” rather than the full industrial-strength version. Start DrRacket, go to the Language menu, and select “Choose Language...”. Then click on “Intermediate student language with lambda” and click OK:
 
-<img src="/assets/tutorial_0/00_choose_language.png" alt="Dr Racket Choose Language" width="50%"/>
+![DrRacket Language Section](/assets/exercise_0/drracket_language)
 
 You only need to do this once; DrRacket will remember the setting when you run it again in the future.
 
@@ -86,7 +86,7 @@ Now let’s make compound images from simpler images. For example, what if you w
 
 <img alt="a-nested-circle" src="/assets/tutorial_0/a-nested-circle.svg" width="25%"/>
 
-We can do this by first making two shapes and then joining them using a function called `overlay`. The [`overlay` function](https://docs.racket-lang.org/teachpack/2htdpimage.html#%28def._%28%28lib._2htdp%2Fimage..rkt%29._overlay%29%29) takes images as arguments and outputs a new image that contains its inputted images stacked on one another (make sure to look it up in the reference materials!). Notice that this means we’re _composing_ or _chaining_ the calls to our shape functions with the call to `overlay`.
+We can do this by first making two shapes and then joining them using a function called `overlay`. The <a href="https://docs.racket-lang.org/teachpack/2htdpimage.html#%28def._%28%28lib._2htdp%2Fimage..rkt%29._overlay%29%29" target="_blank">overlay function</a> takes images as arguments and outputs a new image that contains its inputted images stacked on one another (make sure to look it up in the reference materials!). Notice that this means we’re _composing_ or _chaining_ the calls to our shape functions with the call to `overlay`.
 
 The outputs of the two shape functions are passed as inputs to `overlay`. The data flow we want looks like the below: two shape function calls that output each shape, followed by an overlay call that outputs the final image. This one is if you wanted to overlay two concentric (i.e. they share the same center point) circles.
 
