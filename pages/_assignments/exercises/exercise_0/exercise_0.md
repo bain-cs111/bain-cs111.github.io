@@ -97,7 +97,7 @@ So let's write a **powerful** program! In the bottom half of the window (also ca
 (+ 2 3)
 ```
 
-<img alt="Our First Program" src="/assets/exercise_0/drracket_calc.png" style="scale:50%"/>
+![Our First Program](/assets/exercise_0/drracket_calc.png)
 
 If you see a result of `5`, congratulations! You've officially run your first program.
 
@@ -107,7 +107,7 @@ If you see a result of `5`, congratulations! You've officially run your first pr
 
 However, because you wrote it in the _Interaction Window_, DrRacket hasn't stored your program in any file on your computer. To do that, we need to use the Definitions Window_, the top half of the DrRacket app. Type in `(+ 2 3)` again, but this time up top in the _Definitions Window_. Then click the `Run` button ![Run Button](/assets/exercise_0/drracket_run.png)
 
-<img alt="Our First Definitions" src="/assets/exercise_0/drracket_definitions.png" style="scale:50%"/>
+![Our First Definition](/assets/exercise_0/drracket_definitions.png)
 
 You should see the same calculated result now at the bottom in the _Interactions Window_. In general, when writing programs in our class, we'll follow this same workflow:
 
