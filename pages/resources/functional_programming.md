@@ -1,5 +1,5 @@
 ---
-layout: two-column
+layout: default
 title: Functional Programming in Industry
 permalink: /resources/functional-programming/
 ---

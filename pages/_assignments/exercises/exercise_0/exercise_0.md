@@ -24,13 +24,13 @@ A key part of this class is your Tutorial Team (up to 8 people; no exceptions) w
 There are several ways of finding a Tutorial Team in our class:
 
 1. **EVERYONE** is expected to fill out our Tutorial Team survey (linked below) regardless of whether or not you have Teammates in mind already.
-2. If you already have teammates in mind, go ahead and sign up for your group in Canvas. [Instructions are located here](). We may add students to your pre-formed team depending on the survey results.
+2. If you already have teammates in mind, go ahead and sign up for your group in Canvas. [Instructions are located here](https://community.canvaslms.com/t5/Student-Guide/How-do-I-join-a-group-as-a-student/ta-p/468). We may add students to your pre-formed team depending on the survey results.
 3. If you'd like to find teammates on your own, you can do so by posting in the `#imaginary-student-groups` chat room on Campuswire (if you haven't signed up for Campuswire, make sure to do so via the registration link on Canvas). If you find some people with similar interests, go ahead and sign up for the team on Canvas using the instructions above.
 4. If you'd like to be assigned a Team, just fill out the Team Survey and we'll assign you a Team on Sunday evening.
 
 > **Note**: If you have not signed up for a Team on Canvas by Sunday evening at 5pm, we will use your Survey results to assign you to a team. You will not be able to self-register for teams after 5pm on Sunday.
 
-Link to [Teams Survey](https://forms.gle/TNqpEJutHby4t4RS6) (note, you must be logged into your NU Gmail account in order to access).
+<a class="lab" href="https://forms.gle/TNqpEJutHby4t4RS6" target="_blank">TEAMS SURVEY<i class="fa fa-link" aria-hidden="true"></i></a> (note, you must be logged into your NU Gmail account in order to access).
 
 While we'd like for the Teams to be as stable as possible throughout the quarter, stuff does happen so switching will be allowed after Week 2.
 

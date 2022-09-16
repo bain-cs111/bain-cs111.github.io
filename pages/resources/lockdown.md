@@ -1,10 +1,8 @@
 ---
-layout: two-column
+layout: default
 title: Setting Up the Lockdown Browser
 permalink: /resources/lockdown/
 ---
-
-# Lockdown Browser
 
 In order to create an equitable testing environment and to save an incredible amount of paper, we will use the Lockdown Browser to enable electronic testing.
 

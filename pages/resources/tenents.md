@@ -1,7 +1,7 @@
 ---
-layout: two-column
-title: Course Tenants
-permalink: /resources/zoom/
+layout: default
+title: Course Tenets
+permalink: /resources/tenets/
 ---
 
 # Course Tenets

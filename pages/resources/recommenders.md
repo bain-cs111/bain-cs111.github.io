@@ -3,15 +3,13 @@ layout: two-column
 title: Finding Recommenders for Applications
 permalink: /resources/recommenders/
 ---
-
-# Finding Recommenders for Applications
-
 Many applications ask for some sort of _reference_, a person with whom you've worked that can attest to all of the stuff you submit as part of your application. No matter what year you are in school, it's always a daunting part of the application process. Who do you ask? What sorts of information do they need? What if they say no?
 
 
 > The **cardinal rule of references** is that you always need to ask permission to list someone as a reference or letter writer. _Do not_ list someone as a reference without first asking their permission.
 
-***
+* * *
+
 ## Things to Do Before You Ask
 
 Before you ask for someone to serve as a reference or recommender, there are somethings you need to have settled:
@@ -61,7 +59,8 @@ Sometimes, recommenders will say "no" and that's okay. Academics are notoriously
 
 Remember, your recommenders are meant to both verify and complement your other application materials. Oftentimes it's incredibly helpful to have your supporting application materials in crafting a letter–particularly if the person you're asking has only interacted with you in one particular context. I find that my letters are always stronger when I can call upon experiences that are mentioned elsewhere in your application and if I don't have, for example, your resume (or _curriculum vitae_ (CV) in academic parlance) it's just that much harder to tie everything in your application together. There's no need for these to be the absolute final version of things, but even say, a draft of your personal statement helps your recommender see the story you're trying to tell.
 
-***
+* * *
+
 ## General Advice
 * You shouldn't ask a professor for a letter of recommendation if the only relationship you have with them is taking their class. A letter writer needs to attest to how your are exceptional and if all they know is how you did in their class, there's no way they can do that.
 * It's awesome to ask for a recommendation in-person as you can have a conversation about it right then and there, however, make sure to follow-up via email so there's a written reminder that they've agreed to serve as a recommender.
@@ -76,7 +75,8 @@ Remember, your recommenders are meant to both verify and complement your other a
 | Aug 1 | Beauxbatons | M.D.+Ph.D. (Research Area: Potions) | Letter to be submitted online at Interfolio |
 * _Please_ send us reminders. A good rule of thumb is 1-month, 1-week, 1-day. If your recommender has a penchant for slow responses, you might consider changing the way your remind them. One strategy for professors hard to reach via email would be to try and drop by their office hours.
 
-***
+* * *
+
 ## Things I Usually Ask People to Send Me When Asking for a Recommendation
 Over the years I've found the following help me craft a letter that is supportive and complementary to a student's application materials. Here's what I typically ask for:
 
@@ -84,6 +84,8 @@ Over the years I've found the following help me craft a letter that is supportiv
 2. Any application materials you think might be helpful to me (I like to coordinate my letter to the other strengths in your application, especially to highlight things the default application fields might not "feature")
 3. Any details about the programs/scholarship/job you're applying for that you might think are helpful for me to understand (e.g. what sorts of students do they look for; what might make you stand out from other applicants; any specific reasons you're applying)
 4. A one-sentence summary of anything specific you'd like me to attest to in your recommendation.
-***
+
+* * *
+
 ## Don't be Afraid to Ask for Help
 The worst that can happen is that someone says no. There are many times where students have asked me to serve as a recommender whom I've only met once or twice. Often times, we're able to brainstorm someone who would be able to better attest to their amazing-ness.
