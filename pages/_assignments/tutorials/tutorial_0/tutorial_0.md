@@ -88,7 +88,7 @@ We can do this by first making two shapes and then joining them using a function
 
 The outputs of the two shape functions are passed as inputs to `overlay`. The data flow we want looks like the below: two shape function calls that output each shape, followed by an overlay call that outputs the final image. This one is if you wanted to overlay two concentric (i.e. they share the same center point) circles.
 
-<img alt="overlay function data flow" src="/assets/tutorial_0/overlay-example-final.svg" width="50%"/>
+<img alt="overlay function data flow" src="/assets/tutorial_0/overlay-example-final.svg" width="95%"/>
 
 How do we chain calls in our code? By moving the function call into the place where we want it to be used as an input. The three calls we want, written as text, would look like this:
 
