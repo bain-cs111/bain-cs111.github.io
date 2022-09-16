@@ -139,7 +139,7 @@ While `(+ 2 3)` is a pretty dope program, sometimes we need to teach the compute
 
 Make sure to run your program which should look like the below:
 
-<img alt="Final Version of Our First Program" src="/assets/exercise_0/drracket_ex0.png" style="scale:50%"/>
+![Final Version of Our First Program](/assets/exercise_0/drracket_ex0.png)
 
 Notice that you won't see your NetID outputted in the _Interactions Window_. That's because you didn't actually ask Racket to do anything with your NetID–you just asked it to remember it. That's okay for now. We just want to have it store the NetID so that when we run your program, we can tell your program apart from your classmate's.
 
