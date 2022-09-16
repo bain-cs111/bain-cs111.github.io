@@ -116,7 +116,7 @@ layout: default
                         {% if assignment.draft == 1 %}
                             <strong>{{ assignment.abbreviation }}:</strong>
                         {% else %}
-                            <a href="{{site.baseurl}}{{assignment.url}}" class="{{classname}}">
+                            <a target="_blank" href="{{site.canvas_url}}/assignments/{{assignment.canvas_id}}" class="{{classname}}">
                                 {{ assignment.abbreviation }}
                                 <i class="fa fa-link"></i>
                             </a>

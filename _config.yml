@@ -22,7 +22,7 @@ url: "bain-cs111.github.io" # the base hostname & protocol for your site, e.g. h
 twitter_username:
 github_username:
 campuswire_url: https://campuswire.com/p/G7C57BC09
-
+canvas_url: https://canvas.northwestern.edu/courses/178849
 timezone: "America/Chicago"
 # Build settings
 markdown: kramdown
