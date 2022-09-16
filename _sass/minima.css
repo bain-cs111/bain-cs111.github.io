@@ -1548,7 +1548,7 @@ table.instructions td, table.instructions th {
 
 @media (max-width: 1200px) {
   .one-column main {
-    padding-left: 10vw;
+    padding-left: 0vw;
     padding-right: 10vw;
   }
   .readings td:nth-child(4), .readings th:nth-child(4), .readings td:nth-child(3), .readings th:nth-child(3), .readings th:last-child, .readings td:last-child, .schedule td:nth-child(4), .schedule th:nth-child(4), .schedule td:nth-child(3), .schedule th:nth-child(3), .schedule th:last-child, .schedule td:last-child, .labs td:nth-child(4), .labs th:nth-child(4), .labs td:nth-child(3), .labs th:nth-child(3), .labs th:last-child, .labs td:last-child {
