@@ -30,7 +30,7 @@ There are several ways of finding a Tutorial Team in our class:
 
 > **Note**: If you have not signed up for a Team on Canvas by Sunday evening at 5pm, we will use your Survey results to assign you to a team. You will not be able to self-register for teams after 5pm on Sunday.
 
-<a class="lab" href="https://forms.gle/TNqpEJutHby4t4RS6" target="_blank">TEAMS SURVEY<i class="fa fa-link" aria-hidden="true"></i></a> (note, you must be logged into your NU Gmail account in order to access).
+<a class="lab" href="https://forms.gle/TNqpEJutHby4t4RS6" target="_blank">TEAMS SURVEY<i class="fa fa-link" aria-hidden="true"></i></a> (note, you must be logged into your NU Gmail account in order to access). This is REQUIRED and will count for 50% of your grade for this assignment.
 
 While we'd like for the Teams to be as stable as possible throughout the quarter, stuff does happen so switching will be allowed after Week 2.
 
@@ -79,7 +79,9 @@ One of the main reasons we use Racket in this class is that it is essentially a 
 
 In the bottom left hand corner, you should see a message that says "No language chosen" (you might also see something else here, that's okay). If you click on that menu you'll be brought to the Language Select screen (see below). On this screen, select the `Intermediate Student Language with lambda` and hit OK.
 
+
 <img alt="DrRacket Language Select" src="/assets/exercise_0/drracket_language.png" style="scale:50%"/>
+
 
 Once you've selected the language, hit the ![Run Button](/assets/exercise_0/drracket_run.png) button at the top of the Window which asks Racket to load the selected language. If everything went well, near the bottom of the window you'll see a line that says `Language: Intermediate Student with lambda; memory limit: 128 MB `.
 
