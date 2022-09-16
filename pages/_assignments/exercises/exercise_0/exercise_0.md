@@ -74,11 +74,15 @@ apt-get install racket
 After installation, you should be able to double click on the DrRacket executable/application ![DrRacket Logo](/assets/exercise_0/racket_app.png) to start DrRacket. On a Windows PC, it should be in your Start menu (or whatever they're calling it these days). On a Mac, it'll be in your Applications folder.
 
 That should launch a window that looks something like this:
-<img alt="DrRacket Window" src="/assets/exercise_0/drracket_main.png" style="scale:50%;"/>
+
+![DrRacket Window](/assets/exercise_0/drracket_main.png)
+
 One of the main reasons we use Racket in this class is that it is essentially a programming language for programming languages. Rather than being a single programming language (e.g. Python), it allows you to implement your own languages. In this class, we'll actually be gradually progressing from one language to another language as we practice our programming skills.
 
 In the bottom left hand corner, you should see a message that says "No language chosen" (you might also see something else here, that's okay). If you click on that menu you'll be brought to the Language Select screen (see below). On this screen, select the `Intermediate Student Language with lambda` and hit OK.
-<img alt="DrRacket Language Select" src="/assets/exercise_0/drracket_language.png" style="scale:50%; margin: auto;"/>
+
+![DrRacket Language Select](/assets/exercise_0/drracket_language.png)
+
 Once you've selected the language, hit the ![Run Button](/assets/exercise_0/drracket_run.png) button at the top of the Window which asks Racket to load the selected language. If everything went well, near the bottom of the window you'll see a line that says `Language: Intermediate Student with lambda; memory limit: 128 MB `.
 
 * * *
