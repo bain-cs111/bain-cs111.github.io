@@ -16,7 +16,7 @@ In this assignment you’ll play with simple functions for making images that we
 
 To begin with, we’ll need to tell DrRacket that we’re using one of the simplified “student languages” rather than the full industrial-strength version. Start DrRacket, go to the Language menu, and select “Choose Language...”. Then click on “Intermediate student language with lambda” and click OK:
 
-![DrRacket Language Section](/assets/exercise_0/drracket_language)
+![DrRacket Language Section](/assets/exercise_0/drracket_language.png)
 
 You only need to do this once; DrRacket will remember the setting when you run it again in the future.
 
@@ -24,9 +24,7 @@ DrRacket's main interface consists of two main panes, which default to being in 
 
 You can also set DrRacket to be in _Horizontal Layout_ where the Program Window and Interaction Windows are placed in a horizontal orientation. To switch orientations, click on the `View` menu and select `View Horizontal Layout`(you can switch back the same way). I'll usually use Horizontal Mode in class, but sometimes I waffle between the two. Do whatever works for you!
 
-Vertical Layout | Horizontal Layout
-- | -
-![Vertical Layout](/assets/tutorial_0/01a_vertical_layout.png) | ![Horizontal Layout](/assets/tutorial_0/01b_horizontal_layout.png)
+![Vertical Layout](/assets/tutorial_0/01a_vertical_layout.png) ![Horizontal Layout](/assets/tutorial_0/01b_horizontal_layout.png)
 
 Go to the Program Window and add the following command to the beginning:
 
