@@ -3,7 +3,7 @@ layout: assignment-two-column
 title: Shaping Up
 type: tutorial
 abbreviation: Tutorial 0
-draft: 0
+draft: 1
 points: 100
 num: 1
 canvas_id: 1124990
