@@ -55,9 +55,9 @@ The rough schedule of the course will be (there are some exceptions):
 
 * Mondays - Lecture Day
 * Wednesdays - Tutorial Day
-* Fridays - Practice and Move On Day
+* Fridays - Practice+ Day
 
-For lecture days, we'll have interactive lectures where we introduce a new topic and focus on building a core understanding. For Tutorial days, you'll work in your tutorial groups to complete an assignment during class time. On Practice days, we'll do a little more practice along with previewing the next components of the course.
+For lecture days, we'll have interactive lectures where we introduce a new topic and focus on building a core understanding. For Tutorial days, you'll work in your tutorial groups to complete an assignment during class time. On Practice+ days, we'll do a little more practice along with previewing the next components of the course.
 
 When we assign a pre-recorded lecture, students *must* watch the video before coming to lecture. Organizationally, some topics/modules span multiple lectures.
 
