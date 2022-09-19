@@ -106,7 +106,7 @@ If you see a result of `5`, congratulations! You've officially run your first pr
 
 ## Activity 4: Saving your Program
 
-However, because you wrote it in the _Interaction Window_, DrRacket hasn't stored your program in any file on your computer. To do that, we need to use the Definitions Window_, the top half of the DrRacket app. Type in `(+ 2 3)` again, but this time up top in the _Definitions Window_. Then click the `Run` button ![Run Button](/assets/exercise_0/drracket_run.png)
+However, because you wrote it in the _Interaction Window_, DrRacket hasn't stored your program in any file on your computer. To do that, we need to use the _Definitions Window_, the top half of the DrRacket app. Type in `(+ 2 3)` again, but this time up top in the _Definitions Window_. Then click the `Run` button ![Run Button](/assets/exercise_0/drracket_run.png)
 
 ![Our First Definition](/assets/exercise_0/drracket_definitions.png)
 
@@ -134,7 +134,7 @@ While `(+ 2 3)` is a pretty dope program, sometimes we need to teach the compute
 (define netid "abc1234")
 ```
 
-**Make sure to replace the thing in quotation marks with your actual NetID***. This tells Racket that from now on, when you give it the _symbol_ `netid` it will use the value `"abc1234"`.
+**Make sure to replace the thing in quotation marks with your actual NetID**. This tells Racket that from now on, when you give it the _symbol_ `netid` it will use the value `"abc1234"`.
 
 >**Note**: Those quotation marks `"` are important! They tell Racket that this thing inside the quotation marks isn't just a symbol, it's a piece of data called a string (that's why DrRacket makes it green).
 
@@ -144,11 +144,11 @@ Make sure to run your program which should look like the below:
 
 Notice that you won't see your NetID outputted in the _Interactions Window_. That's because you didn't actually ask Racket to do anything with your NetID–you just asked it to remember it. That's okay for now. We just want to have it store the NetID so that when we run your program, we can tell your program apart from your classmate's.
 
-Make sure to save your modified program using the `File` menu and selecting `Save Definitions` (you don't have to pick `Save Definition as...` since that allows you to create a brand new file and we just want to update the one we already have).
+Make sure to save your modified program using the `File` menu and selecting `Save Definitions` (you don't have to pick `Save Definitions as...` since that allows you to create a brand new file and we just want to update the one we already have).
 
 Congratulations, you're officially a _Racketeer_!
 
-> **Life Advice**: Probably best not to use this term outside of course community as it has some nasty legal implications.
+> **Life Advice**: Probably best not to use this term outside of our course community as it has some nasty legal implications.
 
 * * *
 

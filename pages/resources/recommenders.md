@@ -1,5 +1,5 @@
 ---
-layout: two-column
+layout: default
 title: Finding Recommenders for Applications
 permalink: /resources/recommenders/
 ---
@@ -72,7 +72,8 @@ Remember, your recommenders are meant to both verify and complement your other a
 | -------- | -------------- | -------------- | -------------- |
 | June 28  | Durmstrang Institute | M.S. in Robotics | Possible Phone Recommendation |
 | July 31 | Hogwarts School of Witchcraft and Wizardry | Ph.D. in Muggle Studies | Letter due via owl post |
-| Aug 1 | Beauxbatons | M.D.+Ph.D. (Research Area: Potions) | Letter to be submitted online at Interfolio |
+| Aug 1 | Beauxbatons | M.D. Ph.D. (Research Area: Potions) | Letter to be submitted online at Interfolio |
+
 * _Please_ send us reminders. A good rule of thumb is 1-month, 1-week, 1-day. If your recommender has a penchant for slow responses, you might consider changing the way your remind them. One strategy for professors hard to reach via email would be to try and drop by their office hours.
 
 * * *
