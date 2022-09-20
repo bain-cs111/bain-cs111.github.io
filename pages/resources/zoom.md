@@ -1,5 +1,5 @@
 ---
-layout: two-column
+layout: default
 title: Course Zoom Instructions
 permalink: /resources/zoom/
 ---

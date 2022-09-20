@@ -1,5 +1,5 @@
 ---
-layout: two-column
+layout: default
 title: Campuswire Guidelines
 permalink: /resources/campuswire/
 ---

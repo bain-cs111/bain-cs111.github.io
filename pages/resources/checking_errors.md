@@ -1,5 +1,5 @@
 ---
-layout: two-column
+layout: default
 title: Checking for Syntax or Runtime Errors
 permalink: /resources/checking-errors/
 ---

@@ -1,5 +1,5 @@
 ---
-layout: two-column
+layout: default
 title: Autograder and Submission FAQ
 permalink: /resources/autograder/
 ---
