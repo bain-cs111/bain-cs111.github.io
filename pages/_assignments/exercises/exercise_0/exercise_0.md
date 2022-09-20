@@ -165,3 +165,8 @@ This means that you must _carefully_ read each assignment description and follow
   * Make sure your netid you enter is actually your netid. The autograder will compare the submitter's netid to the one in your program.
 
 For this assignment, you will upload your `exercise_0.rkt` file to the assignment on Canvas. DO NOT UPLOAD ANY OTHER FILES. Once you've submitted your file to Canvas, you're done!
+
+* * *
+
+## Requesting an extension
+If you need to request an extension on this assignment use the <a href="https://forms.gle/fWx9jgQTNp56bAgR6">Extension Request form</a>. Please see this Syllabus for requirements. Your extension is automatically accepted if you meet the conditions. You will see your due date on Canvas update 24 hours prior to the original deadline.

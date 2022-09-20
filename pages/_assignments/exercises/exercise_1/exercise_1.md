@@ -101,3 +101,8 @@ You might need some more functions than the ones we have discussed so far. You m
 
 ## Turning it in
 Once you’ve finished your assignment, **PLEASE READ THE AUTOGRADER GUIDE ONE MORE TIME** before submitting it to Canvas. Congratulations! You’re done with the assignment for this week!
+
+* * *
+
+## Requesting an extension
+If you need to request an extension on this assignment use the <a href="https://forms.gle/fWx9jgQTNp56bAgR6">Extension Request form</a>. Please see this Syllabus for requirements. Your extension is automatically accepted if you meet the conditions. You will see your due date on Canvas update 24 hours prior to the original deadline.
