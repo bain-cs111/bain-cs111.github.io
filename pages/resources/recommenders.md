@@ -1,5 +1,5 @@
 ---
-layout: one-column
+layout: default
 title: Finding Recommenders for Applications
 permalink: /resources/recommenders/
 ---

@@ -1,5 +1,5 @@
 ---
-layout: two-column
+layout: default
 title: Using Practice Tests to Study
 permalink: /resources/practice-tests/
 ---
