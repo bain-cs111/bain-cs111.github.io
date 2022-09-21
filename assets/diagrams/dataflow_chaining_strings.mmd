@@ -1,0 +1,13 @@
+%%{init: {"theme": "neutral", "logLevel": 1 }}%%
+
+graph LR
+    FIRST["&quot;thi"]--->A{<br><font face=courier size=4 color=white>concat<br>&nbsp}
+    SECOND["&quot;is a&quot;"]--->A
+    A ---> Output1["&quot;this is a&quot;"]
+    Output1 ---> B{<br><font face=courier size=4 color=white>concat<br>&nbsp}
+    THIRD[4] ---> B
+    B ---> Output2[7]
+
+    style A fill:#4E2A84
+
+    style B fill:#4E2A84

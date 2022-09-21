@@ -4,24 +4,20 @@ title: What is Computation?
 type: lecture
 description:
 num: 0
-draft: 1
+draft: 0
+canvas_id: 1124953
 due_date: 2022-09-21
 slides:
-   - url: https://docs.google.com/presentation/d/12uKNf2QhKd_HKgmiII0XGwHXHBl2rHhB34s373zjFWQ/edit?usp=sharing
-     title: Conceptual Model of a Computer (Lecture Slides)
-videos:
-   - url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d016026d-8f49-49c6-9fb2-ae670037b123
-     title: Conceptual Model of a Computer (Not Yet Posted)
-     duration: "50:00"
-     live: 1
-readings:
-  - title: "Ch1: Intro to Computing"
-    author: "Charles Severance"
-    url: https://www.py4e.com/html3/01-intro
-    video_url: https://www.py4e.com/lessons/intro
-    source: "Python for Everybody"
+   - url: https://docs.google.com/presentation/d/1x4mm0kX2ca-Aouj-xnBn_01Ume53QzkGQguHr4hyqvE/edit?usp=sharing
+     title: What is Computation? + Course Logistics (Lecture Slides)
+
 ---
 
-In today's lesson, we're going to think a little bit more about how computers work. <br><br>It is important for you to generate your own model of how a computer processes your instructions so that you can get the feedback you need to write the program you intended.
+In today's Lecture, we'll talk about what it means to _compute_. We'll also cover many of the logistical/administrative elements of CS 111.
 
-[Turtle Activities Link](/resources/turtle-activity-1)
+By the end of today you should:
+1. Have an idea of what it means to _compute_
+2. Understand the functional model of computation
+3. Know why you are taking this class
+4. Have a rough picture of what you will learn in this class
+5. At least be aware of the course resources available to you
