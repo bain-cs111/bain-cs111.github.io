@@ -4,6 +4,7 @@ title: Programming in Text
 type: lecture
 draft: 0
 num: 1
+canvas_id: friday-lecture-1-programming-in-text-september-23
 description:
 due_date: 2022-09-23
 slides:
