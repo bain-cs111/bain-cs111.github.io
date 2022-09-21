@@ -1,0 +1,15 @@
+%%{init: {"theme": "neutral", "logLevel": 1 }}%%
+
+graph LR
+    FIRST["+"]--->A{<br><font face=courier size=4 color=white>call<br>&nbsp}
+    SECOND[1] ---> A
+    THIRD[2] ---> A
+
+    A ---> B{<br><font face=courier size=4 color=white>+<br>&nbsp}
+
+    FOURTH[2] ---> B
+
+    B ---> Output2[?]
+
+    style A fill:#4E2A84
+    style B fill:#4E2A84

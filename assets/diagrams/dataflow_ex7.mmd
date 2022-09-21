@@ -1,0 +1,15 @@
+%%{init: {"theme": "neutral", "logLevel": 1 }}%%
+
+graph LR
+    FIRST["&quot;woof woof&quot;"]--->A{<br><font face=courier size=4 color=white>prefix<br>&nbsp}
+    FIRST ---> B{<br><font face=courier size=4 color=white>length<br>&nbsp}
+
+    B ---> C{<br><font face=courier size=4 color=white>+<br>&nbsp}
+    SECOND[5] ---> C
+    C ---> A
+
+    A ---> Output1[?]
+
+    style A fill:#4E2A84
+    style B fill:#4E2A84
+    style C fill:#4E2A84

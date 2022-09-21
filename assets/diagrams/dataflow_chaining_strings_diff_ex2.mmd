@@ -1,0 +1,20 @@
+%%{init: {"theme": "neutral", "logLevel": 1 }}%%
+
+graph LR
+    FIRST["&quot;this &quot;"]--->B{<br><font face=courier size=4 color=white>concat<br>&nbsp}
+
+
+    SECOND["&quot; is a &quot;"]--->A{<br><font face=courier size=4 color=white>concat<br>&nbsp}
+    THIRD["&quot;string&quot;"]--->A
+
+    A ---> Output1["&quot; is a string&quot;"]
+
+    Output1 ---> B
+
+    B ---> Output2["&quot;this is a string&quot;"]
+
+
+
+    style A fill:#4E2A84
+
+    style B fill:#4E2A84

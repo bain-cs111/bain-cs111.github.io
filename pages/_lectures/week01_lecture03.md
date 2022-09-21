@@ -28,4 +28,13 @@ videos:
 ---
 Today we'll build off the pre-recorded lecture on Data Flow diagrams to start designing programs using a text-based programming language. Make sure to watch the lecture video BEFORE coming to class.
 
+If you are having trouble accessing the above videos, please try the following:
+
+1. Open up our Canvas page.
+2. On the list of things on the left, click on Panopto
+3. It may ask you to open it up in a separate window.
+
+You'll then see a Folder where you can access the Lecture Videos and the above links will now magically work! If you're still having trouble feel free to [comment on the Campuswire post)[https://campuswire.com/c/G38ABF3D2/feed/3] and we'll get it figured out.
+
+
 Also in-class, we'll complete most of Exericse 0.
