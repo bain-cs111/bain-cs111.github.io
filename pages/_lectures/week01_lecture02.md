@@ -5,7 +5,7 @@ type: lecture
 description:
 num: 0
 draft: 0
-canvas_id: 1124953
+canvas_id: wednesday-lecture-0-what-is-computation-september-21
 due_date: 2022-09-21
 slides:
    - url: https://docs.google.com/presentation/d/1x4mm0kX2ca-Aouj-xnBn_01Ume53QzkGQguHr4hyqvE/edit?usp=sharing

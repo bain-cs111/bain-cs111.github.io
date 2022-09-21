@@ -2,38 +2,29 @@
 layout: module
 title: Programming in Text
 type: lecture
-draft: 1
+draft: 0
 num: 1
 description:
 due_date: 2022-09-23
 slides:
-  - url: https://docs.google.com/presentation/d/1WqD-m0pSKUymYiH0t1mRCOheXkfuQBuv1zJRSYzh1Lo/edit?usp=sharing
-    title: Writing Programs
+  - url: https://docs.google.com/presentation/d/1mOofIrjlmP_vHD94fxZyHSx8zcJk6Sxsh_hz_-uSJ9M/edit?usp=sharing
+    title: Data Flow Diagrams
+
 videos:
-   - url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=64721adf-75b1-4185-ad7a-ae670037b139
-     duration: "50:00"
-     title: "Live Lecture"
+   - url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=49733953-2f1c-4af5-8fe2-af1701200b29
+     duration: "26:37"
      live: 0
-   - url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7c22b141-00de-4da8-a2f2-ae6a012d917d
-     duration: "2:00"
-     title: "Using ZIP Files on a Windows Computer"
-     live: 1
+     title: "Lecture 1a - Data Flow Diagrams"
+   - url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f7f0545f-9a37-44e6-b31c-af17011828ab
+     duration: "6:29"
+     title: "Welcome to Canvas"
+     live: 0
+   - url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f7f0545f-9a37-44e6-b31c-af17011828ab
+     duration: 4:31"
+     title: "Welcome to Campuswire"
+     live: 0
 
-exercise_url: "lecture02.zip"
-
-readings:
-   - title: "Ch1: Intro to Computing"
-     author: "Charles Severance"
-     url: https://www.py4e.com/html3/01-intro
-     video_url: https://www.py4e.com/lessons/intro
-     source: "Python for Everybody"
-
-extras:
-  - title: "Tutorial Signups"
-    comments: "You MUST sign up for a tutorial session. The first week's tutorial is mandatory attendance."
-    url: https://docs.google.com/spreadsheets/d/1wANRjI2fi6UewfL_dQ2TcmNsc6WCMZQ2LowA5XyTA1o/edit?usp=sharing
-    external: 1
 ---
-Today I'll demonstrate setting up Python and getting ready for our first programming assignments.. We will also sign up for Tutorial sessions in class and review the course survey results.
+Today we'll build off the pre-recorded lecture on Data Flow diagrams to start designing programs using a text-based programming language. Make sure to watch the lecture video BEFORE coming to class.
 
-[Turtle Activities Link](/resources/turtle-activity-1)
+Also in-class, we'll complete most of Exericse 0.
