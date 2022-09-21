@@ -166,6 +166,8 @@ This means that you must _carefully_ read each assignment description and follow
 
 For this assignment, you will upload your `exercise_0.rkt` file to the assignment on Canvas. DO NOT UPLOAD ANY OTHER FILES. Once you've submitted your file to Canvas, you're done!
 
+> **Note**: You will not receive feedback from the autograder on your assignment until AFTER the final due date (which is the "open till date on Canvas").
+
 * * *
 
 ## Requesting an extension
