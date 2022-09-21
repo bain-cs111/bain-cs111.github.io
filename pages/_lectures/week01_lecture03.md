@@ -21,7 +21,7 @@ videos:
      title: "Welcome to Canvas"
      live: 0
    - url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f7f0545f-9a37-44e6-b31c-af17011828ab
-     duration: 4:31"
+     duration: "4:31"
      title: "Welcome to Campuswire"
      live: 0
 
