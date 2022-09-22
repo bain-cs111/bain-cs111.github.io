@@ -9,7 +9,9 @@ description:
 due_date: 2022-09-23
 slides:
   - url: https://docs.google.com/presentation/d/1mOofIrjlmP_vHD94fxZyHSx8zcJk6Sxsh_hz_-uSJ9M/edit?usp=sharing
-    title: Data Flow Diagrams
+    title: Data Flow Diagrams (Pre-Recorded)
+  - url: https://docs.google.com/presentation/d/1N9VaS4X2XnYIUYSimdxCt5-tDLthI8uF412HV6XWXF8/edit?usp=sharing
+    title: Programming in Text (Live)
 
 videos:
    - url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=49733953-2f1c-4af5-8fe2-af1701200b29
