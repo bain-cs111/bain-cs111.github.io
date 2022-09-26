@@ -4,6 +4,7 @@ title: Graphics Language
 type: lecture
 num: 2
 draft: 0
+canvas_id: monday-lecture-2-2d-graphics-language-sep-26
 description:
 due_date: 2022-09-26
 slides:
