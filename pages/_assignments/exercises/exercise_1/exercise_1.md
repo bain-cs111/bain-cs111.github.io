@@ -16,7 +16,7 @@ In this assignment you’ll play with simple functions for making images that we
 
 In order to start this assignment, please download the starter files:
 
-<a class="nu-button" href="/course-files/homework/exercise_1_template.zip" target="_blank">
+<a class="nu-button" href="https://bain-cs111.github.io/course-files/exercises/exercise_1_template.zip" target="_blank">
     Exercise 1 Starter Files <i class="fas fa-download"></i>
 </a>
 
