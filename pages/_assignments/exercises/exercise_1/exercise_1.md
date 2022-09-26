@@ -5,12 +5,12 @@ abbreviation: Exercise 1
 type: homework
 due_date: 2022-10-03
 ordering: 2
-draft: 1
+draft: 0
 canvas_id: 1124987
 points: 100
 ---
 
-In this assignment you’ll play with simple functions for making images that we’ll use later on in the course. If you have not already completed Tutorial 0, do so before starting this assignment as it will assume that you have correctly configured Dr Racket and that you have a solid understanding of how to create both simple and compound images.
+In this assignment you’ll play with simple functions for making images that we’ll use later on in the course. If you have not already completed Exercise 0, do so before starting this assignment as it will assume that you have correctly configured Dr Racket and that you have a solid understanding of how to create both simple and compound images.
 
 > **Note**: We've tried to make this assignment accessible to those who have trouble seeing colors, but please let us know if we can provide additional help. For this assignment it's not necessary to exactly match the colors we show.
 
@@ -22,7 +22,7 @@ In order to start this assignment, please download the starter files:
 
 This download is a ZIP file which _must be extracted_ before the files can be edited. On a Mac, you can simply double click on the ZIP folder and it will extract the files for you. On a Windows computer, you need to can use [these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5).
 
-> **Note**: We highly recommend moving the extracted folder to your CS 111 work folder and renaming it to make sure you submit the file you mean to later when you go to submit.
+> **Note**: We highly recommend moving the extracted folder to a CS 111 work folder somewhere on your machine (so you have all your 111 stuff in the same place) and renaming it to make sure you submit the file you mean to later when you go to submit.
 
 Now, open up the extracted file. For this exercise, it's called `exercise_1.rkt.`
 
@@ -100,7 +100,7 @@ You might need some more functions than the ones we have discussed so far. You m
 * * *
 
 ## Turning it in
-Once you’ve finished your assignment, **PLEASE READ THE AUTOGRADER GUIDE ONE MORE TIME** before submitting it to Canvas. Congratulations! You’re done with the assignment for this week!
+Once you’ve finished your assignment, **PLEASE READ THE WHAT'S AN AUTOGRADER? PAGE ONE MORE TIME** (it's on Canvas) before submitting it to Canvas. Congratulations! You’re done with the assignment for this week!
 
 * * *
 

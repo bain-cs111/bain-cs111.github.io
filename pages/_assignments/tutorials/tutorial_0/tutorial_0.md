@@ -11,6 +11,8 @@ description:
 due_date: 2022-09-28
 ---
 
+> Note: BECAUSE THIS FIRST TUTORIAL IS ATTENDANCE REQUIRED YOU WILL NOT ACTUALLY SUBMIT ANY FILE TO CANVAS. The course staff will ask you to verify your name and NetID before you leave class and you will receive credit based on that. 
+
 In this assignment you’ll play with simple functions for making images that we’ll use later on in the course. Make sure to work with the other people in your group. If you find yourself needing help, ask your assigned PM or any of the other course staff members.
 
 ## Make Sure DrRacket is Configured
@@ -129,7 +131,7 @@ Alright, now that you've seen an example of using `overlay`, see if you can adap
 
 <img alt="overlay activity" src="/assets/tutorial_0/overlay.svg" width="25%"/>
 
-Of course `overlay` is just one function that makes compound images. Make sure to check out the other functions that do similar things like [`above`](https://docs.racket-lang.org/teachpack/2htdpimage.html#%28def._%28%28lib._2htdp%2Fimage..rkt%29._above%29%29), and [`beside`](https://docs.racket-lang.org/teachpack/2htdpimage.html#%28def._%28%28lib._2htdp%2Fimage..rkt%29._beside%29%29).
+Of course `overlay` is just one function that makes compound images. Make sure to check out the other functions that do similar things like `above`[(documentation link)](https://docs.racket-lang.org/teachpack/2htdpimage.html#%28def._%28%28lib._2htdp%2Fimage..rkt%29._above%29%29) and `beside`[(documentation link)](https://docs.racket-lang.org/teachpack/2htdpimage.html#%28def._%28%28lib._2htdp%2Fimage..rkt%29._beside%29%29).
 
 ### Activity 3: Concentric Diamonds
 
