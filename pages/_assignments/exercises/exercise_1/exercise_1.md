@@ -95,7 +95,7 @@ Now, make the flag of Chicago:
 <!-- viewBox="-1 -1 201 122" stroke-width:2px -->
 ![flag-of-chicago](/assets/exercise_1/flag-of-chicago.svg)
 
-You might need some more functions than the ones we have discussed so far. You may find `radial-star` and `overlay/xy` to be helpful. Remember all the functions in Racket are explained in the Racket documentation and your image doesn’t need to be exact! Define it as `flag-of-chicago`. And again, make sure that you can sketch out the dataflow diagram for it.
+You might need some more functions than the ones we have discussed so far. You may find `radial-star` and `overlay/xy` to be helpful. Remember all the functions in Racket are explained in the [Racket documentation](https://docs.racket-lang.org/teachpack/2htdpimage.html) and your image doesn’t need to be exact! Define it as `flag-of-chicago`. And again, make sure that you can sketch out the dataflow diagram for it.
 
 * * *
 
