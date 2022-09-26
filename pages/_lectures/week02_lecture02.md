@@ -11,7 +11,7 @@ slides:
   - url: https://docs.google.com/presentation/d/1TD4F4amyU2_9WRU1r9cT74_glm79gSMNgd1qmVmV518/edit?usp=sharing
     title: Compound Functions (Pre-Recorded)
 videos:
-  - url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5fbaa84a-8909-4135-9246-ae670037b16d
+  - url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d42e53c7-8a24-4b96-86f7-af1c0107fc8e
     title: "Compound Functions (Pre-Recorded)"
     duration: "25:51"
     live: 1
