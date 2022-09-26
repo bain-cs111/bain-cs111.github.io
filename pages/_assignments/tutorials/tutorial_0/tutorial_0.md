@@ -3,7 +3,7 @@ layout: assignment-two-column
 title: Shaping Up
 type: tutorial
 abbreviation: Tutorial 0
-draft: 1
+draft: 0
 points: 100
 num: 1
 canvas_id: 1124990
@@ -11,7 +11,7 @@ description:
 due_date: 2022-09-28
 ---
 
-> Note: BECAUSE THIS FIRST TUTORIAL IS ATTENDANCE REQUIRED YOU WILL NOT ACTUALLY SUBMIT ANY FILE TO CANVAS. The course staff will ask you to verify your name and NetID before you leave class and you will receive credit based on that. 
+> Note: **BECAUSE THIS IS THE FIRST TUTORIAL AND ATTENDANCE IS REQUIRED YOU WILL NOT ACTUALLY SUBMIT ANY FILE TO CANVAS FOR THIS ASSIGNMENT. The course staff will ask you to verify your name and NetID before you leave class and you will receive credit based on that.
 
 In this assignment you’ll play with simple functions for making images that we’ll use later on in the course. Make sure to work with the other people in your group. If you find yourself needing help, ask your assigned PM or any of the other course staff members.
 
