@@ -5,6 +5,7 @@ type: lecture
 num: 3
 draft: 0
 description:
+canvas_id: wednesday-lecture-3-pre-recorded-compound-procedures-sep-28
 due_date: 2022-09-28
 slides:
   - url: https://docs.google.com/presentation/d/1TD4F4amyU2_9WRU1r9cT74_glm79gSMNgd1qmVmV518/edit?usp=sharing
