@@ -35,15 +35,15 @@ Now run the code in Tutorial 0 by pressing the `Run` button or typing `Command-R
 > Note: If you're on a recent-ish computer running macOS, your computer will ask if DrRacket can have permission to access the folder in which your `adv_tutorial_0.rkt` file is stored. If you DENY that access, DrRacket won't be able to load the two libraries we've provided for you: `shading.rkt` and `noise.rkt`.
 
 ### Procedural shaders
-Here’s the idea behind procedural shading.  Ultimately, an image is just a variation of color over some surface where for any given position on the surface, there’s some specified color.  In other words, a picture is in some sense a function from position to color. Rasters represent the function by breaking the surface up into little squares and assigning a color per square, but there’s nothing to prevent you from representing the image as a procedure that takes a location in the image as input and returns a color as output.
+Here’s the idea behind procedural shading. Ultimately, an image is just a variation of color over some surface where for any given position on the surface, there’s some specified color. In other words, a picture is in some sense a function from position to color. Rasters represent the function by breaking the surface up into little squares and assigning a color per square, but there’s nothing to prevent you from representing the image as a procedure that takes a location in the image as input and returns a color as output.
 
 Recall that in Racket, you create functions using `lambda` expressions, expressions of the form:
 
 ```racket
-(λ (argumentNames …) returnValue)
+(λ (argumentNames ...) returnValue)
 ```
 
-The result of executing this expression is that it creates a function that takes its inputs and stashes them in variables with the specified `argumentNames`, and then runs the `returnValue` expression to compute the return value.  If you like, you can then use `define` to give that function a name, but naming a function isn’t necessary, and in this exercise, you mostly won’t need to do it.
+The result of executing this expression is that it creates a function that takes its inputs and stashes them in variables with the specified `argumentNames`, and then runs the `returnValue` expression to compute the return value. If you like, you can then use `define` to give that function a name, but naming a function isn’t necessary, and in this exercise, you mostly won’t need to do it.
 
 So given that a shader is a function that maps position to color or brightness, our basic syntax for it will be something like:
 
@@ -54,7 +54,7 @@ So given that a shader is a function that maps position to color or brightness, 
 
 where `somethingToComputeTheColorForPoint` can be any bit of Racket code you might want to write to compute the color for point.
 
-Let’s limit ourselves to black and white images for the moment. That means the procedure only needs to specify a brightness for the point, rather than a full color. The procedure can represent the brightness as a number between 0 (black) and 255 (the brightest value the monitor can produce). FOOTNOTE
+Let’s limit ourselves to black and white images for the moment. That means the procedure only needs to specify a brightness for the point, rather than a full color. The procedure can represent the brightness as a number between 0 (black) and 255 (the brightest value the monitor can produce).
 
 So a shader is a function that takes a position as an input and returns a number. The simplest example a shader is an image that’s black everywhere:
 
@@ -62,7 +62,7 @@ So a shader is a function that takes a position as an input and returns a number
 (λ (point) 0)
 ```
 
-That is, no matter what the position is, the brightness is always zero. We’ve included a procedure with this assignment called `render` that that rasterizes a shader for you and displays it. FOOTNOTE So if we type:
+That is, no matter what the position is, the brightness is always zero. We’ve included a procedure with this assignment called `render` that that rasterizes a shader for you and displays it. So if we type:
 
 ```racket
 (render (λ (point) 0))
@@ -84,9 +84,12 @@ So we can get what draw programs sometimes call a "gradient" when we use the X c
 
 Here we use the magnitude procedure to get the magnitude of the point (distance from the upper-left corner), and again, the brightness saturates once we get more than 255 pixels from (0,0), that corner.
 
-> Arithmetic with points
+> **Arithmetic with points**
+>
 > Points can be used in arithmetic operations. The `point-*` procedure multiplies both coordinates of the point by the number. So multiplying the point (1,2) by 2 gives you the point (2,4).  Multiplying points by numbers has the effect of stretching them away from the origin (the upper-left corner), but keeping their direction relative to the origin the same.
+>
 > The `point-+` procedure adds the coordinates of two points together, so that `(1, 2)+(5, 3)=(6, 5)`.
+> 
 > You can also subtract points using the `point--` procedure.
 
 Alternatively, we could get a kind of concentric ring structure, like wood grain, if we took the sine of the distance rather than the distance itself as the brightness:
@@ -134,9 +137,9 @@ For this part, we just want you to experiment with writing shaders and see what 
 
 Now that you’ve had a chance to experiment with writing shaders, we're going to write procedures that work with shaders. These are procedures that take shaders as inputs and produce new shaders as outputs.
 
-1. Write a procedure, `brighten`, that takes as inputs a shader and a multiplier (a number), and returns as output a new shader whose output at any given point is the simply the output of the original shader at that point times the multiplier.  So if we brighten a shader by 2, we get a new shader whose output is the original shader’s output times 2 (i.e. twice as bright).
+1. Write a procedure, `brighten`, that takes as inputs a shader and a multiplier (a number), and returns as output a new shader whose output at any given point is the simply the output of the original shader at that point times the multiplier. So if we brighten a shader by 2, we get a new shader whose output is the original shader’s output times 2 (i.e. twice as bright).
 
-This kind of thing can be hard to communicate in text.  So here’s a concrete example.  We’ve included the cloud shader above under the name clouds.  If you run (brighten clouds 2), you should get the the same clouds, only twice as bright.  If you run (brighten clouds 0.5), it should be half as bright:
+This kind of thing can be hard to communicate in text. So here’s a concrete example.  We’ve included the cloud shader above under the name clouds.  If you run `(brighten clouds 2)`, you should get the the same clouds, only twice as bright.  If you run `(brighten clouds 0.5)`, it should be half as bright:
 
 ![](/assets/adv_tutorial_0/screenshot_12.png)
 
