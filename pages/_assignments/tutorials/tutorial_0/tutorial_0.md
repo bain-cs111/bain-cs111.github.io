@@ -140,7 +140,7 @@ Reproduce the shape below (don't worry about exactly matching sizes or colors):
 <img alt="a-nested-diamond" src="/assets/tutorial_0/diamonds.svg" width="25%"/>
 
 Before jumping in, try to break the problem down into smaller sub problems:
-  1. Find a function in the [`2htdp/image` library]() that produces diamond shapes.
+  1. Find a function in the [`2htdp/image` library](https://docs.racket-lang.org/teachpack/2htdp2htdp.html) that produces diamond shapes.
   2. Create a really small diamond.
   3. Figure out how to make 3 slightly larger diamonds of different colors.
   4. Finally, take all four of the diamonds and feed them as inputs to a function that allows you to combine images.
