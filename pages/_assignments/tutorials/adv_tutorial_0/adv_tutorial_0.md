@@ -216,7 +216,7 @@ Morphing is used a lot in graphics. For example, zooming and shifting are just s
 ```
 But we can also do some more sophisticated operations. For example, the noise-vector procedure makes a random vector that can be added to a point, shifting it slightly around. If we use this to morph an image, we get a crinkling effect:
 
-```
+```racket
 (define crinkle
      (λ (shader)
        (morph shader
