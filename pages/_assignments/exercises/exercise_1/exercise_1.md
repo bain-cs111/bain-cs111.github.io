@@ -20,7 +20,7 @@ In order to start this assignment, please download the starter files:
     Exercise 1 Starter Files <i class="fas fa-download"></i>
 </a>
 
-This download is a ZIP file which _must be extracted_ before the files can be edited. On a Mac, you can simply double click on the ZIP folder and it will extract the files for you. On a Windows computer, you need to can use [these instructions](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5).
+This download is a ZIP file which _must be extracted_ before the files can be edited. On a Mac, you can simply double click on the ZIP folder and it will extract the files for you. On a Windows computer, you can use [these instructions from Microsoft](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5).
 
 > **Note**: We highly recommend moving the extracted folder to a CS 111 work folder somewhere on your machine (so you have all your 111 stuff in the same place) and renaming it to make sure you submit the file you mean to later when you go to submit.
 
