@@ -12,7 +12,8 @@ The exercises will describe a set of definitions (typically functions) you need 
 For example, if the homework specifies:
 
 ```racket
-;; Write a procedure add that takes two numbers and returns their sum. ;; add : number number -> number
+;; Write a procedure add that takes two numbers and returns their sum.
+;; add : number number -> number
 (define add
   (lambda (number1 number2) "fill me in"))
 ```
@@ -54,7 +55,7 @@ The auto-grader needs to ​run​ the file in order to grade it.
 * If the file has ​any​ syntax error (missing or extra parens, wrong λ syntax), the auto-grader won't be able to open it.
 * If there's ​any​ error showing up in Interaction Window when you click `Run` the auto-grader won't be able to run your file.
 
-In either situation, the auto-grader would not be able to assign partial credits.
+In either situation, the auto-grader would not be able to assign partial credits. [See this page for more about checking errors in DrRacket](https://canvas.northwestern.edu/courses/178849/modules/items/2427333).
 
 ## Follow question descriptions literally
 Your code should follow the Exercise literally. More specifically,
