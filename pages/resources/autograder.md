@@ -25,6 +25,29 @@ We might run your homework and test it with these `check-expect`s:
 
 The set of ​`check-expect`​s that I'm using will not be disclosed beforehand. This is because you need to be considering whether or not your program works the way you designed it to work!
 
+## When do I get the Autograder feedback?
+
+You'll get it after the final deadline for the assignment via Canvas. This usually means 48ish hours after the regular deadline.
+
+## Why can't I see the results of my code when I put them inside of `define`s
+
+Remember, `define` is a special form that asks Racket to associate a particular _name_ with a particular _value_. **Computers don't do anything you don't ask them to.** `define` does not say to output anything; it just says associate these two things.
+
+If you want to display whatever is stored in your variable you created using `define`, then you either need to ask that object to be displayed as part of your program:
+
+```racket
+(define a-cool-circle (circle 100 "outline" "blue"))
+a-cool-circle
+```
+
+or alternatively, once you've `RUN` your definitions file, you can ask Racket to lookup the value of that variable in the Interactions Window (or REPL):
+
+```Racket
+> a-cool-circle
+```
+
+> Note, we don't use parentheses around the name here because it is NOT a function. It is a piece of data. It doesn't need to be "called."
+
 ## Make sure your submission runs without syntax or runtime errors!
 
 The auto-grader needs to ​run​ the file in order to grade it.
