@@ -17,7 +17,7 @@ If you don't login to zoom or if you are logged in as a user other than through 
 We will have different zoom links for different kinds of activities. All zoom links corresponding to lectures, office hours, and labs will be made available via Canvas
 
 ## Recording (Audio / Video)
-We **will** be recording all sessions during regularly scheduled class time. We WILL NOT be recording office hours or lab sessions in order to protect students' privacy.
+We **will** be recording all Zoom sessions during if they are held during scheduled class time. We WILL NOT be recording office hours or lab sessions in order to protect students' privacy.
 
 ## Etiquette
 To ensure a smooth lecture experience for everyone, we’ll need to follow some simple guidelines.

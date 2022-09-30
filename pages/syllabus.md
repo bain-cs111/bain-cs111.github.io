@@ -278,6 +278,8 @@ If a student fails to comply with the [COVID-19 Expectations](https://www.northw
 
 This class or portions of this class will be recorded by the instructor for educational purposes. Your instructor will communicate how members of the class can access the recordings. Portions of the course that contain images, questions or commentary/discussion by students will be edited out of any recordings that are saved beyond the current term.
 
+If you would like to request a recording of a lecture session, you may do so [via this Google Form](https://forms.gle/BrqGHyUAxmCj6QNY8) (https://forms.gle/BrqGHyUAxmCj6QNY8)
+
 * * *
 
 # Prohibition of Recording of Class Sessions by Students
