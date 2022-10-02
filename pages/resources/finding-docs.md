@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Finding Documentation for Functions
-permalink: /resources/docs/
+permalink: /resources/finding-docs/
 ---
 
 ## Finding Documentation for Built-in Functions
