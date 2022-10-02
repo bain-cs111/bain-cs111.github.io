@@ -15,7 +15,6 @@ EXCLUDED = [
     'index.md',
     'drafts',
     '_drafts',
-    'solutions',
     'cpd.db',
     'build',
     '.pyc',
