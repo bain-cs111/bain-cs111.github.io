@@ -70,7 +70,7 @@ def main():
             zipfolder(dirname, dirname)
             if "lecture" not in dirname:
                 if "solutions" in dirname:
-                    os.rename(dirname + ".zip", dirname + "_solutions.zip")
+                    os.rename(dirname + ".zip", dirname + ".zip")
                 else:
                     os.rename(dirname + ".zip", dirname + "_template.zip")
     else:

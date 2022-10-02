@@ -127,11 +127,11 @@ In Racket, we denote RGB colors with the color function:
 (color <i>red-light  green-light  blue-light</i>)
 </pre>
 
-where each of `<i>red-light</i>`, etc. is a number between 0 and 255. So we can replace "blue" with ```racket (color 0 0 255)```as demonstrated by the following REPL session:
+where each of `red-light`, etc. is a number between 0 and 255. So we can replace `"blue"` with `(color 0 0 255)` as demonstrated by the following REPL session:
 
-<img width="60%" src="/assets/{{page.abbreviation}}/RGB-REPL-1.png" alt="REPL with RGB colors"/>
+<img width="60%" src="/assets/exercise_2/RGB-REPL-1.png" alt="REPL with RGB colors"/>
 
-Returning to the flower you wrote in the previous question, change the color "blue" in the ellipse definition to `(color 0 0 255)`. The test should still pass.
+Returning to the flower you wrote in the previous question, change the color `"blue"` in the ellipse definition to `(color 0 0 255)`. The test should still pass.
 
 Since we can represent colors numerically, we can also use simple math to _change_ colors. For example, increasing a color’s red-light value by 150 will make it 150 units more red:
 
@@ -166,7 +166,7 @@ Manually calculating RGB shade differences can be, well...annoying. Since the di
 (interpolate-colors <i>color-1 color-2 fraction</i>)
 </pre>
 
-where the fraction is a number between 0 and 1, which denotes how much to blend the two colors. Using a fraction of 0 just returns _color-1_, and a fraction of 1 just returns _color-2_.
+where the `fraction` is a number between 0 and 1, which denotes how much to blend the two colors. Using a `fraction` of 0 just returns _color-1_, and a `fraction` of 1 just returns _color-2_.
 
 Just as `iterated-overlay` abstracts away the tedium of calling `overlay` with ten basically identical circles, `interpolate-colors` abstracts away the math of computing the RGB difference between two colors.
 
@@ -174,9 +174,9 @@ Just as `iterated-overlay` abstracts away the tedium of calling `overlay` with t
 
 ### Question 5: A Fancy Flower
 
-Use `iterated-overlay` and `interpolate-colors` to generate a fancy flower. This flower should be similar to the previous one, except that each ellipse should have an alpha value of 100, meaning that the colors of the different ellipses will blend with the colors below them.  Remember that alpha is the fourth argument to the `colo`r function!
+Use `iterated-overlay` and `interpolate-colors` to generate a fancy flower. This flower should be similar to the previous one, except that each ellipse should have an alpha value of 100, meaning that the colors of the different ellipses will blend with the colors below them.  Remember that alpha is the fourth argument to the `color` function!
 
-You must use interpolate-colors in your implementation, starting with blue and ending with red. Remember that iteration starts at 0, so if you call an iterator n times, the final iteration will be n− 1. You may need to adjust your math to make sure the fifth iteration is completely red.
+You must use `interpolate-colors` in your implementation, starting with blue and ending with red. Remember that iteration starts at 0, so if you call an iterator $n$ times, the final iteration will be $n−1$. You may need to adjust your math to make sure the fifth iteration is completely red.
 
 Since debugging colors is difficult with reduced opacity, we have provided a completely opaque test image for you to use. Search for the line
 
