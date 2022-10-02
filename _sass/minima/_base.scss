@@ -33,9 +33,9 @@ section, div, aside {
 section, article {
     a, a:hover, a:visited, a:active {
         text-decoration: none;
-        color: #444;
+        color: #4E2A84;
         //border-bottom: dotted $grey 2px;
-        border-bottom: solid $lightpurple 1px;
+        border-bottom: solid #934B66 2px;
     }
     a:hover {
         // border-bottom: dotted #444 2px;
@@ -51,8 +51,9 @@ section, article {
 
 a, a:hover, a:visited, a:active {
     text-decoration: none;
-    color: #444;
-    border-bottom: solid transparent 2px;
+    color: #4E2A84;
+    //border-bottom: dotted $grey 2px;
+    border-bottom: solid #934B66 2px;
 }
 
 
