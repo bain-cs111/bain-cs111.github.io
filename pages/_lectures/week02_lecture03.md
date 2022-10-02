@@ -5,6 +5,7 @@ type: lecture
 description:
 draft: 0
 num: 4
+canvas_id: friday-lecture-4-aligning-language-sep-30
 due_date: 2022-09-30
 slides:
   - url: https://docs.google.com/presentation/d/1z8rbgJDu-dkMLKo5j9luHw5qcdmP4zacGsmaPR7OB8U/edit?usp=sharing

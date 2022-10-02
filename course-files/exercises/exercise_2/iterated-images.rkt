@@ -2,13 +2,8 @@
 (require 2htdp/image)
 
 ;;;
-;;; Definitions for image iterators used in EECS-111
-;;; Ian Horswill, 10/6/2015
-;;;
-;;; Please note that these definitions are a little fancier than those
-;;; given in class:
-;;;   - The version in class doesn't handle a count of 0 or 1
-;;;   - This version gives better error messages
+;;; Definitions for image iterators used in COMP_SCI-111
+;;; Original version by Ian Horswill, 10/6/2015
 ;;;
 
 (provide iterated-overlay iterated-underlay iterated-beside iterated-above

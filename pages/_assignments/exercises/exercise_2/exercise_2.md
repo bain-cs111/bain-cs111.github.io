@@ -9,7 +9,7 @@ draft: 1
 points: 100
 ---
 
-In this assignment, you will experiment with generating images using the iterated image procedures. Throughout the assignment, you will:
+In this assignment, you will experiment with generating images using the iterated image functions. Throughout the assignment, you will:
 
 * Practice writing functions with and without names (also known as named and anonymous functions)
 * Practice translating mathematical expressions into code
@@ -24,9 +24,13 @@ This assignment will give you practice with the process of abstracting programs.
 * minimize repetition
 * and write _reusable_ and _generalizable_ patterns.
 
-We’ve provided some starter code for you in the `exercise_1.rkt` file. For all questions in this assignment, the starter code has examples of the image you’re trying to produce.
+We’ve provided some starter code for you in the `exercise_2.rkt` file. For all questions in this assignment, the starter code has examples of the image you’re trying to produce.
 
-We’ve also provided a **library file** called `iterated-images.rkt`. This file holds definitions of several functions you’ll need to use during this assignment. We call it a library file, because using it is just like checking a reference book from a library. You don’t have to look at the code in this file, but you do need to make sure that both files (`exercise_1.rkt` and `iterated-images.rkt`) are in the same folder on your computer.
+We’ve also provided a **library file** called `iterated-images.rkt`. This file holds definitions of several functions you’ll need to use during this assignment. We call it a library file, because using it is just like checking a reference book from a library. You don’t have to look at the code in this file, but you do need to make sure that both files (`exercise_2.rkt` and `iterated-images.rkt`) are in the same folder on your computer.
+
+<a class="nu-button" href="/course-files/exercises/exercise_2_template.zip" target="_blank">
+    Exercise 2 Starter Files <i class="fas fa-download"></i>
+</a>
 
 > *Note:* Like the last assignment, we've tried hard to provide instructions for those who have a hard time seeing colors. Please let us know if any of the questions cause you issues.
 
@@ -34,7 +38,7 @@ We’ve also provided a **library file** called `iterated-images.rkt`. This file
 
 ## Getting Started
 
-Start by opening the `exercise_1.rkt` file. At the top of the definitions file you'll see two `require` statements. Each asks Dr Racket to **import** or load some external libraries (just like checking out a book from a real library):
+Start by opening the `exercise_2.rkt` file. At the top of the definitions file you'll see two `require` statements. Each asks Dr Racket to **import** or load some external libraries (just like checking out a book from a real library):
 
 ```racket
 (require 2htdp/image)
@@ -58,11 +62,11 @@ You can work directly in the Definitions Window. Whenever you want to test what 
 #### Option 2
 Alternatively, you can work in the the Read/Evaluate/Print Loop (from now on, we'll call it the **REPL**), aka the Interactions Window. The REPL is nice for fiddling with your code without having to continually re-run the file, and you can hit Ctrl+Up to repeat your previous command if you want to make adjustments. Keep doing this until you get the result you’re looking for. Once you’re satisfied with your results, paste your code into the Definitions Window in the appropriate place.
 
-If there’s an error in your code in the Definitions Window then nothing from the Definitions Window will work in the Interactions Window until you fix the error and hit the Run button again. For example all of the `iterated-` functions from our `iterated-images` library won’t be there! So it’s usually best to write one procedure at a time and test each one as your write it rather than writing all of it at once and then start trying to fix it.
+If there’s an error in your code in the Definitions Window then nothing from the Definitions Window will work in the Interactions Window until you fix the error and hit the Run button again. For example all of the `iterated-` functions from our `iterated-images` library won’t be there! So it’s usually best to write one function at a time and test each one as your write it rather than writing all of it at once and then start trying to fix it.
 
 > **Tip**: It's almost NEVER a good idea to tackle "all" of something at once when it comes to programming. Instead, make small subgoals for yourself and attack each subgoal first. For example, remember in Exercise 0 when we made a circle overlaid on another circle? Sure, you could tackle that all at once. But you could also create small subgoals like 1. create a small red circle; 2. create a large blue circle; 3. overlay red circle on top of blue circle. That way, if you run into an issue in any one particular sub goal, you know it's due to something in that specific section of your program.
 
-***
+* * *
 
 ## Part 1: Iterative Expressions
 
@@ -87,7 +91,7 @@ Now use iterated-overlay to generate an image identical to your result from Part
 Remember that iterators begin counting at 0, not 1, which means you may need to adjust your math slightly to avoid creating a circle with zero radius. If you’re getting something like the figure below, that’s probably what’s happening to you:
 
 <!-- viewport changed to viewBox="0 0 82 82"  -->
-![Possible Issue with Q1B](/assets/{{page.abbreviation}}/question-1b-issue.svg)
+![Possible Issue with Q1B](/assets/exercise_2/question-1b-issue.svg)
 *The tiny dot in the middle of this circle is a circle of radius 0. We don't want that*
 
 ### Question 2: A Row of Rectangles
@@ -102,9 +106,9 @@ Use `iterated-overlay` to generate a flower. You will need to use five ellipses 
 (ellipse 100 25 "solid" "blue")
 ```
 
-Hint: look up the help desk documentation for the `rotate` function. Remember that there are 360 degrees in a circle, and you’re dividing these by five ellipses.
+> Hint: look up the help desk documentation for the `rotate` function. Remember that there are 360 degrees in a circle, and you’re dividing these by five ellipses.
 
-***
+* * *
 
 ### Representing colors with RGB(A)
 
@@ -131,16 +135,16 @@ Returning to the flower you wrote in the previous question, change the color "bl
 
 Since we can represent colors numerically, we can also use simple math to _change_ colors. For example, increasing a color’s red-light value by 150 will make it 150 units more red:
 
-<img width="43%" src="/assets/{{page.abbreviation}}/RGB-REPL-2.png" alt="REPL with Changing RGB colors"/>
+<img width="43%" src="/assets/exercise_2/RGB-REPL-2.png" alt="REPL with Changing RGB colors"/>
 
 We can also control the **opacity** of a color by adding a fourth number, known as the **alpha value**. The alpha value is a number between 0 (completely transparent) and 255 (completely opaque). Once you add an alpha value to an RGB color, you’re using the **RGBA format** (the A stands for "alpha").
 
 
-<img width="45%" src="/assets/{{page.abbreviation}}/RGBA-REPL.png" alt="REPL with RGBA colors"/>
+<img width="45%" src="/assets/exercise_2/RGBA-REPL.png" alt="REPL with RGBA colors"/>
 
 Note that the Racket `color` function takes either three or four numbers. If you only supply three, Racket assumes you want a fully opaque color, so the alpha value will **default** to 255.
 
-***
+* * *
 
 ### Question 4: A Colorful flower
 
@@ -151,7 +155,7 @@ Use `iterated-overlay` to generate a colorful flower. This flower should be iden
 
 > **Hint**: You must use `iterated-overlay` for this question. You can start by copying your solution from Question 3, then modifying the part of the code responsible for the color of the ellipse on each iteration.
 
-***
+* * *
 
 ### The `interpolate-colors` function
 
@@ -166,7 +170,7 @@ where the fraction is a number between 0 and 1, which denotes how much to blend 
 
 Just as `iterated-overlay` abstracts away the tedium of calling `overlay` with ten basically identical circles, `interpolate-colors` abstracts away the math of computing the RGB difference between two colors.
 
-***
+* * *
 
 ### Question 5: A Fancy Flower
 
@@ -177,12 +181,12 @@ You must use interpolate-colors in your implementation, starting with blue and e
 Since debugging colors is difficult with reduced opacity, we have provided a completely opaque test image for you to use. Search for the line
 
 <pre>
-;; (define q5-colors <img src="/assets/{{page.abbreviation}}/q5-colors-opaque.png"/>)
+;; (define q5-colors <img src="/assets/exercise_2/q5-colors-opaque.png"/>)
 </pre>
 
 Start by writing your answer to use an alpha value of 255 and see if you can make it look like this image.  Once it does, then change it to use an alpha value of 100 and it should look like the real image.
 
-***
+* * *
 
 ## Part 2: Function Abstractions
 Now that you’re familiar with the abstractions provided by the `iterated` library, we can start abstracting even more. In this section, you will write reusable functions to generate images from some template, but with even more flexibility.
@@ -205,7 +209,9 @@ Here's what that looks like in practice:
 Remember, any line that begins with a semi-colon is a **comment** which means it's just a note to the programmer that the computer ignores.
 
 In this assignment, we’ve provided you with signatures and purpose statements for the first few functions you need to define. _Whenever signatures or purpose statements are not provided, you are required to write your own._
-***
+
+* * *
+
 ### Functions vs. Expressions
 In Part 1, your answers (e.g. `question-1` and so on) were **expressions** formed by calling other functions.
 
@@ -296,7 +302,8 @@ h(x)=g(x)
 
 One way to summarize the difference is that expressions can be _simplified_ to a concrete value of some kind, whereas functions have missing information (the arguments) which need to be filled in before we can simplify. When a function is called with that information, we can plug in the missing information and simplify.
 
-***
+* * *
+
 ### Question 6: Paint Chips
 
 Write a function called `swatch` that takes three arguments:
@@ -320,6 +327,8 @@ Here's a starter (mmm...now I want a piece of sourdough bread) for your function
 ```
 
 Calling `(swatch (color 0 0 0) (color 255 255 255) 2)` should produce a row consisting of two squares, one completely black and one completely white. If you have difficulty solving this problem, look back at all the functions you have used before. You can use as many of them as you want to solve this problem.
+
+* * *
 
 ### Question 7: Swatch Grids
 
@@ -349,6 +358,8 @@ Here's another starter for you:
 
 > **Hint**: experiment with the function `iterated-above`. Its signature is identical to `iterated-beside`.
 
+* * *
+
 ### Question 8: Bullseye Revisited
 
 Recall that in Question 1, you wrote two equivalent expressions to generate a bullseye consisting of 5 rings with an outer radius of 50. Wouldn’t it be great if we could generalize this template to create bullseyes with any radius size and number of rings? Of course it would be! Rhetorical questions are so great. Well, the great news is that’s exactly what you’re going to do next!
@@ -362,8 +373,7 @@ Write a function called `bullseye/simple` which takes three arguments:
 `bullseye/simple` should return an image of a bullseye with the specified number of rings. The outermost circle should have the specified radius. The lines of the bullseye should be the given color.
 
 In contrast to previous functions, you must:
-1. Write your own signature, purpose statement, and definition for `bullseye/simple` (see Questions
-6 & 7 in the starter code for signature and purpose examples), and
+1. Write your own signature, purpose statement, and definition for `bullseye/simple` (see Questions 6 & 7 in the starter code for signature and purpose examples), and
 2. Convert the two images provided in the `.rkt` file into test cases; that is make your own calls to `check-expect` that compare the value for a call for `bullseye/simple` to the image provided.
 
 We’ve provided one complete test case to start you off. Specifically, calling
@@ -371,6 +381,8 @@ We’ve provided one complete test case to start you off. Specifically, calling
 (bullseye/simple 5 50 (color 0 0 0))
 ```
 should produce a bullseye identical to your answer for both parts of Question 1. Compare your code for Questions 1(a), 1(b), and 8, and notice the increasing generalization.
+
+* * *
 
 ### Question 9: Colorful Bullseye
 Write a function called `bullseye/color` which takes four arguments:
@@ -382,6 +394,13 @@ Write a function called `bullseye/color` which takes four arguments:
 `bullseye/color` should return an image of a bullseye with the specified number of rings. The outermost circle should have the specified radius. The innermost ring should have a color given by the third argument, and the outermost ring should have a color given by the fourth argument. The intermediate rings should interpolate evenly between the two colors. While you can’t reuse the `bullseye/simple` function here, you should use its implementation for inspiration.
 
 Again, you must write your own function signature, purpose (see Questions 6 & 7 in the starter code for signature and purpose examples) and definition. You must also convert the two provided images into test cases.
-***
+
+* * *
+
 ## Turning It In
 Before turning your assignment in, **run the file one last time** to make sure that it runs properly and doesn’t generate any exceptions, and all the tests pass. Assuming they do, submit on Canvas. 
+
+* * *
+
+## Requesting an extension
+If you need to request an extension on this assignment use the <a href="https://forms.gle/fWx9jgQTNp56bAgR6">Extension Request form</a>. Please see this Syllabus for requirements. Your extension is automatically accepted if you meet the conditions. You will see your due date on Canvas update 24 hours prior to the original deadline.
