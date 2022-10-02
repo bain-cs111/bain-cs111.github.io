@@ -6,7 +6,7 @@ permalink: /resources/finding-docs/
 
 ## Finding Documentation for Built-in Functions
 There are LOTS of ways to get more information about what sorts of inputs a function requires and what sort of output it creates. When using the base _Intermediate Student Language_, the easiest ways of accessing this sort of info is one of the following:
-1. Manually going to the whole documentation for all of the ISL [which is hosted here](https://docs.racket-lang.org/htdp-langs/intermediate-lam.html)
+1. Manually going to the whole documentation for all of the ISL [for instance through Google](https://docs.racket-lang.org/htdp-langs/intermediate-lam.html) OR you can open the local version (that doesn't require internet access) by going to the "Help" menu at the very top of the screen on a Mac or at the top of the DrRacket window on Windows and then selecting `Racket Documentation`.
 2. Type a function name in DrRacket and then right click on it and select "Search in Help Desk for..." and then when your browser pops up click the function name
 3. Or you can usually just google: `racket intermediate student language string-append function`. This usually just brings you to the first page...and then you need to search again.
 
