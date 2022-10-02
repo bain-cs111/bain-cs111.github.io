@@ -6,7 +6,7 @@ abbreviation: Advanced Tutorial 1
 draft: 1
 points: 100
 num: 1
-canvas_id:
+canvas_id: 1136335
 description:
 due_date: 2022-10-05
 ---
@@ -14,9 +14,11 @@ due_date: 2022-10-05
 
 > Note: If you're completing the advanced tutorial remotely and plan to submit your RKT file, **please make sure your file name has in it the string `adv`**, otherwise we will assume you are submitting the classic version of the tutorial.
 
+
 <a class="nu-button" href="https://bain-cs111.github.io/course-files/tutorials/adv_tutorial_1_template.zip" target="_blank">
     Advance Tutorial 1 Starter Files <i class="fas fa-download"></i>
 </a>
+
 
 In this tutorial, we’ll experiment with using iterators (functions that take another function as an argument and run it repeatedly), and then write some of our own iterators. Start by opening `adv_tutorial_1.rkt`. It will load up the iterated-images library that you need to for the tutorial and the assignment.
 

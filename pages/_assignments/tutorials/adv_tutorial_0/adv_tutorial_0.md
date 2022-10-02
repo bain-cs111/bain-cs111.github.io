@@ -6,7 +6,7 @@ abbreviation: Advanced Tutorial 0
 draft: 0
 points: 100
 num: 1
-canvas_id:
+canvas_id: 1124990
 description:
 due_date: 2022-09-28
 ---
@@ -15,9 +15,11 @@ Thanks to Prof. Ian Horswill for the initial version of this assignment.
 
 > Note: **BECAUSE THIS IS THE FIRST TUTORIAL AND ATTENDANCE IS REQUIRED YOU WILL NOT ACTUALLY SUBMIT ANY FILE TO CANVAS FOR THIS ASSIGNMENT**. The course staff will ask you to verify your name and NetID before you leave class and you will receive credit based on that.
 
+
 <a class="nu-button" href="https://bain-cs111.github.io/course-files/tutorials/adv_tutorial_0_template.zip" target="_blank">
     Advance Tutorial 0 Starter Files <i class="fas fa-download"></i>
 </a>
+
 
 ## Background
 
@@ -89,7 +91,7 @@ Here we use the magnitude procedure to get the magnitude of the point (distance 
 > Points can be used in arithmetic operations. The `point-*` procedure multiplies both coordinates of the point by the number. So multiplying the point (1,2) by 2 gives you the point (2,4).  Multiplying points by numbers has the effect of stretching them away from the origin (the upper-left corner), but keeping their direction relative to the origin the same.
 >
 > The `point-+` procedure adds the coordinates of two points together, so that `(1, 2)+(5, 3)=(6, 5)`.
-> 
+>
 > You can also subtract points using the `point--` procedure.
 
 Alternatively, we could get a kind of concentric ring structure, like wood grain, if we took the sine of the distance rather than the distance itself as the brightness:
