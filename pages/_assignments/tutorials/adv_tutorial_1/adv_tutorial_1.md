@@ -3,7 +3,7 @@ layout: assignment-two-column
 title: Procedural shading
 type: tutorial
 abbreviation: Advanced Tutorial 1
-draft: 1
+draft: 0
 points: 100
 num: 1
 canvas_id: 1136335
