@@ -86,7 +86,7 @@ Use your `my-row` function as well as the `iterated-above` function to generate 
 
 > Note: `iterated-above` is literally a version of the [built-in `above` function](https://docs.racket-lang.org/teachpack/2htdpimage.html#%28def._%28%28lib._2htdp%2Fimage..rkt%29._above%29%29) that can be iterated. If you think of the `overlay` function, it does the following in English: "overlay shape 1 on top of shape 2 on on top of shape 3 on top of shape 4, etc..." The same is true of `above`: "place shape 1 above shape 2, which is above shape 3, which is above shape 4, etc..." Since you're creating identical rows this isn't so important at the moment, but it will be important later.
 
-Similar to your `my-row` function since the size of the shapes and rows aren’t changing, the `my-grid` function shouldn’t use the `count` variable to change anything about the shape or the row length. This function will take in an image and a number ($n$) and output a grid of images of size $n * n$.
+Similar to your `my-row` function since the size of the shapes and rows aren’t changing, the `my-grid` function shouldn’t use the `count` variable to change anything about the shape or the row length. This function will take in an image and a number (`n`) and output a grid of images of size `n * n`.
 
 > Note: this might seem easy on its face...but it's very easy to get bogged down in parentheses. If you get stuck, try using your code from `my-row` as a sort of "iterator template." In `my-row` you were just drawing a simple shape using whatever `image` was inputted. You're doing the same thing here, except instead of just drawing the inputted `image`, you're drawing a `my-row` of `image`s!
 
@@ -96,7 +96,7 @@ By using the `my-row` function inside `my-grid`, you're practicing the key conce
 
 ## Using the Iterator's Built-in Counter
 
-Remember that all iterators’ have a built-in counter variable that start at $0$ and end at $n-1$. That is, they will run `count` times, but at their first iteration, their counter will be $0$, then $1$, then $2$, and so on. They will then stop once the $n-1$ iteration has finished its business.
+Remember that all iterators’ have a built-in counter variable that start at 0 and end at n-1. That is, they will run `count` times, but at their first iteration, their counter will be 0, then 1, then 2, and so on. They will then stop once the `n - 1` iteration has finished its business.
 
 For your next image, you are going to try and recreate a bullseye made out of red-outlined circles with radii increasing by 25 each time. This function, called `my-bullseye`, will take one input, the number of circles to draw, and will involve `iterated-overlay`. The output should look something like this.
 
@@ -118,7 +118,7 @@ You are going to want to use a structure something similar to your `my-grid` fun
 
 > **Note**: Remember that `iterated-above` places "shape 1 on above shape 2, which is above shape 3, which is above shape 4, etc..." What this means is that if you think about building your pyramid from bottom-to-top...you might actually get a flipped pyramid. If this happens to you, try to think about building it from top-to-bottom.
 
-This function should take as inputs an image and a number ($n$) and then output an image of a pyramid with height $n$ and base 4n$ made out of the input image. This will allow you to build a pyramid with any image you want and any size with literally just a few lines of a program. _Abstraction is SO cool._
+This function should take as inputs an image and a number (`n`) and then output an image of a pyramid with height `n` and base `n` made out of the input image. This will allow you to build a pyramid with any image you want and any size with literally just a few lines of a program. _Abstraction is SO cool._
 
 * * *
 
