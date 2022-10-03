@@ -2,7 +2,7 @@
 layout: module
 title: Iteration
 type: lecture
-draft: 1
+draft: 0
 num: 5
 description:
 due_date: 2022-10-03
