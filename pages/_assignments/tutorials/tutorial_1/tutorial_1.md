@@ -14,7 +14,7 @@ due_date: 2022-10-05
 In this tutorial, you will be experimenting with creating images using the `iterated-images` library. To set up this tutorial, download the `tutorial_1.zip` and make sure to extract everything (if you're on a Windows computer, make sure to follow the same instructions as you found on Exercise 1).
 
 
-<a class="nu-button" href="/course-files/exercises/tutorial_1_template.zip" target="_blank"> Tutorial 1 Starter Files <i class="fas fa-download"></i></a>
+<a class="nu-button" href="/course-files/tutorials/tutorial_1_template.zip" target="_blank"> Tutorial 1 Starter Files <i class="fas fa-download"></i></a>
 
 
 Ensure that `iterated-images.rkt` is in the same `tutorial_1` folder as your `tutorial_1.rkt` file. Throughout, you will practice defining functions that depend on the functions from this library in order to create more complicated images than in Tutorial 0.
