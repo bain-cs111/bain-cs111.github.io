@@ -6,19 +6,12 @@ num: 7
 draft: 1
 due_date: 2022-10-07
 description:
+canvas_id: friday-lecture-7-conditional-expressions-oct-7
 slides:
-  - url: https://docs.google.com/presentation/d/17XWzcc8mkgD6FTk7_EgmtAMtQeE-OlffqN7HHaEh3rc/edit?usp=sharing
-    title: "Writing Reporters"
-videos:
-   - title: "Live Lecture"
-     url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c53bb4b7-779a-489a-966d-ae670037b1d2
-     duration: "50:00"
-     live: 1
-
-exercise_url: "lecture08.zip"
-
+  - url: https://docs.google.com/presentation/d/1ozszCqQpfhWVRt32yhzCUidcBFbYT-VUUqcxU29Vabc/edit?usp=sharing
+    title: "Conditional Expressions"
 ---
 
-We'll continue our earlier work on defining functions! However, we'll add in another feature to make our functions even more powerful: reporters! This means not only can our functions do something cool, but they can REPORT BACK to us some value so that we can use it later in our programs.
+Today we'll add yet another tool to our ever-expanding toolbox: the **conditional expression**.
 
-Today, we'll also talk about Quiz 1 and what to expect on that front. For more details, see the page for [Quiz 1](week04-lecture03).
+These expressions allow to ask "questions" in our programs and then do certain things if the answer is yes...or a totally different thing if the answer is no.
