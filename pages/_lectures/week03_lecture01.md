@@ -5,6 +5,7 @@ type: lecture
 draft: 0
 num: 5
 description:
+canvas_id: monday-lecture-5-iterators-oct-3
 due_date: 2022-10-03
 slides:
   - url: https://docs.google.com/presentation/d/11OhnO2DrnBaFwO-r1aFlIXGItKn1m_4NOX9BMaicpPw/edit?usp=sharing

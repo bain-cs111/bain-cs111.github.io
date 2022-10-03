@@ -4,6 +4,7 @@ title: Lambda Abstraction
 type: lecture
 draft: 0
 num: 6
+canvas_id: wednesday-lecture-6-pre-recorded-lambda-abstraction-oct-5
 due_date: 2022-10-05
 exercise_url: "lecture06.zip"
 slides:
