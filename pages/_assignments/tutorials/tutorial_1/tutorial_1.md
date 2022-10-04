@@ -19,7 +19,7 @@ In this tutorial, you will be experimenting with creating images using the `iter
 
 Ensure that `iterated-images.rkt` is in the same `tutorial_1` folder as your `tutorial_1.rkt` file. Throughout, you will practice defining functions that depend on the functions from this library in order to create more complicated images than in Tutorial 0.
 
-Remember a great resource for general Racket questions is the [official Racket documentation] (https://docs.racket-lang.org/). This documentation includes definitions and explanations for features in Racket and how to use them. The `iterated-images.rkt` library also has its own documentation we'll take a look at later.
+Remember a great resource for general Racket questions is the [official Racket documentation](https://docs.racket-lang.org/). This documentation includes definitions and explanations for features in Racket and how to use them. The `iterated-images.rkt` library also has its own documentation we'll take a look at later.
 
 * * *
 
