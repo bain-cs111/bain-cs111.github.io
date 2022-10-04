@@ -127,4 +127,8 @@ If you're in class make sure to check-in with your PM. You don't need to submit 
 
 If you're submitting remotely, you MUST submit your completed tutorial to Canvas and it will be graded for completion. Make sure your functions are named `my-row`, `my-grid`, `my-bullseye`, and `my-pyramid` and that all of the built-in `check-expect`s pass.
 
+Before turning your assignment in, **run the file one last time** to make sure that it runs properly and doesn’t generate any exceptions, and all the tests pass.
+
+Then, make sure to read the [Autograder Guide](https://canvas.northwestern.edu/courses/178849/pages/whats-an-autograder) one last time. Not only is it a useful check of your work, but it will also tell you which file you should submit.
+
 > Note: For groups that have a significant amount of programming experience, your PM may suggest trying out the [Advanced Tutorial 1](https://bain-cs111.github.io/assignments/adv-tutorial-1)
