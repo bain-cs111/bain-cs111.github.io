@@ -1,6 +1,6 @@
 ---
 layout: assignment-two-column
-title: Procedural shading
+title: Custom Iterators
 type: tutorial
 abbreviation: Advanced Tutorial 1
 draft: 0
