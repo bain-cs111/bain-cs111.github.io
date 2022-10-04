@@ -398,7 +398,11 @@ Again, you must write your own function signature, purpose (see Questions 6 & 7 
 * * *
 
 ## Turning It In
-Before turning your assignment in, **run the file one last time** to make sure that it runs properly and doesn’t generate any exceptions, and all the tests pass. Assuming they do, submit on Canvas. 
+Before turning your assignment in, **run the file one last time** to make sure that it runs properly and doesn’t generate any exceptions, and all the tests pass.
+
+Then, make sure to read the [Autograder Guide](https://canvas.northwestern.edu/courses/178849/pages/whats-an-autograder) one last time. Not only is it a useful check of your work, but it will also tell you which file you should submit.
+
+Assuming they do, submit on Canvas. 
 
 * * *
 
