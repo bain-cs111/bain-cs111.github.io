@@ -154,7 +154,7 @@ If you score below an 80, you may petition to resubmit **exactly one Exercise pe
 
 ## Mini-quizzes
 
-These will be short Canvas quizzes for each module of the course that serve as a check of your attendance and/or asynchronous participation in the course.
+These will be short quizzes for each module of the course that serve as a check of your attendance and/or asynchronous participation in the course. For those that complete the Mini-Quiz in class, you will receive full credit for your attendance and full participation. If you choose to complete the Mini-Quiz remotely, you will need to complete the Canvas version of the quiz within 48 hours of your scheduled class time.
 
 ## Quizzes
 
