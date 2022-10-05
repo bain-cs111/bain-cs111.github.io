@@ -139,7 +139,7 @@ We will not accept late tutorial submissions.
 
 The Exercises serve as larger programming assignments that build upon the content we discuss in lecture and work on in Tutorials. The 10 weekly Exercises will be spread across our 11 weeks of class and will be submitted on Canvas and generally due on Mondays before the start of class.
 
-We do not accept resubmissions of assignments. This means it is up to you to verify that:
+It is up to you to verify that:
 1. You have submitted the correct file.
 2. That your program runs without intervention (except those assignments that ask for human input).
 3. That your program is NOT dependent on running on _your specific_ computer.
@@ -147,6 +147,10 @@ We do not accept resubmissions of assignments. This means it is up to you to ver
 These exercises will be graded via an autograder (computerized grading machine) as well as checked for plagiarism against other students' (including from past quarters) solutions, online solutions, and a large database of course content.
 
 You may submit the assignments up to 48 hours late with a 10% penalty per 24-hours.
+
+### Petition to Resubmit (edit 10/5/22)
+
+If you score below an 80, you may petition to resubmit **exactly one Exercise per quarter**. You need to first fill out the [Petition to Resubmit Google Form](https://forms.gle/E4v4jjpvYZstiWQz7) and then resubmit the assignment via Canvas within 24 hours. Any resubmissions through this process will be treated as if they were submitted 48-hours late. Please also remember that our Emergency Grade Erasure policy also lessens the impact of single assignments on your grade.
 
 ## Mini-quizzes
 
