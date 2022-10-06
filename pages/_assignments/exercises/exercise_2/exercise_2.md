@@ -176,7 +176,7 @@ Just as `iterated-overlay` abstracts away the tedium of calling `overlay` with t
 
 Use `iterated-overlay` and `interpolate-colors` to generate a fancy flower. This flower should be similar to the previous one, except that each ellipse should have an alpha value of 100, meaning that the colors of the different ellipses will blend with the colors below them.  Remember that alpha is the fourth argument to the `color` function!
 
-You must use `interpolate-colors` in your implementation, starting with blue and ending with red. Remember that iteration starts at 0, so if you call an iterator $n$ times, the final iteration will be $n−1$. You may need to adjust your math to make sure the fifth iteration is completely red.
+You must use `interpolate-colors` in your implementation, starting with blue and ending with red. Remember that iteration starts at 0, so if you call an iterator `n` times, the final iteration will be `n-1`. You may need to adjust your math to make sure the fifth iteration is completely red.
 
 Since debugging colors is difficult with reduced opacity, we have provided a completely opaque test image for you to use. Search for the line
 
@@ -342,7 +342,7 @@ Using the `swatch` function, you wrote in Question 6, write a function called `s
 `swatch-grid` should return an `image`, a grid with `num-rows` rows and `num-cols` columns. Each grid cell should be a 50x50 square.
 
 * Each row should interpolate evenly between the leftmost and rightmost color, like before.
-* Each column should interpolate between the topmost color, and black: `(color 0 0 0)`. However, the last column should not be completely black – this is different from what we’ve previously done. Specifically, if there are $m$ rows, then the last row should stop $1/m$ short of being completely black.
+* Each column should interpolate between the topmost color, and black: `(color 0 0 0)`. However, the last column should not be completely black – this is different from what we’ve previously done. Specifically, if there are `m` rows, then the last row should stop `1/m` short of being completely black.
 
 You must use the `swatch` function you wrote in Question 6.
 
