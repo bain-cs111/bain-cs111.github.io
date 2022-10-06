@@ -80,7 +80,7 @@ Note that just because it works for those blue circles doesn't mean it works for
 
 ## Abstraction and Iterating on Iterators
 
-Now that you've got a working `my-row` function, let's use it to make an even more complicated image: a complete grid of whatever image someone inputs to our function. For example, say I wanted to make a grid (5 wide and 5 high) of outlined red circles:
+Now that you've got a working `my-row` function, let's use it to make an even more complicated image: a complete grid of whatever image someone inputs to our function. For example, say I wanted to make a grid (5 wide and 5 high) of outlined green circles:
 
 <img src="/assets/tutorial_1/my-grid.svg" alt="My Grid Example" width="33%"/>
 
@@ -91,6 +91,8 @@ Use your `my-row` function as well as the `iterated-above` function to generate 
 Similar to your `my-row` function since the size of the shapes and rows aren’t changing, the `my-grid` function shouldn’t use the `count` variable to change anything about the shape or the row length. This function will take in an image and a number (`n`) and output a grid of images of size `n * n`.
 
 > Note: this might seem easy on its face...but it's very easy to get bogged down in parentheses. If you get stuck, try using your code from `my-row` as a sort of "iterator template." In `my-row` you were just drawing a simple shape using whatever `image` was inputted. You're doing the same thing here, except instead of just drawing the inputted `image`, you're drawing a `my-row` of `image`s!
+
+**Just because your `my-grid` function works on the green circles DOES NOT mean it is correctly written (even it passes the `check-expect`).** Try making a grid of blue circles using your `my-grid` function before moving on.
 
 By using the `my-row` function inside `my-grid`, you're practicing the key concept of **abstraction**. Once you've made a function to create a row of images, you no longer need to remember all those details–you just call the function! Once you've created `my-grid`, you don't need to worry about ever writing it again–you just call the function! In a way, you're creating larger and larger Lego bricks you can later combine into even more complex programs.
 
