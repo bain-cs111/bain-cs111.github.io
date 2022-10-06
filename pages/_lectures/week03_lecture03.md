@@ -3,7 +3,7 @@ layout: module
 title: Conditional Expressions
 type: lecture
 num: 7
-draft: 0
+draft: 1
 due_date: 2022-10-07
 description:
 canvas_id: friday-lecture-7-conditional-expressions-oct-7
