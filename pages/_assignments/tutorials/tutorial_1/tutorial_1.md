@@ -74,6 +74,8 @@ You are going to try and create a row of circles of a fixed size using `iterated
 
 When you think you've got it, make sure to uncomment the `check-expect` for the `my-row` function (i.e. delete the `#|` and `|#` that currently surround the `check-expect` function call) and run your program to see if it matches the expected output.
 
+Note that just because it works for those blue circles doesn't mean it works for all other cases. Make sure to try your `my-row` function with some different inputs that aren't blue circles to make sure it work the way you expect it to.
+
 * * *
 
 ## Abstraction and Iterating on Iterators
