@@ -3,9 +3,10 @@ layout: module
 title: Conditional Expressions
 type: lecture
 num: 7
-draft: 1
+draft: 0
 due_date: 2022-10-07
 description:
+exercise_url: "lecture07.zip"
 canvas_id: friday-lecture-7-conditional-expressions-oct-7
 slides:
   - url: https://docs.google.com/presentation/d/1ozszCqQpfhWVRt32yhzCUidcBFbYT-VUUqcxU29Vabc/edit?usp=sharing
