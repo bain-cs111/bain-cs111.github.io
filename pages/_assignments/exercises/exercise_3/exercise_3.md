@@ -8,18 +8,22 @@ ordering: 4
 draft: 1
 points: 100
 ---
-For this assignment, you’ll make a simple collection of information about music albums (we’re calling this a library). This library is just a list of albums - `(listof album)` - so anytime you see library think `(listof album)`. Feel free to use your own albums, other people’s albums, or just make them up. Finally, you'll write expressions and procedures that query it for different kinds of information.
+For this assignment, you’ll make a simple collection of information about music albums (we’re calling this a library). This library is just a list of albums - `(listof album)` - so anytime you see library think `(listof album)`. Feel free to use your own albums, other people’s albums, or just make them up. Finally, you'll write expressions and functions that query it for different kinds of information.
 
 # Important
-Throughout this assignment, as with any assignment, you are encouraged when possible to reuse procedures from one problem to solve subsequent problems. However, **don’t just copy the code**. Call the procedure by name! That simultaneously saves you work and makes the code easier to read. Plus, if you find a bug later, you only have to fix it in one place: the original definition.
+Throughout this assignment, as with any assignment, you are encouraged when possible to reuse functions from one problem to solve subsequent problems. However, **don’t just copy the code**. Call the function by name! That simultaneously saves you work and makes the code easier to read. Plus, if you find a bug later, you only have to fix it in one place: the original definition.
 
 In general, these problems only require simple answers. Most have two or three line answers, although the exact number of lines depends on how you put line breaks into your code. That’s not to say that if you have an answer that’s longer that it’s wrong, but it may mean that you’re making life unnecessarily difficult for yourself. One good way to make life easier on yourself is to reuse code you’ve already written.
 
 Write your functions to work with any input. Don’t assume our test data will look like your test data. Follow these instructions exactly. If we say to remove duplicates, make sure you remove duplicates. Make sure your type signatures exactly match the ones in the assignment as you go.
 
+<a class="nu-button" href="/course-files/exercises/exercise_3_template.zip" target="_blank">
+    Exercise 3 Starter Files <i class="fas fa-download"></i>
+</a>
+
 # Making Your Library
 
-You’ll be adding your code to the `exercise_2.rkt` we've provided for you. Each album object has three fields: the `title`, the `artist` name, and the `genre` (e.g. "pop", "rock", "acid-house", "country", whatever).  We’ve provided the album data definition for you at the top of the file:
+You’ll be adding your code to the `exercise_3.rkt` we've provided for you. Each album object has three fields: the `title`, the `artist` name, and the `genre` (e.g. "pop", "rock", "acid-house", "country", whatever).  We’ve provided the album data definition for you at the top of the file:
 
 ```racket
 (define-struct album (title artist genre))
@@ -41,7 +45,7 @@ Don’t forget to remove the example album ``(make-album "title" "artist" "genre
 
 Again, they may not be all your albums or even actual albums you or exist! But you need to make sure there are enough albums and that they are varied in the right ways to test your code. For example, one of the functions you will write is intended to find all the genres in the library. So you probably want to have more than one genre. Similarly, you will write a function to find artists who work in multiple genres which means you need to make sure there’s at least one artist in the library who does work in multiple genres and at least one who does not. That way you can check that the one who does appears in the output but the one who only works in one genre doesn’t appear in the output. Feel free to add albums to the library _as you go through the assignment_ if you realize you need more data to properly test your code.
 
-Note that we will be testing your code against our own library, not yours. So in your tests you should test against a couple of different libraries.  We’ve also included a define in the file for you to fill in an additional library.
+Note that we will be testing your code against our own library, not yours. So in your tests you should test against a couple of different libraries. We’ve also included a define in the file for you to fill in an additional library.
 
 * * *
 
@@ -173,7 +177,11 @@ Write a function, `artist-album-counts`, to count the number of albums by each a
 ```racket
 ; artist-album-counts:
 ;    (listof album) -> (listof (listof string number))
+```
+
 For example, assuming your library had two Kanye West albums, 1 Hayley Kiyoko album, and 1 Lido album (and nothing else), you’d get:
+
+```racket
 (check-expect (artist-album-counts some-library)
               (list (list "Kanye West" 2)
                     (list "Hayley Kiyoko" 1)
@@ -190,7 +198,7 @@ For example, assuming your library had two Kanye West albums, 1 Hayley Kiyoko al
 ; artist-album-count-list:
 ;    string, (listof album) -> (listof string number)
 ```
-* Now use that function, along with the `all-xartists` function, to write `artist-album-counts`.
+* Now use that function, along with the `all-artists` function, to write `artist-album-counts`.
 
 * * *
 
@@ -212,5 +220,14 @@ Now do the same thing, but count the number of albums in each genre, rather than
 
 * * *
 
-# Turning It In
-Before turning your assignment in, **run the file one last time** to make sure that it runs properly and doesn’t generate any exceptions, and all the tests pass. Assuming they do, submit on Canvas. 
+## Turning It In
+Before turning your assignment in, **run the file one last time** to make sure that it runs properly and doesn’t generate any exceptions, and all the tests pass. Make sure you've also spent some time writing your OWN `check-expect` calls to test your code.
+
+Then, make sure to read the [Autograder Guide](https://canvas.northwestern.edu/courses/178849/pages/whats-an-autograder) one last time. Not only is it a useful check of your work, but it will also tell you which file you should submit.
+
+Assuming they do, submit on Canvas. 
+
+* * *
+
+## Requesting an extension
+If you need to request an extension on this assignment use the <a href="https://forms.gle/fWx9jgQTNp56bAgR6">Extension Request form</a>. Please see this Syllabus for requirements. Your extension is automatically accepted if you meet the conditions. You will see your due date on Canvas update 24 hours prior to the original deadline.

@@ -21,37 +21,51 @@ Let’s start by experimenting with `list`s and the built-in iterators `map`, `f
 
 **Activity 1**. Define a list of numbers and call it `num-list`. The numbers in the list are 2, 3, 4, 5, and 6.
 
-**Activity 2**. Now use `map` to write an expression that multiplies each number in `num-list` by 5.
+BEFORE YOU DO SO, go ahead and write a `check-expect` (that's right, we're going to write a test BEFORE we write a program). In this case, we don't care WHAT is in this list...just that it's a list, so we'll use the `list?` predicate to make sure the thing we make actually is a list. We'll give you this one, but from now on, you're going to have to write your own:
+
+```Racket
+(check-expect (list? num-list)
+              true)
+```
+
+**Activity 2**. Now use `map` to write an expression that multiplies each number in `num-list` by 5. Store the result in a variable called `activity-2`. **Write a `check-expect` for your whatever values you put in `num-list`. For example, if you had used `(list 0 1 2 3)`, then you'd be expecting to get back `(list 0 5 10 15)`.
+
 * First step: write the code to work with one element of the list. So start by writing a function that takes a number and multiplies it by 5. You don’t have to worry about giving it a name, you can just write it as a lambda
 * Second step: run the code over all the elements of the list. Now map that function over the list
 
-**Activity 3**. Now use `filter` to write an expression that finds all the numbers that are **either** equal to 2 or greater than 5.
+**Activity 3**. Now use `filter` to write an expression that finds all the numbers that are **either** equal to 2 or greater than 5. Store the result in a variable called `activity-3`. Don't forget to write a test!
+
 * First step: write the code to test an element of the list. Start by writing a function that take a number and returns `true` if the number is 2 or greater than 5. Again, you don’t need to give it a name. You can just write a `lambda`.
 * Second step: run the code over the list. Now write a `filter` expression to use this function to find the desired elements of the list.
 
-**Activity 4**. Next use `foldl` to write an expression to compute the sum of the numbers in `num-list`.
+**Activity 4**. Next use `foldl` to write an expression to compute the sum of the numbers in `num-list`. Store it in a variable called `activity-4`.
+
 * First step: write the code to combine two elements of the list. In this case, that’s super easy: + will do it.
 * Second step: run it over all the elements of the list. Write a `foldl` expression to run + on all the elements of the list.
 > Hint: the sum of the empty list (a list with no elements) is just zero.
 
-**Activity 5**. And now we are going to use `andmap` to determine whether **all** the numbers in `num-list` are less than three.
+**Activity 5**. And now we are going to use `andmap` to determine whether **all** the numbers in `num-list` are less than three. Store it in a variable called `activity-5`. Again, make sure to test your expression.
+
 * First step: write the code to test one element. Write a function that tests if a number is less than three
 * Second step: run it over all the elements of the list. Use `andmap` and the function you just wrote to test if ALL a list's elements less than three.
 
-**Activity 6**. Next try and see if you can find another function to determine whether **any** of the numbers in a list are less than three.
+**Activity 6**. Next try and see if you can find another function to determine whether **any** of the numbers in a list are less than three. Store the result in `activity-6`.
 
-**Activity 7**. We’ve included a list of lists of numbers in a variable called `list-of-lists`. Write an expression to compute the product of all the numbers in all its sublists.
+**Activity 7**. We’ve included a list of lists of numbers in a variable called `list-of-lists`. Write an expression to compute the product of all the numbers in all its sublists and store it in `activity-7`.
+
 * First step: write the code to compute the product of one sublist. Start by writing a function to compute the product of all the numbers in a list of numbers. That is, to multiply all the numbers in the list together. Notice that this is a lot like computing a sum!
 * Second step: run it on each the sublists of the list to build a new list where each element is a product of a sublist. Which iterator (`map`, `filter`, or `foldl`) seems appropriate for this purpose?
 
-**Activity 8**. We’ve put a list of strings in your Racket file called `word-list`.  Write an expression to append together the first character of each string in the list.
+**Activity 8**. We’ve put a list of strings in your Racket file called `word-list`.  Write an expression to append together the first character of each string in the list and store it in `activity-8`.
 * Start by making a list of the first characters.
   * First step: write a function that takes a string and returns just the first character. Look up the `substring` function in the documentation to see how to do this.
   * Second step: run it on all the elements of the list. You’re an old hand at this now. You should know how to do it!
 * Now append all those first characters together.
     * First step: Write a function that will append two strings together (you actually don’t need to do this. There’s already one build in called `string-append`).
     * Second step: now run that function on all the elements of the list to squeeze them into one string. Again, does this seem like a job for `map`, `fold`, or `filter`? (Note: if you get the `string` but backwards...consider which direction you're going in!)
-***
+
+* * *
+
 ## Part 2: Building `struct`ures!
 This one is a lot simpler. Remember that you define a new kind of data type by saying:
 
@@ -78,8 +92,17 @@ When we run that, the system makes a bunch function automatically:
 
 **Activity 2**.	Now pick a name, breed, color, and meow volume for a cat (the first three should  be `string`s and the last one should be a number between 0 and 10) and make a `cat` object to represent it. Store it in the variable `my-cat`.
 
-**Activity 3**.	Now write expressions to get the `name` and `breed` of the cat object in `my-cat`.
+**Activity 3**.	Now write expressions to get the `name` and `breed` of the cat object in `my-cat`. Store them in `got-the-name` and `got-the-breed` respectively.
 
-***
+* * *
+
 ## Getting Credit for Your Work
-If you're in class, make sure to submit the Google Form with the secret word and your group number; you don't need to submit a `rkt` file. If you're submitting remotely, you MUST submit your completed tutorial to Canvas and it will be graded for completion.
+If you're in class make sure to check-in with your PM. You don't need to submit a `rkt` file. Your attendance will be posted on Canvas by around 5pm today.
+
+If you're submitting remotely, you MUST submit your completed tutorial to Canvas and it will be graded for completion.
+
+Before turning your assignment in, **run the file one last time** to make sure that it runs properly and doesn’t generate any exceptions, and all the tests pass.
+
+Then, make sure to read the [Autograder Guide](https://canvas.northwestern.edu/courses/178849/pages/whats-an-autograder) one last time. Not only is it a useful check of your work, but it will also tell you which file you should submit.
+
+> Note: For groups that have a significant amount of programming experience, your PM may suggest trying out the [Advanced Tutorial 2](https://bain-cs111.github.io/assignments/adv-tutorial-2)

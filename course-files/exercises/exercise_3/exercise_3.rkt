@@ -1,6 +1,6 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname |Exercise 2|) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname exercise_3) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
 (require "./remove_duplicates.rkt")
 
 ; This defines the basic album datatype.
@@ -41,7 +41,7 @@
 ;;; test your code.
 ;;;
 ;;; Here's what we mean.  One of the questions involves
-;;; writing a procedure that finds all the albums of a
+;;; writing a function that finds all the albums of a
 ;;; given genre.  If all the albums in the library are
 ;;; in the rock genre, then there's only one genre and
 ;;; when you ask for all the rock albums and it gives
@@ -60,8 +60,8 @@
         
         ))
 
-;;; Add the procedures you write (e.g. all-genres, versatile-artists)
-;;; below.  Be sure to test your procedures to make sure they work.
+;;; Add the functions you write (e.g. all-genres, versatile-artists)
+;;; below.  Be sure to test your functions to make sure they work.
 ;;; We only provide very few test cases this time, so you need
 ;;; to write your own test cases to make sure the code works.
 ;;; We will use our own test cases when grading and assign you
