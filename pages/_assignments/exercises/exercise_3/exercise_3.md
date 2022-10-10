@@ -15,7 +15,9 @@ Throughout this assignment, as with any assignment, you are encouraged when poss
 
 In general, these problems only require simple answers. Most have two or three line answers, although the exact number of lines depends on how you put line breaks into your code. That’s not to say that if you have an answer that’s longer that it’s wrong, but it may mean that you’re making life unnecessarily difficult for yourself. One good way to make life easier on yourself is to reuse code you’ve already written.
 
-Write your functions to work with any input. Don’t assume our test data will look like your test data. Follow these instructions exactly. If we say to remove duplicates, make sure you remove duplicates. Make sure your type signatures exactly match the ones in the assignment as you go.
+Write your functions to work with any input. Don’t assume our test data will look like your test data.
+
+Follow these instructions exactly. If we say to remove duplicates, make sure you remove duplicates. Make sure your type signatures exactly match the ones in the assignment as you go.
 
 <a class="nu-button" href="/course-files/exercises/exercise_3_template.zip" target="_blank">
     Exercise 3 Starter Files <i class="fas fa-download"></i>
