@@ -5,6 +5,7 @@ type: lecture
 draft: 0
 num: 9
 description:
+canvas_id: wednesday-lecture-9-pre-recorded-manipulating-composite-data-oct-12
 due_date: 2022-10-12
 slides:
    - title: "Manipulating Composite Data"

@@ -6,7 +6,7 @@ description:
 num: 8
 draft: 0
 due_date: 2022-10-10
-
+canvas_id: monday-lecture-8-composite-data-oct-10
 exercise_url: "lecture08.zip"
 
 slides:

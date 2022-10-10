@@ -7,6 +7,7 @@ due_date: 2022-10-17
 ordering: 4
 draft: 0
 points: 100
+canvas_id: 1138593
 ---
 For this assignment, you’ll make a simple collection of information about music albums (we’re calling this a library). This library is just a list of albums - `(listof album)` - so anytime you see library think `(listof album)`. Feel free to use your own albums, other people’s albums, or just make them up. Finally, you'll write expressions and functions that query it for different kinds of information.
 

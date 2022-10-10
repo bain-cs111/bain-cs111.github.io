@@ -6,6 +6,7 @@ abbreviation: Tutorial 2
 draft: 0
 points: 100
 num: 3
+canvas_id: 1138589
 description:
 due_date: 2022-10-12
 ---
