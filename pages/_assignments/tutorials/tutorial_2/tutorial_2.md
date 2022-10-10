@@ -14,6 +14,9 @@ due_date: 2022-10-12
 
 For this tutorial, you’ll experiment with `list`s and `structs`. **Make sure to write `check-expects` for each expression you write to test its correctness.**
 
+<a class="nu-button" href="/course-files/tutorials/tutorial_2_template.zip" target="_blank"> Tutorial 2 Starter Files <i class="fas fa-download"></i></a>
+
+
 ***
 ## Part 1: Iterating Over Lists of Lists
 
