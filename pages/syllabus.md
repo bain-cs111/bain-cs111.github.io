@@ -160,7 +160,7 @@ These will be short quizzes for each module of the course that serve as a check 
 
 ## Quizzes
 
-There will be four cumulative assessments of your knowledge and practice of the course material administered during our assigned class time (50 minutes). The tentative schedule for these quizzes is below:
+There will be four cumulative assessments of your knowledge and practice of the course material administered in-person during our assigned class time (50 minutes). The tentative schedule for these quizzes is below:
 
 {:.medium}
 | Quiz | Focus Topic  | Date |
@@ -170,6 +170,7 @@ There will be four cumulative assessments of your knowledge and practice of the 
 | Q3   | Imperatives  | November 21 |
 | Q4   | Summative    | Section 1. December 9, 9am<br>Section 2. December 8, 9am
 
+Please note that the Emergency Erasure Policy (more info below) might affect how these 4 quizzes affect your grade.
 
 ## Grading Equity Policies
 

@@ -3,7 +3,7 @@ layout: assignment-two-column
 title: Composing and Manipulating Composite Data
 type: tutorial
 abbreviation: Tutorial 2
-draft: 1
+draft: 0
 points: 100
 num: 3
 description:
@@ -33,7 +33,7 @@ Define a list of numbers and call it `num-list`. The numbers in the list are 2, 
 
 BEFORE YOU DO SO, go ahead and write a `check-expect` (that's right, we're going to write a test BEFORE we write a program). In this case, we don't care WHAT is in this list...just that it's a list, so we'll use the `list?` predicate to make sure the thing we make actually is a list. We'll give you this one, but from now on, you're going to have to write your own:
 
-```Racket
+```racket
 (check-expect (list? num-list)
               true)
 ```

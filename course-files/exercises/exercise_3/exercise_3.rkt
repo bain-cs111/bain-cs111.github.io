@@ -40,7 +40,7 @@
 ;;; But you should include enough variety to adequately
 ;;; test your code.
 ;;;
-;;; Here's what we mean.  One of the questions involves
+;;; Here's what we mean. One of the questions involves
 ;;; writing a function that finds all the albums of a
 ;;; given genre.  If all the albums in the library are
 ;;; in the rock genre, then there's only one genre and
@@ -158,6 +158,9 @@
               (list (list "James Morrison" 1)
                     (list "Kenshi Yonezu" 1)))
 
+
+;; NOTE: Remember that "function" and "procedure" are the same thing! Racket's predicate
+;; for seeing if something is a function is called procedure?
 (check-expect (procedure? all-titles) #true)
 (check-expect (procedure? all-artists) #true)
 (check-expect (procedure? all-genres) #true)

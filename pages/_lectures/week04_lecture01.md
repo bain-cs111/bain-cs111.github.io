@@ -4,7 +4,7 @@ title: Composite Data Types
 type: lecture
 description:
 num: 8
-draft: 1
+draft: 0
 due_date: 2022-10-10
 
 exercise_url: "lecture08.zip"
