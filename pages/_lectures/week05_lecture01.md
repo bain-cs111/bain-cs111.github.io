@@ -14,8 +14,8 @@ Quiz 1 will cover all the content from the beginning of the class up to and incl
 
 ## Logistics
 * In-person here in the Auditorium (ANU Students please keep an eye out for an email from me this evening with accommodations details)
-* Taken on the Lockdown Browser on your personal computer; details on [how to set it up are on our Canvas page]().
-* Practice Exam available on Canvas at 6pm this evening
+* Taken on the Lockdown Browser on your personal computer; details on <a href="https://canvas.northwestern.edu/courses/178849/modules/items/2427335" target="_blank"> how to set it up are on our Canvas page.</a>
+* Practice Exam available on Canvas
   * there's also tips on how to use a Practice Exam effectively
   * solutions will be available for the practice on Wednesday evening
   * there will be two versions: one that requires the Lockdown Browser (so you can test that you've got it setup correctly) and one that does not so you can take it and refer to other resources
@@ -82,5 +82,5 @@ A valid answer would be:
 
 ## Reminders
 
-* You do NOT need to memorize all of the functions [(you get a glossary)](course-files/quizzes/q1_glossary.pdf)
-* You DO need to know the [Rules of Execution and Special Forms](https://docs.google.com/presentation/d/1i5YPqSRd2-E7Pm-c8A1322LBsmeyR6qyfjv0UcvhvPM/edit#slide=id.g1632f97878b_0_0).
+* You do NOT need to memorize all of the functions <a target="_blank" href="https://bain-cs111.github.io/course-files/quizzes/q1_glossary.pdf">(you get a glossary)</a>
+* You DO need to know the <a href="https://docs.google.com/presentation/d/1i5YPqSRd2-E7Pm-c8A1322LBsmeyR6qyfjv0UcvhvPM/edit#slide=id.g1632f97878b_0_0" target="_blank">Rules of Execution and Special Forms</a>.
