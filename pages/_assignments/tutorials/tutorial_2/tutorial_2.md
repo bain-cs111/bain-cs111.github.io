@@ -1,6 +1,6 @@
 ---
 layout: assignment-two-column
-title: Composing Composite Data
+title: Composing and Manipulating Composite Data
 type: tutorial
 abbreviation: Tutorial 2
 draft: 1
@@ -10,14 +10,17 @@ description:
 due_date: 2022-10-12
 ---
 
-# Tutorial 2: Composing Composite Data
-
 For this tutorial, you’ll experiment with `list`s and `structs`. **Make sure to write `check-expects` for each expression you write to test its correctness.**
+
+There a number of goals here:
+1. Get some practice using composite data (both lists and structs)
+2. Get a lot of practice manipulating lists using those library of list functions we talked about in Lecture 10
+3. **Practice thinking about and writing our OWN tests** for our programs.
 
 <a class="nu-button" href="/course-files/tutorials/tutorial_2_template.zip" target="_blank"> Tutorial 2 Starter Files <i class="fas fa-download"></i></a>
 
+* * *
 
-***
 ## Part 1: Iterating Over Lists of Lists
 
 Let’s start by experimenting with `list`s and the built-in iterators `map`, `foldl`, and `filter`.
@@ -31,35 +34,41 @@ BEFORE YOU DO SO, go ahead and write a `check-expect` (that's right, we're going
               true)
 ```
 
-**Activity 2**. Now use `map` to write an expression that multiplies each number in `num-list` by 5. Store the result in a variable called `activity-2`. **Write a `check-expect` for your whatever values you put in `num-list`. For example, if you had used `(list 0 1 2 3)`, then you'd be expecting to get back `(list 0 5 10 15)`.
+**Activity 2**. Now use `map` to write a function, call it `list-times-5`, that takes as input a list and multiplies each number in `num-list` by 5, and returns the result. **Write a `check-expect` for your whatever values you put in `num-list`. For example, if you had used `(list 0 1 2 3)`, then you'd be expecting to get back `(list 0 5 10 15)`.
 
 * First step: write the code to work with one element of the list. So start by writing a function that takes a number and multiplies it by 5. You don’t have to worry about giving it a name, you can just write it as a lambda
 * Second step: run the code over all the elements of the list. Now map that function over the list
+* Third step: turn it into a function.
 
-**Activity 3**. Now use `filter` to write an expression that finds all the numbers that are **either** equal to 2 or greater than 5. Store the result in a variable called `activity-3`. Don't forget to write a test!
+**Activity 3**. Now use `filter` to write a function, call it `activity-3`, that finds all the numbers that are **either** equal to 2 or greater than 5. Don't forget to write some tests to try your function on! Make sure to test it on your `num-list`
 
 * First step: write the code to test an element of the list. Start by writing a function that take a number and returns `true` if the number is 2 or greater than 5. Again, you don’t need to give it a name. You can just write a `lambda`.
 * Second step: run the code over the list. Now write a `filter` expression to use this function to find the desired elements of the list.
+* Third step: turn it into a function.
 
-**Activity 4**. Next use `foldl` to write an expression to compute the sum of the numbers in `num-list`. Store it in a variable called `activity-4`.
+**Activity 4**. Next use `foldl` to write a function, call it `my-sum`, to compute the sum of the numbers in a list. Check it against the sum of your `num-list`.
 
 * First step: write the code to combine two elements of the list. In this case, that’s super easy: + will do it.
 * Second step: run it over all the elements of the list. Write a `foldl` expression to run + on all the elements of the list.
+Third step: turn it into a function.
 > Hint: the sum of the empty list (a list with no elements) is just zero.
 
-**Activity 5**. And now we are going to use `andmap` to determine whether **all** the numbers in `num-list` are less than three. Store it in a variable called `activity-5`. Again, make sure to test your expression.
+**Activity 5**. And now we are going to use `andmap` to determine whether **all** the numbers in a list are less than three. Write a function that does this, call it `all-less-than-three?`, and make sure to test it on your `num-list` list.
 
 * First step: write the code to test one element. Write a function that tests if a number is less than three
 * Second step: run it over all the elements of the list. Use `andmap` and the function you just wrote to test if ALL a list's elements less than three.
+* Third step: turn it into a function
 
-**Activity 6**. Next try and see if you can find another function to determine whether **any** of the numbers in a list are less than three. Store the result in `activity-6`.
+**Activity 6**. Next try and see if you can find another function to determine whether **any** of the numbers in a list are less than three. Make a new function called `any-less-than-three?` and write a test using at least your `num-list`.
 
-**Activity 7**. We’ve included a list of lists of numbers in a variable called `list-of-lists`. Write an expression to compute the product of all the numbers in all its sublists and store it in `activity-7`.
+**Activity 7**. We’ve included a list of lists of numbers in a variable called `list-of-lists`. Write a function to compute the product of all the numbers in all its sublists and call it `lists-product`.
 
 * First step: write the code to compute the product of one sublist. Start by writing a function to compute the product of all the numbers in a list of numbers. That is, to multiply all the numbers in the list together. Notice that this is a lot like computing a sum!
 * Second step: run it on each the sublists of the list to build a new list where each element is a product of a sublist. Which iterator (`map`, `filter`, or `foldl`) seems appropriate for this purpose?
+* Third step: turn it into a function.
 
-**Activity 8**. We’ve put a list of strings in your Racket file called `word-list`.  Write an expression to append together the first character of each string in the list and store it in `activity-8`.
+**Activity 8**. We’ve put a list of strings in your Racket file called `word-list`.  Write a function, call it `first-letter-word-maker`, to append together the first character of each string in the list.
+
 * Start by making a list of the first characters.
   * First step: write a function that takes a string and returns just the first character. Look up the `substring` function in the documentation to see how to do this.
   * Second step: run it on all the elements of the list. You’re an old hand at this now. You should know how to do it!
