@@ -130,7 +130,7 @@ We’ll add support for things like `if` and `lambda` next week.
 
 * * *
 
-### Activity 3 - Interpreting procedure calls
+## Activity 3 - Interpreting procedure calls
 
 Okay, so now we want to write `evaluate-procedure-call`. This is going to take a list representing the procedure call expression and run that expression. For example, if the source code was `(+ 1 2)`, `evaluate-procedure-call` will get called with the list `'(+ 1 2)`, i.e. a three element list whose elements are the symbol `+`, and the numbers `1` and `2`, respectively:
 
