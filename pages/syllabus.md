@@ -1,4 +1,4 @@
----
+expressions---
 layout: assignment-two-column
 title: Syllabus
 permalink: /syllabus/
@@ -152,7 +152,24 @@ You may submit the assignments up to 48 hours late with a 10% penalty per 24-hou
 
 ### Petition to Resubmit (edit 10/5/22)
 
-If you score below an 80, you may petition to resubmit **exactly one Exercise per quarter**. You need to first fill out the [Petition to Resubmit Google Form](https://forms.gle/E4v4jjpvYZstiWQz7) and then resubmit the assignment via Canvas within 24 hours. Any resubmissions through this process will be treated as if they were submitted 48-hours late. Please also remember that our Emergency Grade Erasure policy also lessens the impact of single assignments on your grade.
+If you score below an 80 **because of an issue with the autograder**, you may petition to resubmit **exactly one Exercise per quarter**. You need to first fill out the [Petition to Resubmit Google Form](https://forms.gle/E4v4jjpvYZstiWQz7) and then resubmit the assignment via Canvas within 24 hours. Any resubmissions through this process will be treated as if they were submitted 48-hours late. Please also remember that our Emergency Grade Erasure policy also lessens the impact of single assignments on your grade.
+
+In order to petition to resubmit, you must:
+* **Have already received your grade on the assignment**.
+* Not have had access to the solutions for the assignment.
+* Attest to not having looked at any other student's work or spoken with other students about the solutions since submitting your assignment.
+* Must have a valid reasoning as to why _specifically the fact your assignment is autograded_ led to the fact your score lowered. Possibilities include:
+  * Incorrect naming of variables
+  * Incorrect typing of expressions
+  * Syntax errors from typos
+  * _Up to the discretion of the instructor_: incorrect file upload
+
+The following are NOT valid reasons for resubmission:
+  * Did not write your own tests
+  * Did not consider cases specifically called out in Lectures / Pre-recorded Lectures / Assignment descriptions
+  * Did not follow the directions of the assignment
+
+All of the above reasonings may be subject to further scrutiny.
 
 ## Mini-quizzes
 
