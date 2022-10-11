@@ -1,4 +1,4 @@
-expressions---
+---
 layout: assignment-two-column
 title: Syllabus
 permalink: /syllabus/
