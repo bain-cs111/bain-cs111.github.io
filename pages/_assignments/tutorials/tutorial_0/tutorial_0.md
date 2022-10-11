@@ -189,4 +189,4 @@ Now have fun trying to make different interesting glasses designs, and share the
 ## Getting Credit for Your Work
 Since attendance for this tutorial is required, your PM will ask to confirm your name and NetID. You'll automatically receive full credit as long as your PM indicates you participated fully. In future weeks, if you choose not to attend and instead submit your work remotely, it will be graded for completion and, as such, you may not receive full credit.
 
-> Note: For groups that may have a significant amount of programming experience, your PM may suggest trying out the [Advanced Tutorial 0](https://bain-cs111.github.io/assignments/adv-tutorial-0)
+> Note: For groups that may have a significant amount of programming experience, your PM may suggest trying out the <a target="blank" href="https://bain-cs111.github.io/assignments/adv-tutorial-0">Advanced Tutorial 0</a>
