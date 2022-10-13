@@ -78,7 +78,7 @@ Next try and see if you can find another function to determine whether **any** o
 
 ### Activity 7
 
-We’ve included a list of lists of numbers in a variable called `list-of-lists`. Write a function to compute the product of all the numbers in all its sublists and call it `lists-product`.
+We’ve included a list of lists of numbers in a variable called `lst-of-lsts`. Write a function to compute the product of all the numbers in all its sublists and call it `lists-product`.
 
 * First step: write the code to compute the product of one sublist. Start by writing a function to compute the product of all the numbers in a list of numbers. That is, to multiply all the numbers in the list together. Notice that this is a lot like computing a sum!
 * Second step: run it on each the sublists of the list to build a new list where each element is a product of a sublist. Which iterator (`map`, `filter`, or `foldl`) seems appropriate for this purpose?
