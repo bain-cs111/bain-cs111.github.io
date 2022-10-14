@@ -1,5 +1,5 @@
 ---
-layout: lecture-two-column
+layout: module
 title: Quiz 1 Review
 type: lecture
 description:
