@@ -1,6 +1,6 @@
 ---
 layout: module
-title: Lists
+title: Manipulating COmposite Data Types
 type: lecture
 draft: 0
 num: 9

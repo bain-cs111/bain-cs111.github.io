@@ -3,26 +3,39 @@ layout: lecture-two-column
 title: Quiz 1 Review
 type: lecture
 description:
-draft: 1
+draft: 0
 num: 10
 due_date: 2022-10-14
 
+slides:
+   - title: "Q1 Review"
+     url: https://docs.google.com/presentation/d/1JCQjSTm9WSOeHVgvEJSXGzdqYzNZJikXBqOIE1wcRmM/edit?usp=sharing
+videos:
+  - title: "(Optional) Lecture 10.1: Extra Help with Structs"
+    url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b9207bba-a4d7-44e2-9c40-af2d01899b2e
+    live: 0
+    duration: "31:02"
+
+  - title: "(Optional) Lecture 10.2: Extra Help with Lists"
+    url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=575570ec-4adf-443f-8164-af2d01899ace
+    live: 0
+    duration: "24:19"
+
+  - title: "(Optional) Lecture 10.3: Intro to Exercise 3"
+    url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2dc14688-bf82-4698-9f66-af2d01899b00
+    live: 0
+    duration: "11:55"
 ---
 
 {:.blockquote-no-margin}
 
-## Study Materials
-* <a href="https://docs.google.com/document/d/17nc-9cYCRfjAPzvO81ZBqECWky7oQ-pyk5NLCWwjFLs/edit?usp=sharing" target="_blank">Study Guide</a>
-* Please do the <a href="https://canvas.northwestern.edu/courses/165750/quizzes" target="_blank">practice mini-quizzes</a>
-
-## Full-Length Practice Quizzes
-* We have published 3 practice quizzes which will be available after class on Friday, 4/15.
-    * <a href="https://canvas.northwestern.edu/courses/165750/quizzes/176840" target="_blank">Practice Quiz 01a</a> (requires the Lockdown Browser)
-    * <a href="https://canvas.northwestern.edu/courses/165750/quizzes/176852" target="_blank">Practice Quiz 01b</a>
-    * <a href="https://canvas.northwestern.edu/courses/165750/quizzes/176849" target="_blank">Practice Quiz 01c</a>
-* A note on using the [Lockdown Browser](../resources/lockdown-browser):
-    * Practice Quiz 01a will require using the Lockdown Browser (LDB). Please practice taking the quiz with the LDB at least 1 day before the quiz to work out any bugs.
-    * Start practicing early. You can take each practice quiz as many times as you want.
+## Practice Quizzes
+* There's a practice quiz on Canvas
+* The solutions will show after you hit submit
+* You can take it as many times as you'd like
+* It's basically twice as long as a normal quiz
+* (You can think of it like two practice quizzes smooshed together)
+* There's also a version of it that requires the Lockdown Browser (LDB). YOU NEED TO GET THIS SETUP NOW. Also practice using the Glossary in the LDB.
 
 ## How to Take The Actual Quiz
-On Friday, 4/22, we will all be taking the quiz **IN CLASS** (Lutkin Hall), on your laptop, using the Lockdown Browser.
+On Monday, 10/17, we will all be taking the quiz **IN CLASS** (Tech Auditorium), on your laptop, using the Lockdown Browser. See the slides for more details.
