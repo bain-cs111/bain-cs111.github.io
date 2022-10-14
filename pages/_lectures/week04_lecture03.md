@@ -5,6 +5,7 @@ type: lecture
 description:
 draft: 0
 num: 10
+canvas_id: friday-lecture-10-quiz-1-review-oct-14
 due_date: 2022-10-14
 
 slides:
