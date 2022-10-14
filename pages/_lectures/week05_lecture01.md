@@ -52,8 +52,7 @@ Then the answer would be `exception`.
 
 2. Here's a program; here's what we want to get out of it; here's what we get; fix it.
 
-Examples on the Practice Quiz (which will be released Monday evening).
-
+Examples on the Practice Quiz.
 3. Write a valid test for the given function definition
 Covers everything up to and including Lecture 9 (Manipulating Composite Data)
 
@@ -61,7 +60,7 @@ Covers everything up to and including Lecture 9 (Manipulating Composite Data)
 ```racket
 ; a snake is
 ; (make-snake Number String)
-(define-struct snake [weight food])
+(define-struct snake (weight food))
 
 ; skinny-snake?: Snake -> Boolean
 ; returns true if snake is less than 10 lbs, false otherwise
@@ -69,7 +68,6 @@ Covers everything up to and including Lecture 9 (Manipulating Composite Data)
 (define  (skinny-snake?  s)
      (<  (snake-weight  s)  10))
 ```
-
 
 In the blank below, please provide one valid test (`check-expect`) of the procedure.
 
