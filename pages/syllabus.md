@@ -210,10 +210,10 @@ There will be no exceptions to this policy. Once you are granted an extension, i
 
 The _emergency grade erasure policy_ acknowledges that often times life situations occur that make it impossible to keep up in a course. **_Do not_ use this a planning or scheduling device.** This is specifically meant to take care of emergencies that happen in your life during the quarter.
 
-* Your lowest quiz score is dropped (best 3 of 4)
-* Your lowest tutorial score is dropped (best 9 of 10)
+* Your lowest quiz score (including 0s) is dropped (best 3 of 4)
+* Your lowest tutorial score (including 0s) is dropped (best 9 of 10)
   * _You may not drop the final tutorial score_ (Tutorial 9)
-* Your lowest exercise score is dropped (best 9 of 10)
+* Your lowest exercise score (including 0s) is dropped (best 9 of 10)
   * _You may not drop the final exercise score_ (Exercise 9)
 
 If you _choose_ to drop an assignment early in the quarter only to find yourself in an emergency situation later in the quarter, you will need to reach out to your Dean of Students in order to arrange for flexibility across all of your coursework.
