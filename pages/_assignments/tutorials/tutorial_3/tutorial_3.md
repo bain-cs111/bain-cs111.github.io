@@ -7,27 +7,46 @@ draft: 1
 points: 100
 num: 4
 description:
+canvas_id: 1140153
 due_date: 2022-10-19
 ---
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
-Today's tutorial is all about practicing recursion. Remember, **recursion** itself is a very simple concept: a function is **recursive** if it calls itself in its definition.
+Today's tutorial is all about practicing recursion. Remember, **recursion** itself is a very simple concept: a function is **recursive** if it calls itself in its definition. In all of these, we AREN'T using our list iterators (e.g. `filter`, `map`, etc.). Instead, we're building these functions from the ground up!
 
 [Relevant "XKCD" Comic Strip](https://thomaspark.co/2017/01/relevant-xkcd/) (totally worth a click):
 
-![XKCD Comic About Recursion](/assets/tutorial_3/xkcd.png)
+<img alt="XKCD Comic About Recursion" src="/assets/tutorial_3/xkcd.png" style="width: 75%;"/>
 
-***
+* * *
+## Getting Started
+There are no template files for this Tutorial so you'll need to start from a blank DrRacket file. You can do this by either just opening DrRacket and it'll open a new `Untitled` file or if you already have DrRacket open, you can go to the File menu and hit `New` or `New Tab`.
+
+After you've got a blank document open, might as well save it with a good sensible name somewhere on your computer where you store important docs.
+
+* * *
 ## Problem 1 - `factorial`
 
-Write the **factorial** function $n!$ as a **recursive** function.  The factorial of a number is the product of all the numbers from one to that number:
+Write the **factorial** function $$n!$$ as a **recursive** function.  The factorial of a number is the product of all the numbers from one to that number:
 
-$$ n! = \prod_{i=1}^{n}i = 1 * 2 * 3 * \ldots * n $$
+$$n! = \prod_{i=1}^{n}i = 1 * 2 * 3 * \ldots * n$$
 
-So $1! = 1$, $2! = 1 * 2 = 2$, $3! = 1 * 2 * 3 = 6$, $4! = 24$, $5! = 120$, and so on. Here are some subgoals to accomplish on your way to writing the function:
+$$1! = 1$$
+
+$$2! = 1 * 2 = 2$$
+
+$$3! = 1 * 2 * 3 = 6$$
+
+$$4! = 24$$
+
+$$5! = 120$$
+
+and so on. Here are some subgoals to accomplish on your way to writing the function:
 
 _Subgoal 1_. What is the type of `factorial` (that is, what is its type signature, the types of its input and output)?
 
-_Subgoal 2_. What is the purpose statement for it?
+_Subgoal 2_. What is the purpose statement for it? Can you write some tests (`check-expect`s) to make sure it works?
 
 _Subgoal 3_. What should the **base case** be (aka the “easy case”) for the recursion. The base case is an input for the function where you know the answer without having to recurse. What’s a really easy input to compute the factorial of?
 
@@ -59,7 +78,8 @@ _Subgoal 6_. Now fill in the part in your code that says TODO:
 > $$5! = (5 - 0) * 4! = (5 - 0) * (5 - 1) * 3! = \ldots $$
 
 Nice work! You've officially written a recursive function. Remember that all you need to do is: 1. find a base case; 2. think of a way of getting the original input "one step closer" to the base case at a time; and 3. think of a way to combine the results to the "one step closer" problems.
-***
+
+* * *
 
 ## Problem 2 - `count-odd`
 Write a function
@@ -72,7 +92,7 @@ that returns the number of odd elements in a list of numbers. Remember that you 
 
 _Subgoal 1_. We’ve already given you a type for `count-odd`. So write a type signature comment.
 
-_Subgoal 2_. Now write a purpose statement in your own words. Don’t start writing code before you start thinking about what you’re trying to accomplish!
+_Subgoal 2_. Now write a purpose statement in your own words. Don’t start writing code before you start thinking about what you’re trying to accomplish! Can you write some `check-expect`s to verify it works as you might imagine?
 
 _Subgoal 3_. Okay, now what’s the base case? Again, this is a case that’s so easy we don’t have to do much. What would be a `list` where you’d just know the answer?
 
@@ -111,12 +131,13 @@ Your code will look something like:
 And then `recursive-answer` will get used inside of two of the `do-something`s.
 
 Wow, you're good at this! Two down, two to go!
-***
+
+* * *
 
 ## Problem 3 - `count`
 Now abstract your answer from the previous question to make a function
 ```racket
-count: (X -> Boolean) (listof X) -> number
+count: (T -> Boolean) (listof T) -> number
 ```
 that takes a `list`, but also a **predicate**, and returns the number of elements in the list that the predicate returns `true`. For example, `(count odd? my-list)` should do the same thing as `(count-odd my-list)`.
 
@@ -125,9 +146,11 @@ Good news! This does not require coming up with a new base case or recursive cas
 * Change the name of the function
 * Add an extra input to the function so that the user can input a predicate
 * Change the code so that instead of always using `odd?` it instead uses the predicate the user specified. (Make sure to change the `recursive-answer`!)
+* Make sure to write some tests for your new function!
 
-Wow. Abstraction **and** recursion. This is straight :fire:. Better call the :fire_engine:.
-***
+Wow. Abstraction **and** recursion. This is straight 🔥. Better call the 🚒.
+
+* * *
 
 ## Problem 4 - Seeing the `tree`s from the Forest
 
@@ -145,7 +168,7 @@ Another way of describing it is that tree is a stick for the trunk and then two 
 We can write that as a recursion. The function `tree` takes a number of levels of branching (levels of recursion) and gives you back a `image` of that tree with that number of levels. So zero levels of branching is just a stick. One level of branching is a Y shape (a stick with two sticks pointing out of it), two levels of branching is a Y where the branches on top each each Y’s themselves, and so on. That means:
 
 * A tree with zero levels of branching is a stick
-* A tree with $n$ levels of branching is a stick with two subtrees that have $n-1$ levels of branching
+* A tree with $$n$$ levels of branching is a stick with two subtrees that have $$n-1$$ levels of branching
 
 Here’s what your function should (roughly) produce across inputs from 0 levels of branching up to 9 levels:
 
@@ -159,7 +182,7 @@ Time for some subgoals:
 * As always, what is the type of the function? That is, what type of input does it expect and what type of output does it generate?  Remember that the input is the number of levels of branching (i.e. number of levels of recursion).
 * Write a type signature comment.
 * What is it trying to do in your own words?
-* Write a purpose statement
+* Write a purpose statement (it's hard to write tests for this sort of image function, so instead try to imagine what sort of images you SHOULD see as soon as your program starts working)
 * What’s your base case? That is, for what number of levels of branching do you not need to recurse at all? And what do you return then?
 * What’s your recursive case?
 * What’s the "one step closer" number of levels of branching that brings you closer to the base case?
@@ -169,6 +192,7 @@ Time for some subgoals:
     TODO)
 ```
 * Finally, you need to fill in `TODO` with something that makes the subtree itself by assembling the two copies of the subtree with a trunk. Rather than make you fiddle for a long time, here's the basic structure, which is:
+
 ```racket
 (above (beside (rotate angle (scale factor subtree))
                (rotate (* -1 angle) (scale factor subtree))
@@ -179,6 +203,15 @@ Pick whatever `angle` you want (we used 45 degrees). For `factor`, choose some n
 
 Feel free to experiment.  You can add little circles at the ends, for example to make something that looks vaguely like leaves.  There’s no specific right answer we’re looking for on this one.
 
-***
+* * *
+
 ## Getting Credit for Your Work
-If you're in class, make sure to submit the Google Form with the secret word and your group number; you don't need to submit a `rkt` file. If you're submitting remotely, you MUST submit your completed tutorial to Canvas and it will be graded for completion.
+If you're in class make sure to check-in with your PM with your name and NetID. You don't need to submit a `rkt` file. Your attendance will be posted on Canvas by around 5pm today.
+
+If you're submitting remotely, you MUST submit your completed tutorial to Canvas and it will be graded for completion.
+
+Before turning your assignment in, **run the file one last time** to make sure that it runs properly and doesn’t generate any exceptions, and all the tests pass.
+
+Then, make sure to read the [Autograder Guide](https://canvas.northwestern.edu/courses/178849/pages/whats-an-autograder) one last time. Not only is it a useful check of your work, but it will also tell you which file you should submit.
+
+> Note: For groups that may have a significant amount of programming experience, your PM may suggest trying out the <a target="blank" href="/assignments/adv-tutorial-3">Advanced Tutorial 3</a>
