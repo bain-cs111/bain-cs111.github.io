@@ -71,7 +71,7 @@ _Subgoal 6_. Now fill in the part in your code that says TODO:
 > **Note**: our notation here is a little misleading because it makes it look like `fixit` should just be the name of a function. But for this problem, you’ll want to pass an additional argument to the function besides the result from the recursive call. That means for this problem, the form will really be:
 > ```racket
 > (some-function some-argument
->                 (factorial easier-input))
+>                (factorial easier-input))
 > ```
 
 > **Hint**: Remember, that a factorial can be expressed like this:
@@ -121,11 +121,11 @@ However, since the `fixit` part here needs to involve an `if` expression that wi
 Your code will look something like:
 ```racket
 (if base-case
-          base-case-answer
-          (local [(define recursive-answer (count-odd easier-input))]
-              (if something-is-true
-                  do-something
-                  do-something-else)))
+    base-case-answer
+    (local [(define recursive-answer (count-odd easier-input))]
+           (if something-is-true
+               do-something
+               do-something-else)))
 ```
 
 And then `recursive-answer` will get used inside of two of the `do-something`s.
@@ -156,7 +156,7 @@ Wow. Abstraction **and** recursion. This is straight 🔥. Better call the 🚒.
 
 Write a recursive function, `tree`, that makes a recursive image something like this:
 
-![Image of a cool tree](/assets/tutorial_3/tree.svg)
+<img alt="Image of a cool tree" src="/assets/tutorial_3/tree.svg" style="width:50%;" />
 
 How do you make something like this? Here’s the basic idea:
 * At its base, it's just a solid green rectangle
@@ -172,7 +172,7 @@ We can write that as a recursion. The function `tree` takes a number of levels o
 
 Here’s what your function should (roughly) produce across inputs from 0 levels of branching up to 9 levels:
 
-![Trees at Different Levels from 0 to 9](/assets/tutorial_3/tree-sequence.svg)
+<img alt="Trees at Different Levels from 0 to 9" src="/assets/tutorial_3/tree-sequence.svg" style="width:75%;" />
 
 Your trees don’t have to look exactly like ours–that would require a lot of trial and error that you wouldn’t learn anything from. Just experiment with making recursive pictures like this and have fun. You can make some absolutely dope images with this simple pattern.
 

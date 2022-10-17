@@ -3,29 +3,52 @@ layout: module
 title: Recursion
 description:
 type: lecture
-draft: 1
+draft: 0
 num: 11
+canvas_id: wednesday-lecture-11-pre-recorded-recursion-oct-19
 due_date: 2022-10-19
 slides:
-   - title: "Lecture Slides"
-     url: https://docs.google.com/presentation/d/1eB6yFYnpYiIQTwNJQd23Cj4XaAN1_9YC8vWaLTAKtug/edit?usp=sharing
-readings:
-  - title: "Ch5: Iteration"
-    author: "Severance"
-    url: https://www.py4e.com/html3/05-iterations
-    video_url: https://www.py4e.com/lessons/loops
-  - title: "Ch7: Iteration"
-    source: "ThinkCS"
-    url: http://openbookproject.net/thinkcs/python/english3e/iteration.html
+   - title: "Recursion"
+     url: https://docs.google.com/presentation/d/1NYvjkH8RucOy4NX8a-poxDv_tu2DIMl302rxZ1707fo/edit#slide=id.g15fe7b0146b_0_600
 videos:
-   - title: "Live Lecture"
-     url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=60a4ce10-0cb9-4d03-a08f-ae670037b251
-     duration: "50:00"
-     live: 1
-
-exercise_url: "lecture12.zip"
+   - title: "Intro"
+     url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3ddada54-002d-4258-b7b0-af310046eb21
+     duration: "9:24"
+     live: 0
+   - title: "Summing a List under the Substitution Model"
+     url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=801cc865-eaf4-4b6d-a170-af310046846f
+     duration: "5:56"
+     live: 0
+   - title: "Recursion"
+     url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f9b41dac-de52-456f-acbf-af310046487b
+     duration: "3:07"
+     live: 0
+   - title: "Recursively Summing a List"
+     url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1fc1d13c-da0e-4206-81c8-af310045ec3d
+     duration: "6:11"
+     live: 0
+   - title: "Recursion Template"
+     url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8da76a60-e2d1-4e63-8d66-af310045b315
+     duration: "4:20"
+     live: 0
+   - title: "Recursive foldr"
+     url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0adb605c-c22f-4f2f-aa1f-af31004544d1
+     duration: "2:26"
+     live: 0
+   - title: "Recursive length"
+     url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ca8e0c49-ade2-4efe-a92e-af31004545a1
+     duration: "3:48"
+     live: 0
+   - title: "Recursive iterated-beside"
+     url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2ca244bf-b848-4fa0-bba7-af3100454500
+     duration: "4:29"
+     live: 0
+   - title: "(Bonus) Execution is Recursive!"
+     url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=74a0a430-dc09-496d-af01-af310045456b
+     duration: "2:34"
+     live: 0
 ---
 
-<img class="module-image" src="/assets/images/lectures/loops.gif" /> In this lesson, we’re going to go over while loops -- a way of allowing your program to repeat code for a specified number of iterations. Being able to repeat code blocks (also know as "looping" or "iterating") is very powerful, and will allow you to easily perform repetitive tasks in a variety of different contexts: playing songs, drawing pictures, building animations, doing data processing, and so forth.
+Today we'll talk about the idea of **RECURSION** in the pre-recorded lectures. PLEASE. PLEASE. PLEASE. Watch these videos before coming to the Tutorial session on Wednesday.
 
-I also highly recommend that you read Chapter 5 in the Severance (Python for Everyone), for additional review.
+I can't emphasize this enough...
