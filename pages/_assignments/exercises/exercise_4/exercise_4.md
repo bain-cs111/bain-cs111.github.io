@@ -5,7 +5,7 @@ abbreviation: Exercise 4
 type: homework
 due_date: 2022-10-24
 ordering: 5
-draft: 1
+draft: 0
 canvas_id: 1140195
 points: 100
 ---
