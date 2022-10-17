@@ -3,7 +3,7 @@ layout: assignment-two-column
 title: Recursion
 type: tutorial
 abbreviation: Tutorial 3
-draft: 1
+draft: 0
 points: 100
 num: 4
 description:
@@ -20,12 +20,14 @@ Today's tutorial is all about practicing recursion. Remember, **recursion** itse
 <img alt="XKCD Comic About Recursion" src="/assets/tutorial_3/xkcd.png" style="width: 75%;"/>
 
 * * *
+
 ## Getting Started
 There are no template files for this Tutorial so you'll need to start from a blank DrRacket file. You can do this by either just opening DrRacket and it'll open a new `Untitled` file or if you already have DrRacket open, you can go to the File menu and hit `New` or `New Tab`.
 
 After you've got a blank document open, might as well save it with a good sensible name somewhere on your computer where you store important docs.
 
 * * *
+
 ## Problem 1 - `factorial`
 
 Write the **factorial** function $$n!$$ as a **recursive** function.  The factorial of a number is the product of all the numbers from one to that number:
