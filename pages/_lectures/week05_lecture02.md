@@ -7,6 +7,8 @@ draft: 0
 num: 11
 canvas_id: wednesday-lecture-11-pre-recorded-recursion-oct-19
 due_date: 2022-10-19
+exercise_url: "lecture11.zip"
+
 slides:
    - title: "Recursion"
      url: https://docs.google.com/presentation/d/1NYvjkH8RucOy4NX8a-poxDv_tu2DIMl302rxZ1707fo/edit#slide=id.g15fe7b0146b_0_600
