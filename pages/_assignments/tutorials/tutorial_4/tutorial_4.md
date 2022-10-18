@@ -29,7 +29,7 @@ Write a function, `power`, that raises a number to a power: `(power a b)` should
 
 Time for our subgoals!
 
-What is the type of power (that is, what is its type signature, the types of its input and output)?
+What is the type of `power` (that is, what is its type signature, the types of its input and output)?
 
 Step 1. What is the purpose statement for it?
 

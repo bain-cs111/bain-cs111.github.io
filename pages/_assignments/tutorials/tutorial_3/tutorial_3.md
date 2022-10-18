@@ -52,6 +52,8 @@ _Subgoal 2_. What is the purpose statement for it? Can you write some tests (`ch
 
 _Subgoal 3_. What should the **base case** be (aka the “easy case”) for the recursion. The base case is an input for the function where you know the answer without having to recurse. What’s a really easy input to compute the factorial of?
 
+Hint: what's $$1!$$
+
 _Subgoal 4_. Now time to implement that base case. Write inside your function:
 ```racket
 (if test-for-base-case
