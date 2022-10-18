@@ -3,7 +3,7 @@ layout: assignment-two-column
 title: More Recursion Practice
 type: tutorial
 abbreviation: Tutorial 4
-draft: 1
+draft: 0
 points: 100
 num: 5
 canvas_id: 1140257
