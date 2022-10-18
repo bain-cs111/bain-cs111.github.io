@@ -6,6 +6,7 @@ draft: 0
 num: 12
 canvas_id: friday-lecture-12-pre-recorded-iterative-recursion-oct-21
 description:
+exercise_url: "lecture12.zip"
 due_date: 2022-10-21
 slides:
    - title: "Iterative Recursion"
