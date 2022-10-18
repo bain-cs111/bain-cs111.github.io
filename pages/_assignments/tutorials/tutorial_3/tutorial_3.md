@@ -54,13 +54,15 @@ _Subgoal 3_. What should the **base case** be (aka the “easy case”) for the 
 
 Hint: what's $$1!$$
 
-_Subgoal 4_. Now time to implement that base case. Write inside your function:
+_Subgoal 4_. Now time to implement that base case. Write inside your function (this is just a temporary "stub"):
 ```racket
 (if test-for-base-case
     answer-for-base-case
     TODO)
 ```
-Where `test-for-base-case` is something that looks at the input to the function and determines if it’s the base-case input, and answer-for-base-case is the answer for the base case. We’ll fill in `TODO` in a minute.
+Now replace `test-for-base-case` with something that looks at the input to the function and determines if it’s the base-case input, and answer-for-base-case is the answer for the base case. We’ll fill in `TODO` in a minute.
+
+> Hint (again): Let's say you named your input to the function `n`. If we know that `(factorial 1)` should be `1` cause `1!` is 1...and we know that `1!` is our "simplest" (base) case...then all we need to do is test to see if `n` is `=` to `1`. If it is...then our function should just return `1`.
 
 _Subgoal 5_. What’s the **recursive case**? The recursive case is what runs when the input is anything that's NOT the base case. Basically, our goal is to call ourselves (i.e. `factorial`) with a new input that's "one step closer" to the base case. Once we get that answer back (it could take a lot of recursions), we'll take the answer to that and turn it into the answer for the original problem.
 
@@ -68,9 +70,12 @@ You'll need to decide two things:
 * How do you make the input to `factorial` be "one step closer" to your base case?
 * If you had the answer for the "one step closer" input, how would you use it to solve for the original input?
 
+> Hint: how would you make `3!` one step closer to `1!`?  Wait a second...isn't `3!` the same thing as `3 * 2!`? And isn't `2!` the same thing as `2 * 1!`?
+
 _Subgoal 6_. Now fill in the part in your code that says TODO:
-* Write your recursive call, i.e. `(factorial easier-input)` where `easier-input` is whatever the easier version of the input is.
-* Change it to `(fixit (factorial easier-input))` where `fixit` is something that transforms the answer to `(factorial one-step-closer)` into the answer for the original input.
+* Write your recursive call, i.e. `(factorial easier-input)` where `easier-input` is whatever the easier version of the input is
+* `easier-input` will look some thing like this `(some-math-op input-number another-number)`
+* Then change it to `(fixit (factorial easier-input))` where `fixit` is something that transforms the answer to `(factorial easier-input)` into the answer for the original input.
 
 > **Note**: our notation here is a little misleading because it makes it look like `fixit` should just be the name of a function. But for this problem, you’ll want to pass an additional argument to the function besides the result from the recursive call. That means for this problem, the form will really be:
 > ```racket
@@ -81,7 +86,9 @@ _Subgoal 6_. Now fill in the part in your code that says TODO:
 > **Hint**: Remember, that a factorial can be expressed like this:
 > $$5! = (5 - 0) * 4! = (5 - 0) * (5 - 1) * 3! = \ldots $$
 
-Nice work! You've officially written a recursive function. Remember that all you need to do is: 1. find a base case; 2. think of a way of getting the original input "one step closer" to the base case at a time; and 3. think of a way to combine the results to the "one step closer" problems.
+Nice work! You've officially written a recursive function. Remember that all you need to do is: 1. find a base case; 2. think of a way of getting the original input "one step closer" to the base case at a time; and 3. think of a way to combine the results to the "one step closer" problems into the larger problem.
+
+[Having trouble? See if this walkthrough step-by-step helps.](/course-files/tutorial_3/factorial_walkthrough.rkt)
 
 * * *
 
