@@ -79,6 +79,8 @@ And finally, write the definition of power itself:
    (power-helper ...fill this in...)))
 ```
 
+[Having trouble? See if this walkthrough step-by-step helps.](/course-files/tutorial_4/power_walkthrough.rkt)
+
 * * *
 
 ## Interlude - `cond`
