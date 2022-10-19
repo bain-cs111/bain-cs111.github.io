@@ -88,7 +88,7 @@ _Subgoal 6_. Now fill in the part in your code that says TODO:
 
 Nice work! You've officially written a recursive function. Remember that all you need to do is: 1. find a base case; 2. think of a way of getting the original input "one step closer" to the base case at a time; and 3. think of a way to combine the results to the "one step closer" problems into the larger problem.
 
-[Having trouble? See if this walkthrough step-by-step helps.](/course-files/tutorial_3/factorial_walkthrough.rkt)
+[Having trouble? See if this walkthrough step-by-step helps.](/course-files/tutorials/tutorial_3/factorial_walkthrough.rkt)
 
 * * *
 
