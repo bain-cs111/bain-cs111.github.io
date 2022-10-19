@@ -145,6 +145,49 @@ Wow, you're good at this! Two down, two to go!
 
 * * *
 
+## Interlude - Getting tired of writing `lambda`?
+
+So, as is the case with many classes...we've been lying to you for the last few weeks. You know how I said you HAD to use `lambda` or the `λ` to define a function? Totally not true. Say you have a function like this:
+
+```racket
+(define i-am-so-cool
+  (lambda (an-input)
+    do-something-cool))
+```
+
+You can actually use **Sussman form** as a short hand for this same definition by doing the following:
+
+```racket
+(define (i-am-so-cool an-input)
+  do-something-cool)
+```
+
+These two things are completely equivalent. In fact, Racket will run your code in the second example...add the `lambda` expression back in to your code and then run it as normal. _There is never a case where you **have** to use Sussman form._ However, you'll start seeing it in our solutions files from now on as it's just a tad faster than having to type lambda.
+
+So in the general case, a function in Sussman form just looks like this:
+
+```racket
+(define (function-name input-1 input-2 ...)
+  output-expression)
+```
+
+One last example just to make sure you see the difference in notation. These two function definitions are EXACTLY the same:
+
+```racket
+(define f
+  (lambda (x)
+    (+ x 2)))
+```
+
+```racket
+(define (f x)
+  (+ x 2))
+```
+
+Like I said, you don't **have** to use Sussman form. But it is quicker to type...so see if you like it in the next couple of problems.
+
+* * *
+
 ## Problem 3 - `count`
 Now abstract your answer from the previous question to make a function
 ```racket
@@ -202,6 +245,8 @@ Time for some subgoals:
   (local [(define subtree (tree simpler-input))]
     TODO)
 ```
+> Note: that is NOT a function definition in Sussman form. That is storing the result of running `(tree simpler-input)` in the local variable subtree
+
 * Finally, you need to fill in `TODO` with something that makes the subtree itself by assembling the two copies of the subtree with a trunk. Rather than make you fiddle for a long time, here's the basic structure, which is:
 
 ```racket

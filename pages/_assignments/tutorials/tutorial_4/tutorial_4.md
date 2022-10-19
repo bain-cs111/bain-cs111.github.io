@@ -61,6 +61,8 @@ Now write `power` as an iterative recursion. Start by writing a helper function,
    ...stuff...)
 ```
 
+> Note: Function definition look weird? Checkout the section on Sussman form from Tutorial 3!
+
 And returns the answer (`number` raised to `exponent`). To do that, first answer these questions for yourself:
 * Remember that the `accumulator` stores the partial answer. What is the answer you’re ultimately trying to compute (in English)?
 * What would a partial answer be like for this problem?
@@ -76,6 +78,42 @@ And finally, write the definition of power itself:
   (lambda (number exponent)
    (power-helper ...fill this in...)))
 ```
+
+* * *
+
+## Interlude - `cond`
+
+So sometimes you want to do conditionals that have _more_ than two branches. For instance, "if the number i'm looking at is 6, then do this, otherwise if it's 5 then do this, if it's 4 then do this, etc.".
+
+You can totally do that by chaining `if` statements together...but it gets cumbersome pretty quickly. When you find yourself in that sort of situation, it's better to use `cond`. `cond` is another special form that allows us to test multiple conditions and then do actions based on those tests.
+
+When you just want to see if a `test` returns `true` or `false` and do two different actions, `if` and `cond` behave exactly the same. They just use different notation:
+
+```racket
+(if test
+    do-this-if-test-true
+    do-this-if-test-false)
+```
+
+is the same as this:
+
+```racket
+(cond [test do-this-if-test-true]
+      [else do-this-if-test-false])
+```
+
+Notice there are a couple special parts of `cond`'s notation. The first is that you have to put sqaure brackets before and after each test - action pair. The second is that we put `else` as the "test" for the last branch. You can think of `else` as a function that returns true **only if** all the previous tests return false.
+
+Like I said, you don't need `cond` for anything **yet**. But it is very useful for lots of branches in a program:
+
+```racket
+(cond [test do-this-if-test-true]
+      [test-2 otherwise-do-this-if-test-2-true]
+      [test-3 otherwise-do-this-if-test-3-true]
+      [else otherwise-just-do-this])
+```
+
+See if you can use `cond` (with 2 branches) instead of using `if`s for the next couple of problems!
 
 * * *
 
