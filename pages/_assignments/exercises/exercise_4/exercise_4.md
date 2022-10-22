@@ -106,6 +106,8 @@ should return a result like this:
 
 <img alt="my-iterated-overlay example output" src="/assets/exercise_4/my-iterated-overlay.svg"/>
 
+> Note: DON'T COPY AND PASTE THIS IMAGE AS A TEST. Instead, generate the image using `iterated-overlay` and compare it directly to your `my-iterated-overlay`.
+
 > **Remember**: You can't use `foldl`, `foldr`, `apply`, etc.
 
 ### Question 3: `iterated-any`
