@@ -96,7 +96,8 @@ Calling your function like this:
 (my-iterated-overlay (lambda (n)
                        (square (* n 50)
                                "solid"
-                               ; make each iteration progressively lighter
+                               ; make each iteration
+                               ; progressively lighter
                                (color (* n 50)
                                       0 0)))
                      5)   ; number of iterations
@@ -118,7 +119,7 @@ Now you will abstract your code from `iterated-overlay` just like we did in Exer
 ; iterated-any:
 ; (image image -> image)  (number -> image) number -> image
 ; ~~~~~~~~~~~~~~~~~~~~~   ~~~~~~~~~~~~~~~~  ~~~~~~
-; <Combiner>	          <Generator>	    <Count>
+; <a-combiner>	          <a-generator>	    <a-count>
 ```
 
 You can test your function against your implementation of `my-iterated-overlay` from the previous question.
@@ -142,15 +143,21 @@ Recall that `iterated-overlay`, `iterated-beside`, `iterated-above`, etc. all pe
 
 Namely, passing in overlay as our combiner:
 
-<pre>(iterated-any overlay <i>Generator Count</i>)</pre>
+```racket
+(iterated-any overlay a-generator a-count)
+```
 
 should be equivalent to just calling my-iterated-overlay:
 
-<pre>(my-iterated-overlay <i>Generator Count</i>)</pre>
+```racket
+(my-iterated-overlay a-generator a-count)
+```
 
 which, in turn, should be equivalent to calling the original:
 
-<pre>(iterated-overlay <i>Generator Count</i>)</pre>
+```racket
+(iterated-overlay a-generator a-count)
+```
 
 The same holds for `iterated-beside`, `iterated-above`, etc.
 
@@ -185,7 +192,7 @@ Same deal here. Rewrite `iterated-any` to use an accumulator.
 ; iterated-any:
 ; (image image -> image) (number -> image) number -> image
 ; ~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~  ~~~~~
-; <Combiner>              <Generator>	    <Count>
+; <a-combiner>              <a-generator>	    <the-count>
 ```
 * * *
 
