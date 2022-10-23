@@ -106,6 +106,8 @@ Don't change it.
 ## Can I add new ​require​ lines?
 We have included necessary ​`(require ...)`​ lines in the starter code, so there should be no need to add or remove any ​`(require ...)`​ lines. In general, you can (only) include `2htdp` teachpacks (all of form ​`(require 2htdp/...)​`) and the supplementary file from the same week. Don't add any additional library outside this scope, even if it is the supplementary file from previous exercises.
 
+Sometimes, we might provide those require statements commented out; for instance if we recommend testing your programs with them but they aren't required to complete the assignment. In those cases, it's okay to use them to TEST your code, but you shouldn't use those functions within your own function definitions.
+
 ## What part of starter code can I change?
 You can replace ​"fill me in"​ with your work and write any new definitions. Other than that, you ​should not​ modify, delete or comment out existing definitions. You ​must not​ change provided struct definitions.
 
