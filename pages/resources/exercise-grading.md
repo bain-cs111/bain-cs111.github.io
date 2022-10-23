@@ -19,7 +19,7 @@ Yes. Homework Exercises are due on the Canvas **"Due At"** date. You may turn an
 * 0 to 24 hours -> 10%
 * 24 to 48 -> 20%
 
-<div style="text-align: left"><img alt="screenshot from Canvas" src="/assets/images/canvas_example.png" style="scale:50%;"/></div>
+<img alt="screenshot from Canvas" src="/assets/images/canvas_example.png"/>
 
 **No submissions are accepted after 48 hours.**
 
