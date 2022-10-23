@@ -75,7 +75,7 @@ For example, `(product-of (list 1 2 3 4))` should return 24.
 * Be sure to follow the steps listed in the introduction. You must include your own test cases, signatures, and purpose statements.
 * Note that the product of the empty list is defined to be 1, not 0.[^1]
 
-[^1]: If you’re into math, that’s because it’s usually most useful to define the sum or product of an empty list as being the "identity element" for the operation you’re performing (adding or multiplying). The identity element is the number you can add/multiply another number by without changing the other number. So 0 is the identity element of + because $x = x + 0$. But 1 is the identity element of multiplication because x = x * 1. Wow I just really love the properties of rational numbers.
+[^1]: If you’re into math, that’s because it’s usually most useful to define the sum or product of an empty list as being the "identity element" for the operation you’re performing (adding or multiplying). The identity element is the number you can add/multiply another number by without changing the other number. So 0 is the identity element of + because `x = x + 0`. But 1 is the identity element of multiplication because `x = x * 1`. Wow I just really love the properties of rational numbers.
 
 ### Question 2: `my-iterated-overlay`
 

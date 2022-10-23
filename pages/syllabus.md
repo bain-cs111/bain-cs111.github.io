@@ -197,7 +197,7 @@ These two policies are provided to accommodate the myriad situations that studen
 
 ### Deliberate Extension Policy
 
-The _deliberate extension policy_ applies ONLY to **Exercises** and is meant to accommodate students who may have a particular week during the quarter where they are unable to complete the assigned Exercise on-time. Students may apply (using a Google Form included with each assignment) for a 48-hour no-penalty no-questions-asked extension given the two below requirements are satisfied:
+The _deliberate extension policy_ applies ONLY to **Exercises** and is meant to accommodate students who may have a particular week during the quarter where they are unable to complete the assigned Exercise on-time. Students may apply (using a Google Form included at the bottom of each assignment) for a 48-hour no-penalty no-questions-asked extension given the two below requirements are satisfied:
 
 * Students **must** request the extension via the form at least 24 hours in advance of the Exercise deadline.
 * Students **may not** request extensions on consecutive assignments.
