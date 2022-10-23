@@ -135,6 +135,8 @@ This course is meant to a be a learning community which requires the dedicated p
 
 If you attend the Tutorial session in-person and make a legitimate attempt (up to the discretion of your Peer Mentor) at completing the assignment, you will receive full-credit. If you choose not to attend in-person, then your assignment will be reviewed for completion and you may nor may not receive full credit.
 
+If you attended class but for some reason were marked absent, [you can fill out this Google form](https://forms.gle/F5tM4W6kpPbfJ9kE7).
+
 We will not accept late tutorial submissions.
 
 ## Exercises
@@ -174,6 +176,8 @@ All of the above reasonings may be subject to further scrutiny.
 ## Mini-quizzes
 
 These will be short quizzes for each module of the course that serve as a check of your attendance and/or asynchronous participation in the course. For those that complete the Mini-Quiz in class, you will receive full credit for your attendance and full participation. If you choose to complete the Mini-Quiz remotely, you will need to complete the Canvas version of the quiz within 48 hours of your scheduled class time.
+
+If you attended class but for some reason were marked absent, [you can fill out this Google form](https://forms.gle/F5tM4W6kpPbfJ9kE7).
 
 ## Quizzes
 
