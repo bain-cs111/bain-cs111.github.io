@@ -218,6 +218,8 @@ The _emergency grade erasure policy_ acknowledges that often times life situatio
 
 If you _choose_ to drop an assignment early in the quarter only to find yourself in an emergency situation later in the quarter, you will need to reach out to your Dean of Students in order to arrange for flexibility across all of your coursework.
 
+This policy will be automatically applied at the end of the quarter for all students. No action is required on your part.
+
 * * *
 
 # Course Materials and Resources
