@@ -4,8 +4,6 @@ title: Autograder and Submission FAQ
 permalink: /resources/autograder/
 ---
 
-# Auto-grading and Submission FAQ
-
 ## How does auto-grading work?
 The exercises will describe a set of definitions (typically functions) you need to write and what each function should do. We will prepare a set of ​`check-expect​`s to see if those functions run in the same way as required by the exercise. If the functions you write pass the tests we have prepared, you will receive full credit.
 
