@@ -22,8 +22,8 @@ videos:
      url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3def3fca-d966-4bb0-8ead-af38011ec16b
      duration: "7:39"
    - title: "More General Trees"
-     url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=70982cb4-baeb-47a8-83aa-af38011e9e62
-     duration: "4:56"
+     url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b1d6d94d-ed9e-4cd4-af80-af3801221474
+     duration: "2:52"
    - title: "New Count Function"
      url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=43fbcc8f-2766-4d84-92a7-af38011e5e94
      duration: "3:41"
