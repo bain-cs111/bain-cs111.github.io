@@ -14,17 +14,12 @@ slides:
 videos:
   - title: "(Optional) Lecture 10.1: Extra Help with Structs"
     url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b9207bba-a4d7-44e2-9c40-af2d01899b2e
-    live: 0
     duration: "31:02"
-
   - title: "(Optional) Lecture 10.2: Extra Help with Lists"
     url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=575570ec-4adf-443f-8164-af2d01899ace
-    live: 0
     duration: "24:19"
-
   - title: "(Optional) Lecture 10.3: Intro to Exercise 3"
     url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2dc14688-bf82-4698-9f66-af2d01899b00
-    live: 0
     duration: "11:55"
 ---
 

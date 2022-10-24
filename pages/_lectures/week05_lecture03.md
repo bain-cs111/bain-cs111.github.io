@@ -15,19 +15,16 @@ videos:
    - title: "Intro"
      url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=da596b4d-1249-4a6c-a251-af31004e54d8
      duration: "2:44"
-     live: 1
    - title: "Iterative Recursion"
      url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c84b480e-c543-4fe0-820e-af31004e5569
      duration: "8:59"
-     live: 1
    - title: "Helper Functions"
      url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=538d578d-2b2e-4cdf-af96-af31004e5520
      duration: "6:23"
-     live: 1
    - title: "Tree Recursion"
      url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=84319cd8-1b98-4ff9-b7ae-af31004e5503
      duration: "5:40"
-     live: 1
+
 
 ---
 Today we'll follow up with another version of recursion.

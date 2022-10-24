@@ -16,16 +16,13 @@ slides:
 videos:
    - url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=49733953-2f1c-4af5-8fe2-af1701200b29
      duration: "26:37"
-     live: 0
      title: "Lecture 1a - Data Flow Diagrams"
    - url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f7f0545f-9a37-44e6-b31c-af17011828ab
      duration: "6:29"
      title: "Welcome to Canvas"
-     live: 0
    - url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f7f0545f-9a37-44e6-b31c-af17011828ab
      duration: "4:31"
      title: "Welcome to Campuswire"
-     live: 0
 
 ---
 Today we'll build off the pre-recorded lecture on Data Flow diagrams to start designing programs using a text-based programming language. Make sure to watch the lecture video BEFORE coming to class.

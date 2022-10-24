@@ -14,7 +14,6 @@ videos:
   - url: https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d42e53c7-8a24-4b96-86f7-af1c0107fc8e
     title: "Compound Functions (Pre-Recorded)"
     duration: "25:51"
-    live: 1
 
 exercise_url: "lecture03.zip"
 ---
