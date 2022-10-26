@@ -32,7 +32,7 @@ However, in computer science, we often use a different format: _root at the top.
 
 **Root at the Top**
 
-<img alt="Root at the Bottom Tree" src="/assets/exercise_5/ancestry_tree_td.svg" style="float: none; scale:75%;"/>
+<img alt="Root at the Bottom Tree" src="/assets/exercise_5/ancestry_tree_TD.svg" style="float: none; scale:75%;"/>
 
 There is really no difference in the _data_ these trees represent. It's literally just a difference in _appearance_.
 
@@ -40,7 +40,7 @@ I often find it easier to think of these things in terms of your own lived-exper
 
 **Root at the Top**
 
-<img alt="Root at the Top" src="/assets/exercise_5/ancestry_me_td.svg/" style="float: none; scale:75%;"/>
+<img alt="Root at the Top" src="/assets/exercise_5/ancestry_me_td.svg" style="float: none; scale:75%;"/>
 
 **Root at the Bottom**
 
