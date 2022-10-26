@@ -1,6 +1,6 @@
 ---
 layout: lecture-two-column
-title: Quiz 1
+title: Quiz 2
 type: quiz
 draft: 0
 canvas_id: wednesday-quiz-2-nov-2
