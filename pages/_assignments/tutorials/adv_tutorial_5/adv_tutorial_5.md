@@ -3,7 +3,7 @@ layout: assignment-two-column
 title: Building Racket Interpreter in Racket, pt 3
 type: tutorial
 abbreviation: Advanced Tutorial 5
-draft: 1
+draft: 0
 points: 100
 num: 6
 canvas_id: 1141822
@@ -14,117 +14,135 @@ description:
 > Note: If you're completing the advanced tutorial remotely and plan to submit your RKT file, **please make sure your file name has in it the string `adv`**, otherwise we will assume you are submitting the classic version of the tutorial.
 
 
+In this tutorial, we’ll look at how many special forms, such as cond and local, are actually implemented by rewriting them into other kinds of expressions the interpreter already understands.
 
-
-
-
-
-
-
-
-
-
-x
-In this tutorial, we’ll add support for `if` and `lambda` to the interpreter.
-
-<a class="nu-button" href="https://bain-cs111.github.io/course-files/tutorials/adv_tutorial_3_template.zip" target="_blank">
-    Advance Tutorial 3 Starter Files <i class="fas fa-download"></i>
+<a class="nu-button" href="https://bain-cs111.github.io/course-files/tutorials/adv_tutorial_5_template.zip" target="_blank">
+    Advance Tutorial 5 Starter Files <i class="fas fa-download"></i>
 </a>
 
 * * *
 
-## Updates from Last Week's Template
+## Macros
 
-We’ve also had to change the code for the old interpreter a little from last week.
-
-### Sussman Form
-
-The following is part of the language we will use to WRITE our interpreter but does not need to be processed by the interpreter itself.
-
-So you know how we have been using `lambda` to denote the creation of functions? Even when we make named functions? You don't actually have to do that. Instead there's a shortcut (in programming language design, this is sometimes called _syntactic sugar_).
-
-Say we want to make the function `my-sum` that takes as input a list of numbers and returns the sum. Before we'd do it by saying:
-
-```racket
-(define my-sum
-  (lambda (a-list)
-    (apply + a-list)))
-```
-
-Well there's actually a short hand for this which is called "Sussman form" (named after one of the authors of our auxiliary textbooks.)
-
-```racket
-(define (my-sum a-list)
-  (apply + a-list))
-```
-
-In other words, the `lambda` symbol itself can be skipped. Instead, we just say `(define (func-name input-1 input-2 ...) output-expression)` as shorthand. You'll see this in the template file. Sussman form is equivalent to what we have been using (actually when Racket processes your code it transpiles it to include that lambda symbol) and is literally just an optional shorthand you can use.
-
-### More dictionaries
-
-Since we’re going to be adding `lambda` expressions to the interpreter, and lambdas have arguments (variables to hold the inputs to the procedure), we need some way to let the dictionary change over time. To do that, we’ve modified the old interpreter so that most of the procedures take a dictionary as an additional input. That way we can use different dictionaries in different contexts.
-
-We also added a new procedure, `extend-dictionary`, that takes a list of variables, a list of values for those variables, and an existing dictionary, and returns a new dictionary that has all the new variables and values, followed by all the old ones.
-
-### A new kind of procedure
-
-In last week’s interpreter, when you ran `(+ 1 1)`, the interpreter evaluated `+` and got back Racket’s `+` procedure. So all it had to do to finish the procedure call was to use apply to run Racket’s `+` procedure.
-
-However, now we have to allow for the possibility that when the interpreter runs something like `(f 1)`, that `f` will be the result of a lambda expression like `(lambda (x) (+ x 1))`. In that case, we run the procedure call `(f 1)` by calling evaluate on the source code `(+ x 1)` from the lambda, only now in a dictionary in which `x` is set to `1`.
-
-All of this means we need a new kind of data object to hold that source code in it so when the interpreter tries to call it, it can both recognize that it’s not a built-in Racket procedure, and also know what source code it needs to run. These data objects are traditionally called **_closures_** (you'll learn more about these in COMP_SCI 321), but in our code, we’ve called them `interpreted-procedures` since that’s more explicit. There’s a `define-struct` in the code for interpreted procedures. They have three fields:
-* `inputs`: a list of the names of the variables for the procedure’s arguments
-* `result`: the expression to run to compute the output of the procedure
-* `dictionary`: the dictionary that was in use when the lambda was executed to make this interpreted-procedure. Remembering the dictionary will allow a lambda to use the local variables of the code around it.  
-
-So for example, if we run `(lambda (x) (+ x 1))` while the dictionary is `((x 1) (y 2))`, we’ll get back an `interpreted-procedure` whose:
-* `inputs` are `'(x)`
-* `result` is `'(+ x 1)`
-* `dictionary` is `'((x 1) (y 2))`.
-
-Take a moment and read through the code. We’ve marked what’s been added, and what’s been changed.
+A macro is like a procedure in that it tells how to perform some operation by describing it in terms of other operations.  But unlike a procedure, a macro works by literally translating the source code into new source code, and then gives the new source code to the interpreter or compiler to be executed.
 
 * * *
 
-## Adding `if` expressions
-In our old version, `evaluate-complex` always called `evaluate-procedure-call`. Write a new version of `evaluate-complex` that calls `evaluate-if`, when the expression starts with the symbol `if`, and otherwise calls `evaluate-procedure-call`. You can check if a value is the symbol `if` by saying:
+## `cond` expressions
+
+For example, we’ve talked about `cond` in class. A `cond` expression has a series of “clauses”, each of which has a test expression and a result expression. It runs the test expressions of the clauses, in turn until it finds one that evaluates to true, and then evaluates its associated result expression and returns that.
+
+So if, in the following expression, `x` happens to be a list, the following code will return the string `"it’s a list!"`:
 
 ```racket
-(eq? value 'if)
+(cond ((number? x) "it’s a number!")
+      ((string? x) "it’s a string!")
+      ((list? x) "it’s a list!")
+      (else "I don’t know!"))
 ```
 
-Now all you have to do is write `evaluate-if`. We have a skeleton for it in the code. Fill it in.
-
-* * *
-
-## Adding `lambda` expressions
-Great. Now modify `evaluate-complex` so that if the expression starts with `lambda`, it calls `evaluate-lambda`. Then write `evaluate-lambda`. Again, we have a skeleton for you to start from in the code. Remember that `evaluate-lambda` is going to return an `interpreted-procedure` object, so it needs to call `make-interpreted-procedure` with values for the `inputs`, the `result`, and the `dictionary`.
-
-* * *
-
-## Reimplementing procedure calls
-
-As before, procedure calls are implemented by first recursively evaluating all the subexpressions, then calling the value of the procedure expression on the values of the argument expressions. However, this time we have two kinds of procedures to worry about: built-in, primitive Racket procedures, like `+`; and `interpreted-procedures` created by `lambda`.
-
-Write `evaluate-procedure-call` so that it recursively finds the values of the subexpressions, as before. But now, instead of always using `apply` to run the procedure on the arguments, it instead calls `apply-interpreted-procedure`, **if** the procedure is an `interpreted-procedure object`. Otherwise, it can use `apply` as before.
-
-Finally, write `apply-interpreted-procedure`. It should make a new dictionary using the argument names from the `interpreted-procedure` object and the argument values being passed to it, as well as the dictionary from the `interpreted-procedure` object. Then it can just call `evaluate` on the result expression from the `interpreted-procedure` object, and the new dictionary.
-
-* * *
-
-## This is almost a complete programming language!
-
-The one thing we haven’t implemented is `define`, which will have to wait until we get to imperative programming. That’s why we have test cases that look like:
+In other words, it’s equivalent to a bunch of nested ifs:
 ```racket
-(check-expect (evaluate '((lambda (x) (+ x 1))
-                          1)
-                        dictionary)
-              2)
+(if (number? x)
+    "it’s a number!"
+    (if (string? x)
+        "it’s a string!"
+        (if (list? x)
+            "it’s a list!"
+            "I don’t know!")))
 ```
 
-It’s the only way we can test running an interpreted procedure for the moment, but we’ll get to `define` soon.
+But the `cond` version is considered by most programmers to be easier to type and to read.
 
-Not having `define` also means we also don’t have _recursion_ itself (in our constructed language), which is a serious bummer. There is technically a way of implementing recursion using only what we have here. It’s called the [Y combinator](https://en.wikipedia.org/wiki/Fixed-point_combinator#Fixed_point_combinators_in_lambda_calculus), and there’s a famous [startup accelerator](https://en.wikipedia.org/wiki/Y_Combinator) named after it. But both are way outside the scope of this course.
+`cond` is a macro. When you run a piece of code with `cond` in it, the system literally translates the code into the equivalent set of nested ifs and runs (or compiles) that. Remember that the code is really just a data structure, and in the case of Racket, it’s a `list`.
+
+How do we write a procedure to transform the source code for the cond expression, represented as nested lists, into the source code for the if version, also represented as nested lists is straight-forward?  Well, we can define cond schematically like this:
+
+* `(cond (test result) other-clauses …)` is equivalent to `(if test result (cond other-clauses …))`
+* `(cond (else exp))` is equivalent to just `exp`
+
+The first of these gives us a recursion: a clause introduces an if whose alternative is transformed version of the other clauses. And the second point gives us the base case: when we get to an else, we don’t need any more ifs. Here’s some code that does that. It takes the source code for a `cond`, pulls out the clauses, and calls `expand-clauses` on them. `expand-clauses` recurses down the clauses, generating ifs until it hits an else clause:
+
+```racket
+;; expand-cond: list -> list
+;; Transforms a cond expression into the equivalent set of nested ifs.
+(define (expand-cond cond-exp)
+  (local [(define (expand-clauses clauses)
+            (local [(define next-clause (first clauses))
+                    (define test (first next-clause))
+                    (define value (second next-clause))]
+              (if (eq? test 'else)
+                  value
+                  (list 'if
+                        test
+                        value
+                        (expand-clauses (rest clauses))))))]
+    (expand-clauses (rest cond-exp))))
+```
+
+* * *
+
+## The macro dictionary
+
+We’ve added a second dictionary, uncreatively called macro-dictionary, that maps names of macros to procedures that transform them.  For example, it maps the name cond to the expand-cond procedure.  Then, we’ve given you a procedure, macro-expander, that given a name returns the transformer procedure associated with it, if its argument is the name of a macro, or otherwise just returns false. So:
+
+```racket
+(macro-expander 'cond)
+```
+
+returns `expand-cond`, but `(macro-expander '+)` returns `#f`.
+
+* * *
+
+## Modifying the interpreter to support macros
+
+We’ve made the interpreter slightly more complicated since last time.  Before, when `evaluate-complex` found something that wasn’t if or `lambda`, it called `evaluate-procedure-call` since the only other kinds of expressions were procedure calls.  Now, it’s possible to have a macro call. So we’ve added a procedure called `evaluate-call` that has to look at the call, figure out if it’s a macro call, and if so expand it and run the expanded code, otherwise call `evaluate-procedure-call` as before.
+
+Fill in the code for `evaluate-call`. If you did it right, then all the old check-expects for evaluate should still work, but the new ones that evaluate code containing cond should also work!
+
+* * *
+
+## Writing `and` and `or`
+
+We said in class that and and or are procedure, but they’re actually not. Like `cond`, they’re macros that expand into ifs.  The expression `(and a b)` expands into `(if a b #f)`. And the expression `(and a b c)` expands into `(if a (if b c #f) #f)`.  Here’s the general pattern:
+
+*	`(and a other-stuff …)` expands into `(if a (cond other-stuff …) #f)`
+*	`(and a)` expands to just `a`
+
+Again, the first of these gives us a recursion: for each argument to and, we make an if with the argument, then the result of the recursion on the remaining arguments, and otherwise false. The last point gives us the base case: when we only have one argument, just use that.
+
+Fill in the code for `expand-and` and test it out.
+
+Why is and defined this way? Because if it were a procedure, it would always run all its arguments, because the interpreter always runs of the arguments of a procedure.  But defining it in terms of if, we make a version that stops running the arguments once we find an argument that’s false, at which point it returns false. If it gets through all of them without getting false, it returns true.
+
+Now do `expand-or`. Or works by running arguments until it finds one that’s true and returns true. The pattern is:
+
+* `(or a other-stuff …)` expands into `(if a #t (cond other-stuff …))`
+* `(or a)` expands to just `a`
+
+So once again, this gives us a recursion.
+
+* * *
+
+## Writing `local`
+
+`local` is also a macro. We’re going to implement a simplified version of `local` that just expands into a procedure call. If we say:
+
+```racket
+(local ((define a 1)
+        (define b 2))
+  (+ a b))
+```
+
+We can get the same effect by running:
+
+```racket
+((lambda (a b) (+ a b)) 1 2)
+ ```
+
+The lambda expression makes a procedure that puts its arguments in variables `a` and `b`, then returns `(+ a b)`. That’s what we want here, only we want `a` to be `1` and `b` to be `2`.  So we just call the procedure with `1` and `2` as arguments, and the procedure obediently puts those values in variables `a` and `b`, then returns `(+ a b)`.
+
+Fill in the code for `expand-local`. Note that this one doesn’t need to be a recursion, although feel free to write one if you really want to. But this one is easier to do using some calls to cons, list, and map.
 
 * * *
 
