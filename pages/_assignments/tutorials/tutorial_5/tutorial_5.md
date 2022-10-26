@@ -97,7 +97,7 @@ This definition also gives us a way to write recursive functions on binary trees
 
 * * *
 
-## Making a Tree in Racket
+## Problem 3 - Making a Tree in Racket
 The numerical binary tree above would look like this in Racket:
 
 ```racket
