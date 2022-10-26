@@ -170,4 +170,4 @@ Before turning your assignment in, **run the file one last time** to make sure t
 
 Then, make sure to read the [Autograder Guide](https://canvas.northwestern.edu/courses/178849/pages/whats-an-autograder) one last time. Not only is it a useful check of your work, but it will also tell you which file you should submit.
 
-> Note: For groups that may have a significant amount of programming experience, your PM may suggest trying out the <a target="blank" href="">Advanced Tutorial 5 (will be posted Tuesday)</a>
+> Note: For groups that may have a significant amount of programming experience, your PM may suggest trying out the <a target="blank" href="/course-files/tutorials/adv_tutorial_5_template.zip">Advanced Tutorial 5</a>
