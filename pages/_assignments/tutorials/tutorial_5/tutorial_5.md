@@ -88,8 +88,10 @@ Given this definition, we can say the following are all valid binary trees:
 * `6`, since a tree can be just a number
 *	`7`, same reason
 * `5`, same reason
-*	`(make-branch 4 6 7)`, since * and * are trees and `(make-branch number tree tree)` is a tree
+*	`(make-branch 4 6 7)`, since `6` and `7` are trees and `(make-branch number tree tree)` is a tree
 * `(make-branch 2 (make-branch 4 6 7) 5)`, by the same reasoning, since `(make-branch 4 6 7)` is a tree and so is 5.
+
+> **Note**: Having trouble visualizing what these programs are actually trying to encode? Checkout the [Lecture 14 slides](https://docs.google.com/presentation/d/1x4XjJ28pT0WP3STvJp7wk07T7kBLauLlTqz_sbC90ao/edit#slide=id.g172794ed368_1_634) for some _similar_ but not identical examples.
 
 This definition also gives us a way to write recursive functions on binary trees. Since we know a tree is always either a `number` or a `branch` (that contains further trees inside it), we can have our base case be when the tree is just a single number (which we can test using the `number?` predicate) and our recursive case be when it’s a `branch` (in which case we recurse on the `left` and `right` children).
 
