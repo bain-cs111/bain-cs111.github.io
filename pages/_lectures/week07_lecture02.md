@@ -29,7 +29,7 @@ Three Types of Problems:
 **Examples**: What's the type of the following expression?
 ```racket
 (lambda (n)
-  * n 2)
+  (* n 2))
 ```
 The answer would be: `number -> number` because this is a **function** that takes as input numbers and produces as output numbers.
 
