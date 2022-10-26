@@ -133,12 +133,12 @@ So if called with, for example, my ancestry tree from the beginning as an argume
 
 Don’t worry about duplicate names in the list. If there are two ancestors with the same name, just return them twice.
 
-### Question 2: `ancestors-names-except`
+### Question 2: `ancestors-names-exclusive`
 
 Given an ancestry tree, give a list of all names in the ancestry, except the person’s own name. So if called my example tree, it should return all the names except "me".
 
 ```racket
-; ancestors-names-except: ancestry-tree -> (listof string)
+; ancestors-names-exclusive: ancestry-tree -> (listof string)
 ; returns a list of the names of one's ancestors excluding one's own name
 (define (ancestors-names-except pers) ...)
 ```
@@ -152,6 +152,7 @@ Now write a function that can determine if two trees have a common ancestor, in 
 ; returns true if the ancestry trees have a common ancestor
 (define (related? f1 f2) ...)
 ```
+
 * * *
 
 ## Part 2: Binary Search Trees
