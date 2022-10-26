@@ -31,7 +31,7 @@ Three Types of Problems:
 (lambda (n)
   (* n 2))
 ```
-The answer would be: `number -> number` because this is a **function** that takes as input numbers and produces as output numbers.
+The answer would be: `number -> number` because this is a **function** that takes as input number and produces as output number.
 
 If we were instead to give you an expression:
 ```racket
