@@ -133,7 +133,7 @@ By completing the tutorials, you will become familiar with the types of strategi
 
 This course is meant to a be a learning community which requires the dedicated participation of all members. Attendance is required for the first Tutorial, but you may choose to submit future tutorials remotely.
 
-If you attend the Tutorial session in-person and make a legitimate attempt (up to the discretion of your Peer Mentor) at completing the assignment, you will receive full-credit. If you choose not to attend in-person, then your assignment will be reviewed for completion _and accuracy_ meaning you may nor may not receive full credit.
+If you attend the Tutorial session in-person and make a legitimate attempt (up to the discretion of your Peer Mentor) at completing the assignment, you will receive full-credit. If you choose not to attend in-person, then your assignment will be reviewed for completion _and accuracy_ meaning you may nor may not receive full credit. Remote tutorials will be graded via the same autograding mechanism as the Exercises.
 
 If you attended class but for some reason were marked absent, [you can fill out this Google form](https://forms.gle/F5tM4W6kpPbfJ9kE7).
 
