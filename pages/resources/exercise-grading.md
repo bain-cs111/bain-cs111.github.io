@@ -23,6 +23,14 @@ Yes. Homework Exercises are due on the Canvas **"Due At"** date. You may turn an
 
 **No submissions are accepted after 48 hours.**
 
+> I finished the exercise on time but forgot to submit it on Canvas. The date modified date shows that it was finished before the deadline. Can I get late forgiveness?
+
+Unfortunately, no. Date / modified created on digital files isn't any sort of verifiable evidence.
+
+I don't like to be harsh, but if you send us a screenshot of a timestamp, we won't consider it.
+
+It's trivial to manipulate these digital timestamps and so they don't serve as any sort of proof. It's your responsibility to upload your files by the due date.
+
 > How do I see what I got wrong on the Exercise?
 
 Go to the Canvas submission page for the assignment in question. View the comments, of which, you'll see at least two. The one that says `See attached files.` has an attachment with your name and NetID, along with the extension `.HTML`. You can download and open that file in any web browser to see the autograder report for your assignment.
