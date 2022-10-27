@@ -7,7 +7,7 @@ draft: 0
 num: 15
 due_date: 2022-10-28
 exercise_url: "lecture15.zip"
-canvas_id: friday-lecture-15-pre-recorded-binary-search-trees-oct-28
+canvas_id: friday-lecture-15-binary-search-trees-oct-28
 slides:
    - title: "Binary Search Trees"
      url: https://docs.google.com/presentation/d/1dS7t4WmACU_cseFZjHz3650UjftOt_j5RtmEZalBlpg/edit?usp=sharing

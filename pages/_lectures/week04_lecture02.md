@@ -1,6 +1,6 @@
 ---
 layout: module
-title: Manipulating COmposite Data Types
+title: Manipulating Composite Data Types
 type: lecture
 draft: 0
 num: 9
