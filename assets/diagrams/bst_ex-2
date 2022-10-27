@@ -1,0 +1,7 @@
+graph TB;
+K[Kenobi] --> B[Boba]
+B --> C[Anakin]
+B --> E[Grogu]
+K --> T[Trilla]
+T --> M[Mace]
+T --> Y[Yoda]
