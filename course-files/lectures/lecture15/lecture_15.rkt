@@ -45,21 +45,21 @@
 ; INVARIANT: each ssn number in the list l is larger than ssn of employee e
 
 ; add: employee database -> database
-; adds the person to the database, maintaining ascending order
-; (define (addv2 per db)
+; adds the employee to the database, maintaining ascending order
+; (define (add-v2 per db)
 ;   ...)
 
-; (check-expect (addv2 jessica-e (list ava-e george-e steve-e))
+; (check-expect (add-v2 jessica-e (list ava-e george-e steve-e))
 ;               (list ava-e george-e jessica-e steve-e))
-; (check-expect (addv2 ava-e empty)
+; (check-expect (add-v2 ava-e empty)
 ;               (list ava-e))
 
-; Challenge, how do we insert a person into an already sorted list?
+; Challenge, how do we insert a employee into an already sorted list?
 
 
 
-; lookupv2: number database -> person or false
-; find the person in the database with the provided ssn
+; lookup-v2: number database -> employee or false
+; find the employee in the database with the provided ssn
 ;   false if not found (the database is sorted)
 
 (check-expect (lookup-v2 2 (list ava-e george-e jessica-e steve-e))
@@ -83,22 +83,22 @@
 ; predicate - db-node? empty?
 ; selectors - db-node-employee, db-node-left, db-node-right
 
-; INVARIANT: every person in 'left' has a smaller SSN than employee 'e'
-;   and every person in 'right' has a larger SSN than person 'e'
+; INVARIANT: every employee in 'left' has a smaller SSN than employee 'e'
+;   and every employee in 'right' has a larger SSN than employee 'e'
 
 ; Exploiting the invariant - using the invariant to make our code more
 ;   efficient
 
-; lookup-v3 : number database -> person or false
-; returns person if ssn in database, false otherwise
+; lookup-v3 : number database -> employee or false
+; returns employee if ssn in database, false otherwise
 (define (lookup-v3 n db)
   ;what do you do if the db is empty?
-  ;what do you do if the person at the root (db-node-person db)
+  ;what do you do if the employee at the root (db-node-employee db)
   ;    has the ssn that we're looking for
   ;what do you do if the number we are looking for is less
-  ;    than the person at the root
+  ;    than the employee at the root
   ;what do you do if the number we are looking for is greater
-  ;    than the person at the root
+  ;    than the employee at the root
 )
 
 ; binary search tree example 1
