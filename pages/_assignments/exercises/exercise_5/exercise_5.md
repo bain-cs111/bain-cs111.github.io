@@ -229,6 +229,55 @@ You **MUST** use/exploit the invariant in your definition of `lookup`. You **MAY
 
 * * *
 
+## Appendix: Creating Test Cases
+
+In general, creating a comprehensive set of tests is a difficult task. However, just in the context of exercises 4 and 5, a useful strategy is to follow the data definition.
+
+```racket
+; An ancestry-tree is either...
+; - empty
+; - (make-human string ancestry-tree ancestry-tree)
+```
+
+To come up with an `ancestry-tree`, it suffices to pick one of the cases and repeatedly replace any remaining ancestry-trees using the same procedure. Here are a few examples:
+
+### Example 1
+```racket
+ancestry-tree ---pick the empty case---> empty
+```
+
+### Example 2
+```racket
+ancestry-tree
+---pick the make-human case--->
+(make-human "A" ancestry-tree ancestry-tree) ; ---pick the empty case--->
+(make-human "A" empty ancestry-tree)
+; ---pick the empty case--->
+(make-human "A" empty empty)
+```
+
+### Example 3
+```racket
+ancestry-tree
+---pick the make-human case--->
+(make-human "B" ancestry-tree ancestry-tree) ---pick the make-human case--->
+(make-human "B"
+            (make-human "C" ancestry-tree  ancestry-tree)
+            ancestry-tree)
+; ---pick the empty case twice--->
+(make-human "B"
+            (make-human "C" empty empty)
+            ancestry-tree)
+; ---pick the empty case--->
+(make-human "B"
+            (make-human "C" empty empty)
+            empty)
+```
+
+In each step, there are exactly two options available from the data definition. Even more, following both options is effectively the same as enumerating all small ancestry trees. Although deciding the names in the trees still requires creativity, at least this approach lets you test the recursive structure in the code.
+
+* * *
+
 ## Turning It In
 
 Before turning your assignment in, **run the file one last time** to make sure that it runs properly and doesn’t generate any exceptions, and all the tests pass. Make sure you've also spent some time writing your OWN `check-expect` calls to test your code.
