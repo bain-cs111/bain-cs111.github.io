@@ -71,6 +71,8 @@ def main():
             if "lecture" not in dirname:
                 if "solutions" in dirname:
                     os.rename(dirname + ".zip", dirname + ".zip")
+                elif "practice" in dirname:
+                    os.rename(dirname + ".zip", dirname + "_practice.zip")
                 else:
                     os.rename(dirname + ".zip", dirname + "_template.zip")
     else:
