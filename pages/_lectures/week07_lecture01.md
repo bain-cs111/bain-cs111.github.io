@@ -7,6 +7,7 @@ draft: 0
 canvas_id: monday-lecture-16-quiz-2-review-oct-31
 num: 16
 due_date: 2022-10-31
+exercise_url: "lecture16.zip"
 slides:
   - title: "Quiz 2 Review"
     url: https://docs.google.com/presentation/d/1Tya7ycaFzdKtXJwyUg07kNvOV9nd0vDzdBJSMP-EeFg/edit?usp=sharing
