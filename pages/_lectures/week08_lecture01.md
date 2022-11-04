@@ -1,6 +1,6 @@
 ---
 layout: module
-title: Imperative Programming (Cont.)
+title: Imperative Programming
 description:
 type: lecture
 draft: 1

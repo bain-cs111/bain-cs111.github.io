@@ -12,6 +12,11 @@ canvas_id: 1143472
 
 This exercise will be all about creating Snake the video game. If you've never played before, I recommend checking out [this browser-based version](https://www.mikusa.com/snake/snake.html) before starting the assignment.
 
+> **Note:** There are a few differences between this version and ours:
+> * Our snake will start off with a single segment rather than a bunch.
+> * We'll have multiple food morsels on the board at the start.
+> * We'll have obstacles on the board that also pose a danger to the snake.
+
 The purpose of this assignment is:
 
 1. have a summative assignment of nearly all the topics we've covered in the first 7 weeks of class
@@ -21,11 +26,13 @@ This is an authentic example of what you'll be doing if you continue on in CS pa
 
 ## What is Snake?
 
-In this game, you control a snake that wanders around a grid (square) board, eating food (yellow morsels) and avoiding purple obstacles. Each time the snake eats a morsel of food, it gets 1 unit longer. If the snake ever runs into itself, runs into the edge of the board or runs into a purple obstacle, the game is over. The snake never stops moving; the player can control only the direction that the snake moves by using the arrow keys.
+In this game, you control a snake that wanders around a grid (square) board, eating yellow food morsels and avoiding purple obstacles. Each time the snake eats a morsel of food, it gets 1 unit longer. If the snake ever runs into itself, runs into the edge of the board or runs into a purple obstacle, the game is over. The snake never stops moving; the player can control only the direction that the snake moves by using the arrow keys.
 
 ### Some Logistical stuff
 
-This assignment DOES NOT use imperative programming. Starting on Friday November 4th, we'll be talking about imperative programming in class soon but this assignment DOES NOT use imperative programming. This means that in class we will be using the `Advanced Student Language` for imperative programming but as this assignment is purely functional (no imperative programming) we want to use continue using `Intermediate Student with Lambda`.
+This assignment DOES NOT use imperative programming. Starting on Monday, November 7th, we'll be talking about imperative programming in class soon but this assignment DOES NOT use imperative programming. This means that in class we will be using the `Advanced Student Language` for imperative programming but as this assignment is purely functional (no imperative programming) we want to use continue using `Intermediate Student with Lambda`. You can always check what language you're using in DrRacket by looking at the bottom left hand corner of the main window.
+
+<img href="/assets/exercise_6/drracket_language.png" alt="Screenshot of DrRacket language chooser" style="float: none; scale:75%;"/>
 
 ### Computer Coordinate Systems
 Computers tend to use an odd coordinate system where the top left corner has coordinates `(0, 0)` and the y-coordinate increases in value as you move down. That is, the bottom left corner is at coordinates `(0, SIZE_OF_COORDINATE_SYSTEM)`. For this assignment the provided `snake-lib.rkt` file corrects for this behavior, moving the `(0, 0)` coordinate to the bottom left like coordinate systems in math. This means when the snake is moving up you’ll want to increase the y- coordinate and decrease it when the snake is moving down.
@@ -45,7 +52,6 @@ Just like our custom `struct`s, this means we have the following functions to cr
 
 ## How to Get Started
 To begin, download the template files below and make sure that all the files `snake-lib.rkt`, `foreign.rkt`, and `snake.rkt` are in a folder where you will do your work.
-
 
 <a class="nu-button" href="/course-files/exercises/exercise_6_template.zip" target="_blank">
     Exercise 6 Starter Files <i class="fas fa-download"></i>
@@ -71,6 +77,7 @@ For this assignment, we will use several different data definitions (already inc
 These definitions are provided in your code _as a reference_ but the `define-struct` lines must remain commented as they are defined in already in `snake-lib.rkt` **for you**. They are also listed below.
 
 This `require` line also provides two other definitions:
+
 * `board-length`, the length of one side of the board (measured in terms of snake body segments – by default, this is set to 50)
 
 * `play-game`, a function described near the end of this assignment.
@@ -78,12 +85,12 @@ This `require` line also provides two other definitions:
 ### The `game`
 ```racket
 ; a game is...
-; - (make-game snake (listof posn) (listof posn) number) (define-struct game [snake food obstacles ticks])
-; a direction is one of... ; - 'up
-; - 'down
-; - 'left
-; - 'right
+; - (make-game snake (listof posn) (listof posn) number)
+;   aka: (define-struct game (snake food obstacles ticks))
 ```
+
+* x-coordinates increase from 1 to `board-length` (inclusive) toward the right.
+* y-coordinates increase from 1 to `board-length` (inclusive) toward the top.
 
 > **Interlude on Symbols**
 > `'down` and its counterparts might look a little weird. It's not a string...and it's not a list. What the heck is it? The single quote (i.e. `'`) when _not_ paired with a parenthesis (e.g. `'(1 2)`) means: "the following is a **symbol**". `symbol`s are another type of data in Racket that you can think of as "strings without any spaces." Racket knows the symbol ends as soon as it sees a space.
@@ -91,35 +98,41 @@ This `require` line also provides two other definitions:
 > That is `'up` is a **symbol** and `"up"` is a **string**. If you see something that starts with a single quote, it's a symbol. To test to see if something is a symbol, you can use the built-in function `symbol?`. To test if two symbols are equal, you can use: `symbol=?`
 
 ### The `snake`
+
 ```racket
 ; a snake is...
-; - (make-snake direction (listof posn)) (define-struct snake [heading segments])
+; - (make-snake direction (listof posn))
+;   aka: (define-struct snake (heading segments))
+```
+
+So a `snake` is made up:
+* a `heading` (`'up`, `'left`, `'down`, or `'right`)
+* and a list of `segments` (more below)
+
+#### Snake `segments`
+
+```racket
 ; segments is either
 ; - (cons posn empty)
 ; - (cons posn segments)
-; That is, segments is a non-empty list of posns.
 ```
 
-* x-coordinates increase from 1 to `board-length` (inclusive) toward the right.
-* y-coordinates increase from 1 to `board-length` (inclusive) toward the top.
-* the default value for `board-length` is 50.
-
+That is, `segments` is a non-empty list of `posn`s.
 
 ### `food`
 ```racket
 ; food is either
 ; - empty
 ; - (cons posn food)
-; That is, food is a list of posns.
 ```
-This is basically just a list of `posns`. If a `(x,y)` point is in this list, that means we'll see it on the board as a yellow food particle at that coordinate point.
 
-### `obstacle-squares`
+This is basically just a list of `posn`s. If a `(x,y)` point is in this list, that means we'll see it on the board as a yellow food particle at that coordinate point.
+
+### `obstacle-squares` (a variable)
 ```racket
 ; obstacle-squares is either
 ; - empty
 ; - (cons posn obstacle-squares)
-; obstacle-squares is also a list of posns.
 ```
 This is basically just a list of `posns`. If a `(x,y)` point is in this list, that means we'll see it on the board as a purple obstacle at that coordinate point.
 
@@ -178,10 +191,10 @@ This function **does not** replace eaten food; `play-game` (in `snake-lib.rkt`) 
 Below are two examples of the behavior of this function for the snake before and after a single step. The first scenario shows the snake moving upwards without eating. The second is the same scenario except the snake eats a piece of food as it moves upward.
 
 **Without food - Snake moving up**
-<img href="/assets/exercise_6/snake_first_screenshot.png" alt="Snake screenshot of not eating food"/ style="float: none; scale:75%;"/>
+<img href="/assets/exercise_6/snake_first_screenshot.png" alt="Snake screenshot of not eating food" style="float: none; scale:75%;"/>
 
 **With food - Snake moving down**
-<img href="/assets/exercise_6/snake_second_screenshot.png" alt="Snake screenshot of eating food"/ style="float: none; scale:75%;"/>
+<img href="/assets/exercise_6/snake_second_screenshot.png" alt="Snake screenshot of eating food" style="float: none; scale:75%;"/>
 
 ### Finally Testing Your Work
 
