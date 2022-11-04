@@ -6,7 +6,7 @@ type: lecture
 draft: 0
 num: 17
 due_date: 2022-11-04
-canvas_id:s
+canvas_id: friday-lecture-17-on-functional-programming-nov-4
 exercise_url: "lecture17.zip"
 slides:
   - title: "On Functional Programming"

@@ -5,7 +5,7 @@ abbreviation: Exercise 6
 type: homework
 due_date: 2022-11-14
 ordering: 7
-draft: 1
+draft: 0
 points: 100
 canvas_id: 1143472
 ---
@@ -24,6 +24,10 @@ The purpose of this assignment is:
 
 This is an authentic example of what you'll be doing if you continue on in CS past our course. It's incredibly rare to work on something just totally by yourself. And even if you're working by yourself, you usually rely on outside libraries and other people's programs as the basis of your larger programs.
 
+Your finished Snake program will look like this:
+
+<img src="/assets/exercise_6/finished_snake.png" alt="Screenshot of finished game" style="float: none; scale:75%;"/>
+
 ## What is Snake?
 
 In this game, you control a snake that wanders around a grid (square) board, eating yellow food morsels and avoiding purple obstacles. Each time the snake eats a morsel of food, it gets 1 unit longer. If the snake ever runs into itself, runs into the edge of the board or runs into a purple obstacle, the game is over. The snake never stops moving; the player can control only the direction that the snake moves by using the arrow keys.
@@ -32,7 +36,7 @@ In this game, you control a snake that wanders around a grid (square) board, eat
 
 This assignment DOES NOT use imperative programming. Starting on Monday, November 7th, we'll be talking about imperative programming in class soon but this assignment DOES NOT use imperative programming. This means that in class we will be using the `Advanced Student Language` for imperative programming but as this assignment is purely functional (no imperative programming) we want to use continue using `Intermediate Student with Lambda`. You can always check what language you're using in DrRacket by looking at the bottom left hand corner of the main window.
 
-<img href="/assets/exercise_6/drracket_language.png" alt="Screenshot of DrRacket language chooser" style="float: none; scale:75%;"/>
+<img src="/assets/exercise_6/drracket_language.png" alt="Screenshot of DrRacket language chooser" style="float: none; scale:50%;" />
 
 ### Computer Coordinate Systems
 Computers tend to use an odd coordinate system where the top left corner has coordinates `(0, 0)` and the y-coordinate increases in value as you move down. That is, the bottom left corner is at coordinates `(0, SIZE_OF_COORDINATE_SYSTEM)`. For this assignment the provided `snake-lib.rkt` file corrects for this behavior, moving the `(0, 0)` coordinate to the bottom left like coordinate systems in math. This means when the snake is moving up you’ll want to increase the y- coordinate and decrease it when the snake is moving down.
@@ -191,10 +195,10 @@ This function **does not** replace eaten food; `play-game` (in `snake-lib.rkt`) 
 Below are two examples of the behavior of this function for the snake before and after a single step. The first scenario shows the snake moving upwards without eating. The second is the same scenario except the snake eats a piece of food as it moves upward.
 
 **Without food - Snake moving up**
-<img href="/assets/exercise_6/snake_first_screenshot.png" alt="Snake screenshot of not eating food" style="float: none; scale:75%;"/>
+<img src="/assets/exercise_6/snake_first_screenshot.png" alt="Snake screenshot of not eating food" style="float: none; scale:50%;"/>
 
 **With food - Snake moving down**
-<img href="/assets/exercise_6/snake_second_screenshot.png" alt="Snake screenshot of eating food" style="float: none; scale:75%;"/>
+<img src="/assets/exercise_6/snake_second_screenshot.png" alt="Snake screenshot of eating food" style="float: none; scale:50%;"/>
 
 ### Finally Testing Your Work
 
