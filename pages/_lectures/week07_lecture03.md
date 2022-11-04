@@ -1,5 +1,5 @@
 ---
-layout: lecture-two-column
+layout: module
 title: On Functional Programming
 description:
 type: lecture
