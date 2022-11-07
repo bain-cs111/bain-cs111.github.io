@@ -84,6 +84,9 @@ This `require` line also provides two other definitions:
 
 * `board-length`, the length of one side of the board (measured in terms of snake body segments – by default, this is set to 50)
 
+* x-coordinates increase from 1 to `board-length` (inclusive) toward the right.
+* y-coordinates increase from 1 to `board-length` (inclusive) toward the top.
+
 * `play-game`, a function described near the end of this assignment.
 
 ### The `game`
@@ -93,8 +96,10 @@ This `require` line also provides two other definitions:
 ;   aka: (define-struct game (snake food obstacles ticks))
 ```
 
-* x-coordinates increase from 1 to `board-length` (inclusive) toward the right.
-* y-coordinates increase from 1 to `board-length` (inclusive) toward the top.
+* the `snake` is described in more detail below (where is the snake on the screen)
+* the `food` is described in more detail below (where is the food located on the screen)
+* the `obstacles` are described in more detail below (where are the obstacles on the screen)
+* the `ticks` just keeps track of how many "turns" have been played (aka how many times has the snake moved)
 
 > **Interlude on Symbols**
 > `'down` and its counterparts might look a little weird. It's not a string...and it's not a list. What the heck is it? The single quote (i.e. `'`) when _not_ paired with a parenthesis (e.g. `'(1 2)`) means: "the following is a **symbol**". `symbol`s are another type of data in Racket that you can think of as "strings without any spaces." Racket knows the symbol ends as soon as it sees a space.
