@@ -83,10 +83,8 @@ These definitions are provided in your code _as a reference_ but the `define-str
 This `require` line also provides two other definitions:
 
 * `board-length`, the length of one side of the board (measured in terms of snake body segments – by default, this is set to 50)
-
 * x-coordinates increase from 1 to `board-length` (inclusive) toward the right.
 * y-coordinates increase from 1 to `board-length` (inclusive) toward the top.
-
 * `play-game`, a function described near the end of this assignment.
 
 ### The `game`
@@ -179,7 +177,9 @@ The game ends when the snake runs into:
 2. A wall - if the x and y coordinates of all of the snakes segments fall between 1 and 50 (board-length) inclusive, this means that the snake has NOT hit a wall. If the x or y coordinate of any of the segments becomes 0 or 51, then the snake has hit a wall. Please be very careful when checking the bounds here.
 3. Or an `obstacle` (purple dot) - see if any of the segments have collided with any of the obstacles.
 
-> **Hint**: you might find it useful to write helper functions
+Note that a "dead snake" (aka, game over) is exemplified by the snake turning red on the game board. (The `snake-lib` also takes care of this for you)
+
+> **Hint**: you might find it useful to write helper functions. One for each condition of game over.
 
 _When your snake runs off the top or left side of the board, you’ll see a weird shift of the game board and you’ll be able to see the segment of the snake that is off the side of the board. When it runs off the bottom or right, this will not happen. This is expected behavior and you don't need to worry about it._
 
@@ -193,7 +193,7 @@ This function moves the game forward one step. _One step increments the game’s
 
 _Moving_ the snake means that the snake both gains and loses a segment (unless it eats). The new segment’s coordinates are determined by the segment that was previously at the front of the snake and the direction the snake is heading. If the snake does not eat, it loses the oldest segment, namely the one that was previously at the end of the snake. To see if the snake has eaten, you should check to see if adding a new segment in the direction of the header collides with a piece of food.
 
-> **Hint**: To remove an element from the end of a list, think about how you can use the rest and reverse procedures (you can find reverse in the [Racket Documentation](https://docs.racket-lang.org/htdp-langs/intermediate-lam.html#%28def._htdp-intermediate-lambda._%28%28lib._lang%2Fhtdp-intermediate-lambda..rkt%29._reverse%29%29)).
+> **Hint**: To remove an element from the end of a list, think about how you can use the rest and reverse functions (you can find reverse in the [Racket Documentation](https://docs.racket-lang.org/htdp-langs/intermediate-lam.html#%28def._htdp-intermediate-lambda._%28%28lib._lang%2Fhtdp-intermediate-lambda..rkt%29._reverse%29%29)).
 
 This function **does not** replace eaten food; `play-game` (in `snake-lib.rkt`) handles that task. You **do need to handle removing the eaten food**, however.
 
@@ -204,6 +204,14 @@ Below are two examples of the behavior of this function for the snake before and
 
 **With food - Snake moving up**
 <img src="/assets/exercise_6/snake_second_screenshot.png" alt="Snake screenshot of eating food" style="float: none; width:50%;"/>
+
+> **Hint**: Remember, in functional programming we can't update the value of a variable. If we want to "update" a game, we have to create a whole new game and update its properties using the values from the old game. So for instance if we wanted to make a new game using some old game `g`...and all we wanted was to update the `g`'s tick counter, we would have to use:
+>```racket
+> (make-game (game-snake g)
+>            (game-food g)
+>            (game-obstacles g)
+>            (+ 1 (game-ticks g))
+>```
 
 ### Finally Testing Your Work
 
