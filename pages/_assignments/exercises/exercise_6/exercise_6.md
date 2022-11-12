@@ -174,7 +174,7 @@ game-over?: game -> boolean
 
 The game ends when the snake runs into:
 1. Itself - the head is the same as one of the other segments. A snake of length 1 or 2 (of 1 or 2 segments) can reverse direction without running into itself. Once a snake is 3 or more segments, reversing direction will cause it to run into itself and the game should be over. You cannot have an empty snake.
-2. A wall - if the x and y coordinates of all of the snakes segments fall between 1 and 50 (board-length) inclusive, this means that the snake has NOT hit a wall. If the x or y coordinate of any of the segments becomes 0 or 51, then the snake has hit a wall. Please be very careful when checking the bounds here.
+2. A wall - if the x and y coordinates of all of the snakes segments fall between 1 and 50 (board-length) inclusive. Please be very careful when checking the bounds here.
 3. Or an `obstacle` (purple dot) - see if any of the segments have collided with any of the obstacles.
 
 Note that a "dead snake" (aka, game over) is exemplified by the snake turning red on the game board. (The `snake-lib` also takes care of this for you)
