@@ -1,11 +1,11 @@
 ---
 layout: assignment-two-column
-title: Simple Asteroids
+title: Inheritance
 type: tutorial
-abbreviation: Tutorial 9
+abbreviation: Tutorial 7
 draft: 1
 points: 100
 num: 10
 description:
-due_date: 2022-11-30
+due_date: 2022-11-16
 ---
