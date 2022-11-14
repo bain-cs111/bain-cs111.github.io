@@ -5,8 +5,9 @@ abbreviation: Exercise 7
 type: homework
 due_date: 2022-11-23
 ordering: 8
-draft: 1
+draft: 0
 points: 100
+canvas_id: 1147673
 ---
 
 In the last several years, you’ve undoubtedly gotten more experience taking exams and quizzes on computers.
@@ -17,7 +18,7 @@ Your job this week is to build an automated quiz taking and scoring system. In t
 
 The end product is an automated "quiz" system that gives a score after the user completes the questions.
 
-Note: As we move into writing code that interacts with a user more, you might find it useful to reference [the Racket documentation](https://docs.racket-lang.org/htdp-langs/advanced.html). While you won't need to use them for this exercise (we take care of it for you) it's definitely worth taking some time to understand how the `runquiz` function at the bottom of the file works.
+Note: As we move into writing code that interacts with a user more, you might find it useful to reference [the Racket documentation](https://docs.racket-lang.org/htdp-langs/advanced.html). While you won't need to actually use the `read` function for this exercise (we take care of it for you) you will need to use the `printf` function (there's a little primer at the top of the assignment template).
 
 <br>
 <a class="nu-button" href="/course-files/exercises/exercise_7_template.zip" target="_blank">
@@ -29,9 +30,9 @@ Note: As we move into writing code that interacts with a user more, you might fi
 ## Part 1: Defining the `question` struct
 You’ll begin by implementing a basic `question` struct. This struct should include the following (attribute and method names must match exactly).
 
-In the starter code, we’ve provided an example question (q1) and some tests to be sure that you defined the question struct and its methods properly. Feel free to add more tests.
+In the starter code, we’ve provided an example question (q1) and some tests to be sure that you defined the question struct and its methods properly.
 
-### Required Attributes
+### Required Fields
 
 | Name        | Type   | Description                        |
 |-------------|--------|------------------------------------|
@@ -49,7 +50,7 @@ In the starter code, we’ve provided an example question (q1) and some tests to
 ## Part 2: multiple-choice Question Sub-type
 A `multiple-choice` question differs from a regular question in that we need to tell the user what the possible choices are, displaying numerical labels next to each choice, starting at 1. That is, the way that we display the question differs a bit. Beyond that difference, multiple choice questions are just question. Implement a `multiple-choice-question` struct as a **subtype** of the `question` struct.
 
-In addition to those that are inherited from question, multiple-choice-question should include the following attributes:
+In addition to those that are inherited from question, multiple-choice-question should include the following fields:
 
 | Name | Type | Description |
 | ---  | --- | ---- |
@@ -58,7 +59,7 @@ In addition to those that are inherited from question, multiple-choice-question 
 
 The multiple-choice-question struct **should include its own `display` method**, as the way we display a multiple-choice question differs from how we display a question – we need to show the choices. See below for an image of the user interaction.
 
-In the starter code, we’ve provided an example question (`q2`) and some tests to be sure that you defined the `multiple-choice-question` struct and it’s methods properly. Feel free to add more tests.
+In the starter code, we’ve provided an example question (`q2`) and some suggested tests to be sure that you defined the `multiple-choice-question` struct and its methods properly.
 
 ## Part 3: numeric-question Sub-type
 A numeric question is displayed just like a question but differs in how we assess the users response. That is, we might be a bit forgiving and allow some bit of error in the numeric answer that they give.
@@ -71,7 +72,7 @@ In addition to those that are inherited from question, numeric-question should i
 
 The `numeric-question` struct should include its own `check-answer` method, as the way we check the answer from the user differs from a regular question in that we need to see if the user’s response is within the allowable error (a range around the correct answer). That is, if `(answer - error-range) < response < (answer + error-range)`. See below for an image of the user interaction.
 
-In the starter code, we’ve provided an example question (q3) and some tests to be sure that you defined the numeric-question struct and its methods properly. Feel free to add more tests.
+In the starter code, we’ve provided an example question (q3) and some suggested tests to be sure that you defined the numeric-question struct and its methods properly.
 
 ## Part 4: Testing your quiz!
 

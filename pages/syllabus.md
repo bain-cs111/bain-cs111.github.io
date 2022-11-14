@@ -104,8 +104,8 @@ Your course grade will consist of 4 weighted components: Tutorials, Exercises, M
 
 {:.medium}
 |--- |--- |
-| **9 Tutorials** (of 10) | 15% |
-| **9 Exercises** (of 10) | 40% |
+| **8 Tutorials** (of 9) | 15% |
+| **8 Exercises** (of 9) | 40% |
 | **Mini Quizzes** (1 per module) | 5% |
 | **3 Quizzes** (of 4) | 40% |
 
@@ -215,10 +215,10 @@ There will be no exceptions to this policy. Once you are granted an extension, i
 The _emergency grade erasure policy_ acknowledges that often times life situations occur that make it impossible to keep up in a course. **_Do not_ use this a planning or scheduling device.** This is specifically meant to take care of emergencies that happen in your life during the quarter.
 
 * Your lowest quiz score (including 0s) is dropped (best 3 of 4)
-* Your lowest tutorial score (including 0s) is dropped (best 9 of 10)
-  * _You may not drop the final tutorial score_ (Tutorial 9)
-* Your lowest exercise score (including 0s) is dropped (best 9 of 10)
-  * _You may not drop the final exercise score_ (Exercise 9)
+* Your lowest tutorial score (including 0s) is dropped (best 8 of 9)
+  * _You may not drop the final tutorial score_ (Tutorial 8)
+* Your lowest exercise score (including 0s) is dropped (best 8 of 9)
+  * _You may not drop the final exercise score_ (Exercise 8)
 
 If you _choose_ to drop an assignment early in the quarter only to find yourself in an emergency situation later in the quarter, you will need to reach out to your Dean of Students in order to arrange for flexibility across all of your coursework.
 
