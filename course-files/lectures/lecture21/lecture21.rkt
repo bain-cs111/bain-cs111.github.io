@@ -165,7 +165,7 @@
 ;              (+ 2 pixel-weight-before-test))
 
 ; grow-zoo!: list-of-animals -> void
-; takes a list of animals and adds one to the weight of each animal
+; takes a list of animals and adds two to the weight of each animal
 ; Effect: Each animal in the zoo is 2 pound heavier
 
 ;; FILL THIS IN
