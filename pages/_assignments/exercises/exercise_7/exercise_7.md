@@ -45,7 +45,9 @@ In the starter code, we’ve provided an example question (q1) and some tests to
 | Name | Inputs | Description |
 | ---- | ------ | ----------- |
 | `display`      | takes as input ONLY a question                           | Displays `"question: "` followed by the question text and then a new line                                                                                                |
-| `check-answer` | takes an input a question and a user response (a `symbol`) | uses `equal?` to assess whether the response is correct or not. If the response equals the answer, `check-answer` should return `#true`. Otherwise, it should return `#false`. |
+| `check-answer` | takes an input a question and a user response (a `symbol`) | **uses `equal?` to assess whether the response is correct or not**. If the response equals the answer, `check-answer` should return `#true`. Otherwise, it should return `#false`. |
+
+> **Note**: You can't use `symbol=?` here and HAVE to use `equal?` to compare answers as numbers can't be turned into symbols (type `'1` into the interactions window and you'll see that it just gives back a number rather than a symbol).
 
 ## Part 2: multiple-choice Question Sub-type
 A `multiple-choice` question differs from a regular question in that we need to tell the user what the possible choices are, displaying numerical labels next to each choice, starting at 1. That is, the way that we display the question differs a bit. Beyond that difference, multiple choice questions are just question. Implement a `multiple-choice-question` struct as a **subtype** of the `question` struct.
