@@ -44,7 +44,7 @@ In the starter code, we’ve provided an example question (q1) and some tests to
 
 | Name | Inputs | Description |
 | ---- | ------ | ----------- |
-| `display`      | takes as input ONLY a question                           | Displays question followed by the question text and then a new line                                                                                                |
+| `display`      | takes as input ONLY a question                           | Displays `"question: "` followed by the question text and then a new line                                                                                                |
 | `check-answer` | takes an input a question and a user response (a `symbol`) | uses `equal?` to assess whether the response is correct or not. If the response equals the answer, `check-answer` should return `#true`. Otherwise, it should return `#false`. |
 
 ## Part 2: multiple-choice Question Sub-type
