@@ -125,7 +125,7 @@ Next (and last) implement one final method:
 
 | Name | Inputs | Description |
 | ---- | ------ | ----------- |
-| `names-by-grad-year` | takes a `roster` and a `number` as input | searches through the `roster`, returning the list of students with the provided grad-year |
+| `names-by-grad-year` | takes a `roster` and a `number` as input | searches through the `roster`, returning the list of students' names with the provided grad-year |
 
 * * *
 
