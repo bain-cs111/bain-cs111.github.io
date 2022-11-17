@@ -7,6 +7,7 @@ draft: 1
 num: 23
 due_date: 2022-11-18
 canvas_id: friday-lecture-23-quiz-3-review-nov-18
+exercise_url: "lecture23.zip"
 slides:
   - title: "Quiz 3 Review"
     url: https://docs.google.com/presentation/d/1C8vjzz8uea3K-pXuLGT6BYgJ02S4AD1-z9BAYpHDST8/edit?usp=sharing
