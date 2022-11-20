@@ -63,6 +63,8 @@ The multiple-choice-question struct **should include its own `display` method**,
 
 In the starter code, we’ve provided an example question (`q2`) and some suggested tests to be sure that you defined the `multiple-choice-question` struct and its methods properly.
 
+For **Test 6** the intent is for you to check that the number-of-choices matches the length of the choices list.
+
 ## Part 3: numeric-question Sub-type
 A numeric question is displayed just like a question but differs in how we assess the users response. That is, we might be a bit forgiving and allow some bit of error in the numeric answer that they give.
 
