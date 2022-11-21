@@ -76,6 +76,8 @@ In addition to those that are inherited from question, numeric-question should i
 
 The `numeric-question` struct should include its own `check-answer` method, as the way we check the answer from the user differs from a regular question in that we need to see if the user’s response is within the allowable error (a range around the correct answer). That is, if `(answer - error-range) < response < (answer + error-range)`. See below for an image of the user interaction.
 
+This `check-answer` should return a boolean just like the previous one: if the answer is in the range, it should return `#true` and if the answer is outside the range it should return `#false`.
+
 In the starter code, we’ve provided an example question (q3) and some suggested tests to be sure that you defined the numeric-question struct and its methods properly.
 
 ## Part 4: Testing your quiz!
