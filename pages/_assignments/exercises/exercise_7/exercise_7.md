@@ -86,6 +86,8 @@ Once you’ve implemented all of parts 1, 2 and 3, uncomment the line `(runquiz 
 
 <img src="/assets/exercise_7/ex7_interaction.png" style="width:50%" />
 
+You can leave this line commented uncommented when you submit; it will not affect the autograder either way.
+
 * * *
 
 ## Turning It In
