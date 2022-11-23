@@ -5,6 +5,7 @@ type: lecture
 draft: 0
 num: 24
 due_date: 2022-11-23
+canvas_id: wednesday-lecture-24-pre-recorded-programming-languages-nov-23
 slides:
   - title: "Programming Languages"
     url: https://docs.google.com/presentation/d/1mCZz4L0xboHmVQlHB6lVz3-o1ObVJVEUu-YvoqzaWpA/edit?usp=sharing
