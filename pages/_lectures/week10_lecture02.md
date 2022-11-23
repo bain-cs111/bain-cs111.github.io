@@ -40,7 +40,7 @@ Today is meant as a fun "zoom out" day. We get so easily bogged down in the spec
 
 1. **Bifrost** (part of the Maya rendering software) which is a programming language for procedural graphics generation; [link to Bifrost](https://makeanything.autodesk.com/bifrost)
 2. **Max (MSP)** which is a programming language meant for audio synthesis and manipulation; [link to Max](https://cycling74.com/products/max)
-3. **NetLogo** which is an IDE and language meant to allow for exploration of complex systems through agent-based modeling; [link to example used in the vide](http://www.netlogoweb.org/launch#http://ccl.northwestern.edu/netlogo/models/models/IABM%20Textbook/chapter%201/Ants%20Simple.nlogo)
+3. **NetLogo** which is an IDE and language meant to allow for exploration of complex systems through agent-based modeling; [link to example used in the video](http://www.netlogoweb.org/launch#http://ccl.northwestern.edu/netlogo/models/models/IABM%20Textbook/chapter%201/Ants%20Simple.nlogo)
 
 Programming languages are diverse in their ways of representation and expression, but the thing they share is the ability to help us _concretize_ what's in our heads in a way the computer understands. This communication between us and the computer is pretty incredible and by forcing ourselves to analyze _how_ we think about things it changes the way _we understand what we understand_ (meta...I know).
 
