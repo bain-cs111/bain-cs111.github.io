@@ -1,5 +1,5 @@
 ---
-layout: two-column
+layout: module
 title:  Q4 Review + AMA
 type: lecture
 draft: 1
