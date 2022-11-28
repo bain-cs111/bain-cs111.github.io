@@ -12,7 +12,7 @@ points: 30
 
 >**NOTE**: This assignment is completely optional and not required.
 
-This is an optional extra credit review assignment that can add up to 40 points to your exercise grade in this class (which currently has 800 points from the 8 highest scoring exercises).
+This is an optional extra credit review assignment that can add up to 30 points to your exercise grade in this class (which currently has 800 points from the 8 highest scoring exercises).
 
 The intent is to help you study for Quiz 4 by writing some more complex functions that span different topics in the course.
 
