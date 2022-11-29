@@ -15,9 +15,9 @@
 ;;; Part 1: LISTS
 ;;;
 
-;; QUESITON 1: contains-a
+;; QUESTION 1: contains-a
 ;; contains-a: any (listof any) -> bool
-;; Returns true if the first is inpu in the listof inputs and
+;; Returns true if the first input is in the listof inputs and
 ;; returns false otherwise.
 
 (check-expect (contains-a 1 '(1 2 3 4))
