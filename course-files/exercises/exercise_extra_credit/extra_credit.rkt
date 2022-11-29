@@ -18,7 +18,7 @@
 ;; QUESTION 1: contains-a
 ;; contains-a: any (listof any) -> bool
 ;; Returns true if the first input is in the listof inputs and
-;; returns false otherwise.
+;; returns false otherwise. It MUST be recursive.
 
 (check-expect (contains-a 1 '(1 2 3 4))
               true)
