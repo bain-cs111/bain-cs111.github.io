@@ -7,6 +7,7 @@ num: 27
 due_date: 2022-12-02
 exercise_url: "lecture27.zip"
 canvas_id: https://canvas.northwestern.edu/courses/178849/pages/friday-lecture-27-quiz-4-review-nov-18
+slides:
   - title: "Q4, Toasters, and AMA"
     url: https://docs.google.com/presentation/d/12oPAfGUP_7Lb8AoaUG2HfG_RqhqVSJukQZR68hTZMaQ/edit?usp=sharing
 ---
