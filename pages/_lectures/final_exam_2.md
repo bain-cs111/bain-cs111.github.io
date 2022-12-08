@@ -18,7 +18,7 @@ It will ALL be in the Advanced Student Language.
 ## Logistics
 * In-person here in the Auditorium (ANU Students please keep an eye out for an email from me this evening with accommodations details)
 * Taken on the Lockdown Browser on your personal computer; details on <a href="https://canvas.northwestern.edu/courses/178849/modules/items/2427335" target="_blank">how to set it up are on our Canvas page.</a>
-* During your assigned class time; you MUST attend the one you're registered for on CAESAR.
+* During your assigned final time; you MUST attend the one you're registered for on CAESAR.
 
 * * *
 
