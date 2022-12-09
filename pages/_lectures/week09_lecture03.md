@@ -3,7 +3,7 @@ layout: module
 title: Quiz 3 Review
 description:
 type: lecture
-draft: 1
+draft: 0
 num: 23
 due_date: 2022-11-18
 canvas_id: friday-lecture-23-quiz-3-review-nov-18
