@@ -154,7 +154,7 @@ You may submit the assignments up to 48 hours late with a 10% penalty per 24-hou
 
 ### Petition to Resubmit (edit 10/5/22)
 
-If you score below an 80 **because of an issue with the autograder**, you may petition to resubmit **exactly one Exercise per quarter**. You need to first fill out the [Petition to Resubmit Google Form](https://forms.gle/E4v4jjpvYZstiWQz7) and then resubmit the assignment via Canvas **before 1pm the following day that grades are posted**. Any resubmissions through this process will be treated as if they were submitted 48-hours late. Please also remember that our Emergency Grade Erasure policy also lessens the impact of single assignments on your grade.
+If you score below an 80 **because of an issue with the autograder**, you may petition to resubmit **exactly one Exercise per quarter**. You need to first fill out the [Petition to Resubmit Google Form](https://forms.gle/E4v4jjpvYZstiWQz7) and then resubmit the assignment via Canvas **before 1pm the following day that grades are posted**. Any resubmissions through this process will be treated as if they were submitted 48-hours late. Please also remember that our Emergency Grade Erasure policy also lessens the impact of single assignments on your grade. Note that because of the quick turnaround at the end of the quarter, neither the Extra Credit Exercise nor Exercise 8 are eligible for resubmissions.
 
 In order to petition to resubmit, you must:
 * **Have already received your grade on the assignment**.
