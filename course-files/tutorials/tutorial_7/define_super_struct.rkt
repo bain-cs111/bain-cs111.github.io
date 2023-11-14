@@ -7,7 +7,6 @@
                      racket/match
                      racket/syntax
                      syntax/parse)
-         mzlib/pconvert-prop
          (only-in lang/htdp-advanced
                   [define asl:define]
                   [lambda asl:lambda]
@@ -48,7 +47,7 @@
              struct-spec-info-override-or-new-methods
              struct-spec-info-allowed-methods)
 
- ;; Basic's uni-directional functor & implicit parameter library
+ ;; Basic uni-directional functor & implicit parameter library
  define/implicit-parameter
  define/linking
  mutable-variable-pack
@@ -261,8 +260,10 @@
     (define expected-field-syms-set (list->set expected-field-syms))
     (define field-syms-set (list->set field-syms))
     (cond
-      [(> (set-count expected-field-syms-set)
-          (set-count field-syms-set))
+      [(not
+        (set-empty?
+         (set-subtract expected-field-syms-set
+                       field-syms-set)))
        (raise-syntax-error
         'define-struct
         (format "the structure ~a has missing fields: ~a"
@@ -274,8 +275,10 @@
                  #:before-last " and "))
         struct-stx
         #'fields)]
-      [(< (set-count expected-field-syms-set)
-          (set-count field-syms-set))
+      [(not
+        (set-empty?
+         (set-subtract field-syms-set
+                       expected-field-syms-set)))
        (raise-syntax-error
         'define-struct
         (format "the structure ~a has extra fields: ~a"
@@ -335,11 +338,9 @@
      #`(begin
          (define (name/parameterized free-var ...)
            (let ([name
-                  #,(syntax-property
-                     (quasisyntax/loc stx
-                       (λ (arg ...)
-                         body-expr ...))
-                     'errortrace:annotate #t #t)])
+                  #,(quasisyntax/loc stx
+                      (λ (arg ...)
+                        body-expr ...))])
              name))
          #,(quasisyntax/loc stx
              (define-syntax name
@@ -375,7 +376,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
-;;; More Basic units/functors and implicit parameters
+;;; More basic units/functors and implicit parameters
 ;;;
 ;;; like define/implicit-parameter except that the free variables are
 ;;; specified through either the mutable-variable-pack form or the
@@ -462,7 +463,7 @@
   (define field-syms
     (struct-spec-info-fields struct-spec))
   (append
-   (list (format-symbol "struct:~a" struct-sym)
+   (list struct-sym
          (format-symbol "make-~a" struct-sym)
          (format-symbol "~a?" struct-sym))
    (for/list ([field-sym (in-list field-syms)])
@@ -608,8 +609,8 @@
           'define-struct
           (format
            (string-append
-            "expected either nothing or method declarations starting with the "
-            "keyword #:methods after the field names, but found ~a extra part~a")
+            "expected either nothing or method declarations, but found ~a extra part~a.\n"
+            " Did you forgot to put #:methods before starting to define the methods?")
            (length rest)
            (if (> (length rest) 1) "s" ""))
           stx
@@ -711,18 +712,6 @@
               'disappeared-binding
               (list (syntax-local-introduce #'method-name))))]))
 
-(struct opaque-struct-type (name info)
-  #:property prop:object-name (struct-field-index name)
-  #:property prop:print-converter
-  (λ (info convert)
-    (opaque-struct-type-name info)))
-
-(define (extract-struct-type info)
-  (cond
-    [(struct-type? info) info]
-    [(opaque-struct-type? info) (opaque-struct-type-info info)]
-    [else info]))
-
 #|
    Structure definitions with methods. The methods are dispatched
    using the struct type of the first parameter.
@@ -782,7 +771,7 @@
   ;; `fields` is `(field:id ...)`.
   (cond
     [methods-stxs
-     (define/syntax-parse (~or struct-name:id (struct-name:id super-name:id))
+     (define/syntax-parse (~or struct-name:id (struct-name:id _))
        #'name-or-super)
      (define spec-info-any
        (syntax-local-value (struct-name->struct-spec-name #'struct-name)
@@ -816,12 +805,8 @@
            ...
            #,@warn-unspecified-struct-stx
            #,(quasisyntax/loc stx
-               (struct struct-name fields
-                 #:constructor-name #,(format-id #'struct-name "make-~a" #'struct-name)
-                 (~? (~@ #:super (extract-struct-type super-name)))
+               (define-struct name-or-super fields
                  #:transparent
-                 #:omit-define-syntaxes
-                 #:reflection-name 'struct-name
                  #:mutable
                  .
                  #,(apply
@@ -832,13 +817,38 @@
                        #'#:property
                        (struct-method-info-prop:-id
                         (syntax-local-value a-method-name-stx))
-                       a-local-method-name-stx)))))
-           (define struct-name
-             (opaque-struct-type 'struct-name
-                          #,(format-id #'struct-name "struct:~a" #'struct-name)))))]
+                       a-local-method-name-stx)))))))]
     [else
      (syntax/loc stx
        (asl:define-struct name-or-super fields . rest))]))
+
+#| expected struct declarations for exercise 7 |#
+(provide
+ struct-spec:question
+ struct-spec:multiple-choice-question
+ struct-spec:numeric-question
+ display
+ check-answer)
+
+(define-struct-method-if-not-exists display)
+(define-struct-method-if-not-exists check-answer)
+
+(define-struct-name-specification question
+  #:fields (text answer point-value)
+  #:override-or-new-methods ()
+  #:allowed-methods (display check-answer))
+
+(define-struct-name-specification multiple-choice-question
+  #:super question
+  #:fields (number-of-choices choices)
+  #:override-or-new-methods (display)
+  #:allowed-methods (display check-answer))
+
+(define-struct-name-specification numeric-question
+  #:super question
+  #:fields (error-range)
+  #:override-or-new-methods (check-answer)
+  #:allowed-methods (display check-answer))
 
 (module+ test
   (require rackunit)
@@ -883,7 +893,7 @@
    exn:fail?
    (λ () (add (make-posn3d 2 2 5) (make-my-posn 1 1))))
 
-  (define-struct/methods (posn2 my-posn) ())
+  (define-struct (posn2 my-posn) ())
 
   (check-equal? (add (make-posn2 1 1) (make-posn2 2 2))
                 (make-my-posn 3 3))
