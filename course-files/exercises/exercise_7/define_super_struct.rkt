@@ -47,7 +47,7 @@
              struct-spec-info-override-or-new-methods
              struct-spec-info-allowed-methods)
 
- ;; Poorman's uni-directional functor & implicit parameter library
+ ;; Basic uni-directional functor & implicit parameter library
  define/implicit-parameter
  define/linking
  mutable-variable-pack
@@ -312,7 +312,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
-;;; Poorman's implicit parameters
+;;; Basic implicit parameters
 ;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -376,7 +376,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
-;;; More poorman's units/functors and implicit parameters
+;;; More basic units/functors and implicit parameters
 ;;;
 ;;; like define/implicit-parameter except that the free variables are
 ;;; specified through either the mutable-variable-pack form or the
