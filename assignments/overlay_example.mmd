@@ -1,0 +1,22 @@
+graph LR
+    A[ ]--->D{"<br/><font face=courier size=4 color=white /><br/>&nbsp;"}
+    B[ ]--->D
+    C[ ]--->D
+    D ---> DOut("<img src='https://bainco.github.io/images/classes/small-red-circle.svg'; width='50' height='100' />")
+    F[ ]--->I{"<br/><font face=courier size=4 color=white /><br/>&nbsp;"}
+    G[ ]--->I
+    H[ ]--->I
+    I ---> IOut("<img src='https://bainco.github.io/images/classes/large-blue-circle.svg'; width='100' height='100' />")
+
+    DOut ---> Circle{"<br/><font face=courier size=4 color=white /><br/>&nbsp;"}
+    IOut ---> Circle
+
+    Circle ---> Output("<img src='https://bainco.github.io/images/classes/a-nested-circle.svg'; width='100' height='100' />")
+
+
+    style D fill:#4E2A84
+    style I fill:#4E2A84
+    style Circle fill:#4E2A84
+    style Output fill:#FFFFFF, stroke:#FFFFFF;
+    style IOut fill:#FFFFFF, stroke:#FFFFFF;
+    style DOut fill:#FFFFFF, stroke:#FFFFFF;
