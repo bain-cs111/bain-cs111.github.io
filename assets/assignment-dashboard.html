@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Class Progress Dashboard</title>
+    <style>
+        :root {
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --card-past-due: #fef2f2;
+            /* Light red background for past due */
+            --border-past-due: #fee2e2;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --primary-color: #4f46e5;
+            /* Indigo progress fill */
+            --track-color: #e5e7eb;
+            /* Gray progress track */
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            margin: 0 0 1.5rem 0;
+            font-size: 2rem;
+        }
+
+        /* Filter Controls */
+        .controls {
+            display: flex;
+            gap: 1rem;
+            background: var(--card-bg);
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            flex-wrap: wrap;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .filter-group label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        select {
+            padding: 0.5rem 2rem 0.5rem 0.7rem;
+            font-size: 1rem;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        /* Dashboard Grid */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        /* Progress Card */
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+            border: 1px solid transparent;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Highlight style for past due assignments */
+        .card.past-due {
+            background-color: var(--card-past-due);
+            border-color: var(--border-past-due);
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 0 0 1rem 0;
+            min-height: 2.6rem;
+            /* Ensures text alignment */
+            display: flex;
+            align-items: center;
+        }
+
+        /* Circular Progress Dial */
+        .dial-container {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            margin-bottom: 1rem;
+        }
+
+        .dial {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            /* Uses a dynamic custom property driven by JS */
+            background: conic-gradient(var(--primary-color) calc(var(--percentage) * 1%), var(--track-color) 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dial::before {
+            content: "";
+            position: absolute;
+            width: 96px;
+            height: 96px;
+            background: inherit;
+            /* Inherits past-due or card background dynamically */
+            border-radius: 50%;
+        }
+
+        /* Explicitly force internal dial cutout masking to honor card backgrounds */
+        .card:not(.past-due) .dial::before {
+            background: var(--card-bg);
+        }
+
+        .card.past-due .dial::before {
+            background: var(--card-past-due);
+        }
+
+        .dial-percentage {
+            position: relative;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .card-meta {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: auto;
+            width: 100%;
+        }
+
+        .due-date {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .card.past-due .due-date {
+            color: #b91c1c;
+            /* Crimson text accent for past due alerts */
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            background: #e0e7ff;
+            color: #4338ca;
+            font-weight: 500;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>CS 111 - Class Progress</h1>
+            <div class="controls">
+                <div class="filter-group">
+                    <label for="weekFilter">Week</label>
+                    <select id="weekFilter">
+                        <option value="all">All Weeks</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="typeFilter">Assignment Type</label>
+                    <select id="typeFilter">
+                        <option value="all">All Types</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="dateFilter">Timeline</label>
+                    <select id="dateFilter">
+                        <option value="all">All Dates</option>
+                        <option value="past">Past Due</option>
+                        <option value="upcoming">Upcoming</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+
+        <main class="dashboard-grid" id="dashboardGrid">
+        </main>
+    </div>
+
+    <script>
+        const JSON_URL = 'https://bain-cs111.github.io/assets/progress-dashboard.json';
+        const TOTAL_STUDENTS = 19; // Pulled to global constant for easier cohort scale maintenance
+
+        let assignmentsData = [];
+
+        // Fallback data structure using explicit ISO strings for reliable calculation
+        const sampleData = [
+            { "title": "Lab 1: Environment Setup", "num_students": 28, "week": 1, "type": "Lab", "due_date": "2026-06-24T23:59:59Z" },
+            { "title": "Quiz 1: Syntax & Types", "num_students": 20, "week": 1, "type": "Quiz", "due_date": "2026-06-26T23:59:59Z" },
+            { "title": "Lab 2: Control Flow", "num_students": 12, "week": 2, "type": "Lab", "due_date": "2026-07-01T23:59:59Z" },
+            { "title": "Project 1: Text RPG Game", "num_students": 3, "week": 2, "type": "Project", "due_date": "2026-07-05T23:59:59Z" },
+            { "title": "Quiz 2: Arrays & Lists", "num_students": 0, "week": 3, "type": "Quiz", "due_date": "2026-07-10T23:59:59Z" }
+        ];
+
+        async function initDashboard() {
+            try {
+                if (JSON_URL === 'MOCK_DATA') {
+                    console.log("Using sample configuration.");
+                    assignmentsData = sampleData;
+                } else {
+                    const response = await fetch(JSON_URL);
+                    if (!response.ok) throw new Error("Network response was not OK");
+                    assignmentsData = await response.json();
+                }
+
+                populateFilters(assignmentsData);
+                renderDashboard(assignmentsData);
+                setupEventListeners();
+
+            } catch (error) {
+                console.error("Error fetching progress data:", error);
+                // Fall back to sample data visually if the endpoint hits CORS or 404 local issues during staging
+                assignmentsData = sampleData;
+                populateFilters(assignmentsData);
+                renderDashboard(assignmentsData);
+                setupEventListeners();
+            }
+        }
+
+        function populateFilters(data) {
+            const weekFilter = document.getElementById('weekFilter');
+            const typeFilter = document.getElementById('typeFilter');
+
+            const weeks = [...new Set(data.map(item => item.week))].sort((a, b) => a - b);
+            const types = [...new Set(data.map(item => item.type))].sort();
+
+            weeks.forEach(week => {
+                const opt = document.createElement('option');
+                opt.value = week;
+                opt.textContent = `Week ${week}`;
+                weekFilter.appendChild(opt);
+            });
+
+            types.forEach(type => {
+                const opt = document.createElement('option');
+                opt.value = type;
+                opt.textContent = type;
+                typeFilter.appendChild(opt);
+            });
+        }
+
+        function formatDueDate(dateString) {
+            if (!dateString) return "No Due Date";
+            const date = new Date(dateString);
+            return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+        }
+
+        function renderDashboard(data) {
+            const grid = document.getElementById('dashboardGrid');
+            grid.innerHTML = '';
+            const now = new Date();
+
+            if (data.length === 0) {
+                grid.innerHTML = '<p>No assignments found matching the active criteria.</p>';
+                return;
+            }
+
+            data.forEach(item => {
+                const card = document.createElement('div');
+
+                // Determine past due status based on target timeline boundary
+                const isPastDue = item.due_date && new Date(item.due_date) < now;
+                card.className = `card ${isPastDue ? 'past-due' : ''}`;
+
+                const percentage = Math.trunc(item.num_students / TOTAL_STUDENTS * 100);
+
+                card.innerHTML = `
+                <h3 class="card-title">${item.title}</h3>
+                <div class="dial-container">
+                    <div class="dial" style="--percentage: ${percentage}">
+                        <span class="dial-percentage">${percentage}%</span>
+                    </div>
+                </div>
+                <div class="card-meta">
+                    <div class="due-date">${isPastDue ? '⚠️ Past Due: ' : 'Due: '}${formatDueDate(item.due_date)}</div>
+                    <div>Week ${item.week} • <span class="badge">${item.type}</span></div>
+                </div>
+            `;
+                grid.appendChild(card);
+            });
+        }
+
+        function setupEventListeners() {
+            const weekFilter = document.getElementById('weekFilter');
+            const typeFilter = document.getElementById('typeFilter');
+            const dateFilter = document.getElementById('dateFilter');
+
+            const filterData = () => {
+                const selectedWeek = weekFilter.value;
+                const selectedType = typeFilter.value;
+                const selectedDateTimeline = dateFilter.value;
+                const now = new Date();
+
+                const filtered = assignmentsData.filter(item => {
+                    const matchesWeek = (selectedWeek === 'all' || item.week.toString() === selectedWeek);
+                    const matchesType = (selectedType === 'all' || item.type === selectedType);
+
+                    let matchesTimeline = true;
+                    if (selectedDateTimeline === 'past') {
+                        matchesTimeline = item.due_date && new Date(item.due_date) < now;
+                    } else if (selectedDateTimeline === 'upcoming') {
+                        matchesTimeline = !item.due_date || new Date(item.due_date) >= now;
+                    }
+
+                    return matchesWeek && matchesType && matchesTimeline;
+                });
+
+                renderDashboard(filtered);
+            };
+
+            weekFilter.addEventListener('change', filterData);
+            typeFilter.addEventListener('change', filterData);
+            dateFilter.addEventListener('change', filterData);
+        }
+
+        initDashboard();
+    </script>
+</body>
+
+</html>
